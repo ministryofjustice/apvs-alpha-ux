@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="">Check Eligibility</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+        
+
+
+<h2 class="heading-large">
+          Eligibility Status
+        </h2>
+
+        <p>Based on the criteria entered, you may be eligible for the Assisted Prison Visits Scheme.</p>
+        <p>We confirm with the Department for Work and Pensions which benefit you receive during the application process. </p>
+        
+
+<p>
+          <a class="button button-start" href="#" role="button" id="start">Start now</a>
+        </p>
+
+        <h2 class="heading-medium">Before you start</h2>
+        <p>You’ll need to have:</p>
+        <ul class="list list-bullet">
+          <li>Your National Insurance number</li>
+          <li>Prison number of the prison where the prisoner related to you is held</li>
+          <li>A valid award notice (if claiming Universal credit, child tax credit, pension credit or health certificate)</li>
+          <li>Proof of parentage - eg Long birth certificate (if acting as an escort for the prisoner's child)</li>
+          <li>Letter from the doctor (if acting as a medical escort for another adult who qualifies for assistance)</li>
+        </uL>
+
+      </div>
+      <!-- <div class="column-third">
+
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="#">Related link</a></li>
+              <li><a href="#">Related link</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div> -->
+
+  </main>
+
+  {% endblock %}
+
+
