@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-GOV.UK prototype kit
+{% if serviceName %} {{ serviceName }} {% endif %}
 {% endblock %}
 
 
@@ -52,12 +52,12 @@ GOV.UK prototype kit
           <li><a href="eligibility.html#income-support">Income Support</a></li>
           <li><a href="eligibility.html#income-support">Income-based Jobseeker’s Allowance</a></li>
           <li><a href="eligibility.html#income-support">Employment and Support Allowance</a></li>
-          <li><a href="eligibility.html#universal-credit">Universal Credit (and you earn less than £6,000 a year)</a></li>
+          <li><a href="eligibility.html#universal-credit">Universal Credit</a> (and you earn less than £6,000 a year)</li>
           <li><a href="eligibility.html#tax-credits">Tax credits</a></li>
           <li><a href="eligibility.html#pension-credit">Pension Credit</a></li>
         </ul>
 
-        <p>Check your <a href="">eligibility for assisted prison visits</a> before you apply.</p>
+        <p>Check your <a href="check-eligibility.html">eligibility for assisted prison visits</a> before you apply.</p>
 
         <p>You might not need to answer all the questions, depending on your circumstances. </p>
 
