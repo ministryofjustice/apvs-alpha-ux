@@ -30,7 +30,7 @@
           <fieldset>
 
             <label for="nationality_other" class="block-label" data-target="example_nationality_other">
-              <input type="radio" name="nationality_other" value="Wales" id="nationality_other">
+              <input type="radio" name="relationship" value="Wales" id="nationality_other">
               Close Relative
             </label>
 
@@ -46,7 +46,7 @@
           <fieldset>
 
             <label for="partner" class="block-label" data-target="example_partner">
-              <input type="radio" name="partner" value="Wales" id="partner">
+              <input type="radio" name="relationship" value="Wales" id="partner">
               Partner 
             </label>
 
@@ -55,11 +55,11 @@
                 Were you living as a couple, in an established relationship, immediately before the period of prison custody was imposed
               </label>
               <label class="block-label">
-              <input type="radio">
+              <input type="radio" type="radio" name="question" value="Yes" id="Yes">
               Yes 
             </label>
             <label class="block-label">
-              <input type="radio">
+              <input type="radio" type="radio" name="question" value="No" id="No">
               No 
             </label>
             </div>
@@ -67,7 +67,7 @@
           </fieldset>
 
           <label class="block-label">
-              <input type="radio">
+              <input type="radio" name="relationship">
               Sole Visitor
             </label>
 
@@ -79,8 +79,8 @@ If you are a close relative, partner or a sole visitor, do you need someone to h
 
  <fieldset>
 
-            <label for="help" class="block-label" data-target="example_help">
-              <input type="radio" name="help" value="Wales" id="partner">
+            <label class="block-label" data-target="example_help">
+              <input type="radio" name="help" value="yes2" id="yes2">
               Yes
             </label>
 
@@ -89,11 +89,11 @@ If you are a close relative, partner or a sole visitor, do you need someone to h
                 
               </label>
               <label class="block-label">
-              <input type="checkbox">
+              <input type="checkbox" type="radio" type="radio" name="question2" value="Yes" id="Yes">
               Medical
             </label>
             <label class="block-label">
-              <input type="checkbox">
+              <input type="checkbox" type="radio" type="radio" name="question2" value="No" id="No">
               Aged 75 years or over
             </label>
             </div>
