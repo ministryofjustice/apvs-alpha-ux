@@ -28,6 +28,17 @@ router.get('/examples/over-18', function (req, res) {
   }
 })
 
+
+router.get('apply-3', function (req, res) {
+  var relationship = req.query.relationship
+
+  if (relationship === 'false') {
+    res.redirect('apply-2.1')
+  } else {
+    res.render('apply-3')
+  }
+})
+
 // add your routes here
 
 module.exports = router
