@@ -25,28 +25,30 @@
         Relationship with the prisoner
       </h2>
 
-      <form action="apply-3" method="get" class="form">
-        <div class="form-group">
+      <form action="apply-3.html" method="get" class="form">
+         <div class="form-group">
           <fieldset>
 
-            <p> Are you the prisoner’s:</p>
+          <p> Are you the prisoner’s:</p>
 
-            <label for="relationshipTrue" class="block-label" data-target="example">
-              <input type="radio" name="relationship" id="relationshipTrue" value="true">
+            <label for="nationality_other" class="block-label" data-target="example_nationality_other">
+              <input type="radio" name="relationship" value="Wales" id="nationality_other" aria-controls="example_nationality_other">
               Close Relative
             </label>
 
-            <div class="panel panel-border-narrow js-hidden" id="example">
+            <div class="panel panel-border-narrow js-hidden" id="example_nationality_other">
               <label for="nationality_other_countries" class="form-label">
                 What is your relationship to the person you are visiting?
               </label>
-              <input class="form-control" type="text" id="relationshipTrue">
+              <input class="form-control" type="text" id="nationality_other_countries">
             </div>
 
-
+          </fieldset>
+        
+          <fieldset>
 
             <label for="partner" class="block-label" data-target="example_partner">
-              <input type="radio" name="relationship" id="relationshipTrue" value="true">
+              <input type="radio" name="relationship" value="Wales" id="partner" aria-controls="example_partner">
               Partner 
             </label>
 
@@ -55,38 +57,69 @@
                 Were you living as a couple, in an established relationship, immediately before the period of prison custody was imposed
               </label>
               <label class="block-label">
-                <input type="radio" type="radio" name="relationship" id="relationshipTrue" value="true">
-                Yes 
-              </label>
-              <label class="block-label">
-                <input type="radio" type="radio" name="relationship" id="relationshipTrue" value="true">
-                No 
-              </label>
+              <input type="radio" name="question" value="Yes" id="Yes">
+              Yes 
+            </label>
+            <label class="block-label">
+              <input type="radio" name="question" value="No" id="No">
+              No 
+            </label>
             </div>
 
+          </fieldset>
 
-
-            <label class="block-label">
-              <input type="radio" name="relationship" id="relationshipTrue" value="true">
+          <label class="block-label">
+              <input type="radio" name="relationship">
               Sole Visitor
             </label>
-          </div>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <div class="form-group">
-            <p>Or:</p>
 
-            <p>Are you escorting someone to the prison?</p>
+<br>
+<br>
+<br>
+<br>
+If you are a close relative, partner or a sole visitor, do you need someone to help you during the journey 
 
-          </div>
-          <div class="form-group">
+ <fieldset>
 
-            <label class="block-label" data-target="escort" name="relationship" id="relationshipFalse" value="false">
-              <input type="radio" name="relationship" id="relationshipFalse" value="false">
+            <label class="block-label" data-target="example_help">
+              <input type="radio" name="help" value="yes2" id="yes2" aria-controls="example_help">
+              Yes
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="example_help">
+              <label for="nationality_other_countries" class="form-label">
+                
+              </label>
+              <label class="block-label">
+              <input type="checkbox" name="question2" value="Yes" id="Yes">
+              Medical
+            </label>
+            <label class="block-label">
+              <input type="checkbox" name="question2" value="No" id="No">
+              Aged 75 years or over
+            </label>
+            </div>
+
+            <label class="block-label">
+              <input type="radio" name="help" value="Wales" id="partner">
+              No
+            </label>
+
+
+
+          </fieldset>
+          <br>
+
+<br>
+
+          <p>Or:</p>
+
+          <p>Are you escorting someone to the prison?</p>
+
+           <fieldset>
+
+            <label class="block-label" data-target="escort">
+              <input type="radio" name="escort" value="yes2" id="yes2" aria-controls="escort">
               Yes
             </label>
 
@@ -95,35 +128,35 @@
                 Who are you escorting?
               </label>
               <label class="block-label">
-                <input type="checkbox" type="radio" type="radio" name="relationship" id="relationshipFalse" value="false">
-                An adult
-              </label>
-              <label class="block-label">
-                <input type="checkbox" type="radio" type="radio" name="relationship" id="relationshipFalse" value="false">
-                Someone else’s child/children
-              </label>
-              <label class="block-label">
-                <input type="checkbox" type="radio" type="radio" name="relationship" id="relationshipFalse" value="false">
-                My child/children
-              </label>
+              <input type="checkbox" name="question2" value="Yes" id="Yes">
+              An adult
+            </label>
+            <label class="block-label">
+              <input type="checkbox" name="question2" value="No" id="No">
+              Someone else’s child/children
+            </label>
+            <label class="block-label">
+              <input type="checkbox" name="question2" value="No" id="No">
+              My child/children
+            </label>
             </div>
 
             <label class="block-label">
-              <input type="radio" name="relationship" id="relationshipFalse" value="false">
+              <input type="radio" name="escort" value="Wales" id="partner">
               No
             </label>
 
 
 
           </fieldset>
-
+            
         </div>
 
 
-        <div class="form-group">
-          <input type="submit" class="button" value="Continue">
-        </div> 
-      </form>
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+</form>
+
+      
 
     </div>
 <!-- <div class="column-third">
