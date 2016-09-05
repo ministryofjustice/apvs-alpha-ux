@@ -28,17 +28,15 @@ router.get('/examples/over-18', function (req, res) {
   }
 })
 
+router.post('/v2/apply-2', function (req, res) {
+  var relationship = req.body.relationship
 
-router.get('apply-3', function (req, res) {
-  var relationship = req.query.relationship
-
-  if (relationship === 'false') {
-    res.redirect('apply-2.1')
+  if (relationship === 'Other') {
+    res.redirect('apply-3')
   } else {
-    res.render('apply-3')
+    // close relative, partner or sole visitor
+    res.redirect('apply-22')
   }
 })
-
-// add your routes here
 
 module.exports = router
