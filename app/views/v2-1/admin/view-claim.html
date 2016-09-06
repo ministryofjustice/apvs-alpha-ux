@@ -1,0 +1,146 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  APVS Admin
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+ <ul id="sub-nav">
+  
+    <li><a href="index">Dashboard</a></li>
+    <li>
+      <a href="eligibility">Eligibility</a>
+      <!-- <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul> -->
+    </li>
+    <li>
+      <a href="claims">Claims</a>
+      <!-- <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul> -->
+    </li>
+
+  </ul>
+
+<a class="link-back" href="claims">Back</a>
+
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+     <h1 class="heading-large">Chris Sisk
+     <span class="heading-secondary">Claim Application</span></h1>
+
+ 
+       <table>
+       
+<tr>
+  <th colspan="2">Prisoner Information</th>
+</tr>
+        <tr>
+          <td>Prisoner number</td>
+          <td>0000001</td>
+        </tr>
+
+        <tr>
+          <td>Prisoner name</td>
+          <td>Mr Peter Bloggs</td>
+        </tr>
+
+        <tr>
+          <td>Eligible for visitation?</td>
+          <td>Yes</td>
+        </tr>
+
+        </table>
+
+        <br>
+
+        <table>
+        <tr>
+  <th colspan="2">Claim Details</th>
+</tr>
+          <tr>
+          <td>Date Submitted</td>
+          <td>10/09/16</td>
+        </tr>
+
+        <tr>
+          <td>Travel</td>
+          <td>Train<br>
+          London to Hewell<br>
+          £100.00<br>
+          <a href="">View Receipt</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Travel</td>
+          <td>Train<br>
+          London to Hewell<br>
+          £100.00<br>
+          <a href="">View Receipt</a>
+          </td>
+        </tr>
+
+        
+
+        <tr>
+          <td>Sustenance</td>
+          <td>Lunch<br>
+          £5.00<br>
+          <a href="">View Receipt</a>
+          </td>
+        </tr>
+
+        </table>
+
+        <br>
+        
+        <a href="index.html" class="button orange">Request More Information</a>
+        <a href="index.html" class="button red">Escalate</a>
+        <a href="index.html" class="button red pull-right">Reject</a>
+
+        <br>
+        <br>
+        <a href="index.html" class="button">Confirm</a>
+      
+    </div>
+
+    <div class="column-third">
+
+      <h2 class="heading-medium">Links</h2>
+      <ul class="un-ordered-list">
+        <li>
+          <a href="/examples/blank-govuk">
+            My Account
+          </a>
+        </li>
+        <li>
+          <a href="/examples/blank-govuk">
+            Link 1
+          </a>
+        </li>
+        <li>
+          <a href="/examples/blank-govuk">
+            Link 2
+          </a>
+        </li>
+      </ul>
+
+      <br>
+      <a href="">Log Out</a>
+    </div>
+
+    
+
+  </div>
+
+</main>
+
+{% endblock %}
