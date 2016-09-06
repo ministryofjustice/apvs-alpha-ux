@@ -60,10 +60,16 @@ router.post('/v2-1/apply-2', function (req, res) {
   }
 })
 
+router.get('/v2-1/apply-4', function (req, res) {
+  var benefit = req.query.benefit
+
+  res.render('v2-1/apply-4', { 'benefit': benefit })
+})
+
 router.get('/v2-1/apply-5', function (req, res) {
   var benefit = req.query.benefit
 
-  if (benefit === 'None of the above') {
+  if (benefit === '' | 'None of the above') {
     res.redirect('el-no')
   } else {
     res.render('v2-1/apply-5', { 'benefit': benefit })
