@@ -1,47 +1,47 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  APVS Admin
+APVS Admin
 {% endblock %}
 
 {% block content %}
 
 <main id="content" role="main">
 
- <ul id="sub-nav">
-  
+  <ul id="sub-nav">
+
     <li><a href="index">Dashboard</a></li>
     <li>
       <a href="eligibility">Eligibility</a>
-      <!-- <ul>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-      </ul> -->
-    </li>
-    <li>
-      <a href="claims" class="active">Claims</a>
-      <!-- <ul>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-      </ul> -->
-    </li>
+<!-- <ul>
+<li><a href="#">Link</a></li>
+<li><a href="#">Link</a></li>
+</ul> -->
+</li>
+<li>
+  <a href="claims" class="active">Claims</a>
+<!-- <ul>
+<li><a href="#">Link</a></li>
+<li><a href="#">Link</a></li>
+</ul> -->
+</li>
 
-  </ul>
+</ul>
 
 <a class="link-back" href="claims">Back</a>
 
-  <div class="grid-row">
+<div class="grid-row">
 
-    <div class="column-two-thirds">
-     <h1 class="heading-large">Joseph Bloggs
-     <span class="heading-secondary">Claim Application</span></h1>
+  <div class="column-two-thirds">
+    <h1 class="heading-large">Joseph Bloggs
+      <span class="heading-secondary">Claim Application</span></h1>
 
- 
-       <table>
-       
-<tr>
-  <th colspan="2">Prisoner Information</th>
-</tr>
+
+      <table>
+
+        <tr>
+          <th colspan="2">Prisoner Information</th>
+        </tr>
         <tr>
           <td>Prisoner number</td>
           <td>0000001</td>
@@ -57,57 +57,68 @@
           <td>Yes</td>
         </tr>
 
-        </table>
+      </table>
 
-        <br>
+      <br>
 
-        <table>
+
+
+      <h3 class="heading-medium">Submitted 5/09/16 <span class="time">3 days ago</span></h3>
+
+
+      <table>
         <tr>
-  <th colspan="2">Claim Details</th>
-</tr>
-          <tr>
-          <td>Date Submitted</td>
-          <td>10/09/16</td>
+          <th>Travel</th>
+          <th>Journey</th>
+          <th>Cost</th>
+          <th>Receipt</th>
+          <th></th>
         </tr>
-
         <tr>
-          <td>Travel</td>
-          <td>Train<br>
-          London to Hewell<br>
-          £100.00<br>
-          <a href="">View Receipt</a>
+          <td>Train</td>
+          <td>Euston to Five Ways return ticket</td>
+          <td>£70.00</td>
+          <td><a href="">View Receipt</a></td>
+          <td>
+            <input type="radio" checked>
           </td>
         </tr>
-
+        <tr>
+          <td>Taxi</td>
+          <td>Five Ways to Visitors Centre</td>
+          <td>£10.00</td>
+          <td><a href="">View Receipt</a></td>
+          <td>
+            <input type="radio" checked>
+          </td>
+        </tr>
         <tr>
           <td>Sustenance</td>
-          <td>Lunch<br>
-          £5.00<br>
-          <a href="">View Receipt</a>
+          <td>Lunch</td>
+          <td>£6.00</td>
+          <td>No Receipt</td>
+          <td>
+            <input type="radio">
           </td>
         </tr>
+      </table>
+      <br>
 
-        </table>
+      <a href="" class="button orange">Request Information</a>
+      <a href="" class="button red">Reject Selected</a>
 
-        <br>
-        
-        <a href="index.html" class="button orange">Request More Information</a>
-        <a href="index.html" class="button red">Escalate</a>
-        <a href="index.html" class="button red pull-right">Reject</a>
+      <a href="" class="button pull-right">Approve Selected</a>
 
-        <br>
-        <br>
-        <a href="index.html" class="button">Confirm</a>
-      
+
     </div>
 
     <div class="column-third">
 
-      
+
       <table>
-      <tr>
-      <th colspan="2">Contact</th>
-      </tr>
+        <tr>
+          <th colspan="2">Contact</th>
+        </tr>
         <tr>
           <td>Phone number</td>
           <td>+4475 123 12345</td>
@@ -120,9 +131,9 @@
       <br>
 
       <table>
-      <tr>
-      <th colspan="2">Claim history</th>
-      </tr>
+        <tr>
+          <th colspan="2">Claim history</th>
+        </tr>
         <tr>
           <td><a href="">APVS15348</a></td>
           <td>Pending</td>
@@ -142,11 +153,11 @@
           </td>
         </tr>
       </table>
-      
-    
+
+
     </div>
 
-    
+
 
   </div>
 

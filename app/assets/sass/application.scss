@@ -100,10 +100,18 @@
             color:#2e8aca;
         }
 
-.heading-secondary {
+span h4.heading-secondary {
     font-size:24px;
     color:#6f777b;
 }
+
+span.time{
+    font-size:20px;
+    color:#6f777b;
+    display:block;
+    font-weight:normal;
+}
+
 
 ul.filter-claims li a{
     background: #dde0e2;
