@@ -49,4 +49,25 @@ router.get('/v2/apply-5', function (req, res) {
   }
 })
 
+router.post('/v2-1/apply-2', function (req, res) {
+  var relationship = req.body.relationship
+
+  if (relationship === 'Other') {
+    res.redirect('apply-3')
+  } else {
+    // close relative, partner or sole visitor
+    res.redirect('apply-22')
+  }
+})
+
+router.get('/v2-1/apply-5', function (req, res) {
+  var benefit = req.query.benefit
+
+  if (benefit === 'None of the above') {
+    res.redirect('el-no')
+  } else {
+    res.render('v2-1/apply-5', { 'benefit': benefit })
+  }
+})
+
 module.exports = router

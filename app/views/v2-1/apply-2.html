@@ -25,101 +25,100 @@
           What is your relationship with the person you are visiting?
         </h2>
 
-<form action="apply-3.html" method="get" class="form">
+<form action="apply-2" method="post" class="form">
          <div class="form-group">
           <fieldset>
 
           <p>Are you the person’s:</p>
 
-            <label for="nationality_other" class="block-label" data-target="example_nationality_other">
-              <input type="radio" name="relationship" value="Wales" id="nationality_other">
-              Close relative
+            <label for="close-relative" class="block-label" data-target="close-relative-question">
+              <input type="radio" name="relationship" value="Close Relative" id="close-relative">
+              Close Relative
             </label>
 
-            <div class="panel panel-border-narrow js-hidden" id="example_nationality_other">
-              <label for="nationality_other_countries" class="form-label">
+            <div class="panel panel-border-narrow js-hidden" id="close-relative-question">
+              <label for="close-relative-relationship" class="form-label">
                 What is your relationship to the person you are visiting?
               </label>
-              <input class="form-control" type="text" id="nationality_other_countries">
+              <input class="form-control" type="text" id="close-relative-relationship" name="close-relative-relationship">
             </div>
 
           </fieldset>
         
           <fieldset>
 
-            <label for="partner" class="block-label" data-target="example_partner">
-              <input type="radio" name="relationship" value="Wales" id="partner">
+            <label for="partner" class="block-label" data-target="partner-question">
+              <input type="radio" name="relationship" value="Partner" id="partner">
               Partner 
             </label>
 
-            <div class="panel panel-border-narrow js-hidden" id="example_partner">
-              <label for="nationality_other_countries" class="form-label">
+            <div class="panel panel-border-narrow js-hidden" id="partner-question">
+              <label class="form-label">
                 Were you living as a couple, in an established relationship, immediately before the period of prison custody was imposed
               </label>
               <label class="block-label">
-              <input type="radio" type="radio" name="question" value="Yes" id="Yes">
+              <input type="radio" type="radio" name="partner-living-as-couple" value="Yes" id="partner-question-yes">
               Yes 
             </label>
             <label class="block-label">
-              <input type="radio" type="radio" name="question" value="No" id="No">
+              <input type="radio" type="radio" name="partner-living-as-couple" value="No" id="partner-question-no">
               No 
             </label>
             </div>
-<label class="block-label">
-              <input type="radio" name="relationship">
-              Sole visitor
+            <label class="block-label">
+              <input type="radio" name="relationship" value="Sole Visitor">
+              Sole Visitor
             </label>
 
-            <label for="other" class="block-label" data-target="other">
-              <input type="radio" name="relationship" value="Wales" id="nationality_other">
+            <label for="other" class="block-label" data-target="other-question">
+              <input type="radio" name="relationship" value="Other" id="other">
               Other
             </label>
 
-            <div class="panel panel-border-narrow js-hidden" id="other">
-              <label for="nationality_other_countries" class="form-label">
+            <div class="panel panel-border-narrow js-hidden" id="other-question">
+              <label for="other-relationship" class="form-label">
                 What is your relationship to the person you are visiting?
               </label>
-              <input class="form-control" type="text" id="nationality_other_countries">
+              <input class="form-control" type="text" name="other-relationship" id="other-relationship">
             </div>
 
           </fieldset>
 
           <br>
 
+          <p>Or:</p>
 
-          <p>Or are you escorting someone to the prison?</p>
+          <p>Are you escorting someone to the prison?</p>
 
            <fieldset>
 
             <label class="block-label" data-target="escort">
-              <input type="radio" name="escort" value="yes2" id="yes2">
+              <input type="radio" name="escort" value="Yes" id="escort-yes">
               Yes
             </label>
 
             <div class="panel panel-border-narrow js-hidden" id="escort">
-              <label for="nationality_other_countries" class="form-label">
+              <label for="escorting" class="form-label">
                 Are you escorting:
               </label>
               <label class="block-label">
-              <input type="checkbox" type="radio" type="radio" name="question2" value="Yes" id="Yes">
+              <input type="checkbox" type="radio" type="radio" name="escorting" value="An adult" id="an-adult">
               An adult
             </label>
             <label class="block-label">
-              <input type="checkbox" type="radio" type="radio" name="question2" value="No" id="No">
+              <input type="checkbox" type="radio" type="radio" name="escorting" value="Someone else's child/children" id="someone-elses-child-children">
               Someone else’s child/children
             </label>
             <label class="block-label">
-              <input type="checkbox" type="radio" type="radio" name="question2" value="No" id="No">
+              <input type="checkbox" type="radio" type="radio" name="escorting" value="My child/children" id="my-child-children">
               My child/children
             </label>
             </div>
 
             <label class="block-label">
-              <input type="radio" name="escort" value="Wales" id="partner">
+              <input type="radio" name="escort" value="No" id="escort-no">
               No
             </label>
-
-
 
           </fieldset>
             

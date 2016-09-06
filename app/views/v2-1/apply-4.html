@@ -22,49 +22,61 @@
 
 
         <h2 class="heading-large">
-         Does someone else claim the benefits on your behalf?
-
+         Do you claim or receive any of the following?
         </h2>
 
+<p>Please select from the following options:</p>
+
 <form action="apply-5" method="get" class="form">
-         <div class="form-group">
+        <div class="form-group">
           <fieldset>
 
-            <label class="block-label" data-target="example_help">
-              <input type="radio" name="help" value="yes2" id="yes2">
-              Yes
+          
+
+            <label for="Income Support" class="block-label">
+              <input type="radio" name="benefit" value="Income Support" id="Income Support">
+              Income Support
             </label>
 
-            <div class="panel panel-border-narrow js-hidden" id="example_help">
-            <p>Please provide this person's;</p>
-              <label for="nationality_other_countries" class="form-label">
-                 First Name
-              </label>
-              <input class="form-control" type="text" id="nationality_other_countries">
-
-              <label for="nationality_other_countries" class="form-label">
-                 Last Name
-              </label>
-              <input class="form-control" type="text" id="nationality_other_countries">
-            
-
-            <label for="nationality_other_countries" class="form-label">
-                 National insurance number
-              </label>
-              <input class="form-control" type="text" id="nationality_other_countries">
-            
-            </div>
-
-            <label class="block-label">
-              <input type="radio" name="help" value="Wales" id="partner">
-              No
+            <label for="Jobseeker’s Allowance (Income based)" class="block-label">
+              <input type="radio" name="benefit" value="Jobseeker’s Allowance (Income based)" id="Jobseeker’s Allowance (Income based)">
+              Jobseeker’s Allowance (Income based)
             </label>
 
+            <label for="Employment and Support Allowance (Income related)" class="block-label">
+              <input type="radio" name="benefit" value="Employment and Support Allowance (Income related)" id="Employment and Support Allowance (Income related)">
+              Employment and Support Allowance (Income related)
+            </label>
 
+            <label for="Universal Credit (and you earn less than £1,250 a month)" class="block-label">
+              <input type="radio" name="benefit" value="Universal Credit (and you earn less than £1,250 a month)" id="Universal Credit (and you earn less than £1,250 a month)">
+              Universal Credit (and you earn less than £1,250 a month)
+            </label>
+
+            <label for="Working Tax credits or Child tax credit with disability" class="block-label">
+              <input type="radio" name="benefit" value="Working Tax credits or Child tax credit with disability" id="Working Tax credits or Child tax credit with disability">
+              Working Tax credits or Child tax credit with disability
+            </label>
+
+            <label for="Pension Credit" class="block-label">
+              <input type="radio" name="benefit" value="Pension Credit" id="Pension Credit">
+              Pension Credit
+            </label>
+
+            
+            <label for="Health Certificate (HC2 or HC3)" class="block-label">
+              <input type="radio" name="benefit" value="Health Certificate (HC2 or HC3)" id="Health Certificate (HC2 or HC3)">
+              Health Certificate (HC2 or HC3)
+            </label>
+
+            <label for="None of the above" class="block-label">
+              <input type="radio" name="benefit" value="None of the above" id="None of the above">
+              None of the above
+            </label>
 
           </fieldset>
-            
-        </div>
+          </div>
+
 
 
         <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
