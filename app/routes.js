@@ -105,7 +105,36 @@ router.get('/v2-2/apply-5', function (req, res) {
   if (benefit === '' | 'None of the above') {
     res.redirect('el-no')
   } else {
-    res.render('v2-1/apply-5', { 'benefit': benefit })
+    res.render('v2-3/apply-5', { 'benefit': benefit })
+  }
+})
+
+// version 2.3 start
+
+router.post('/v2-3/apply-2', function (req, res) {
+  var relationship = req.body.relationship
+
+  if (relationship === 'Other') {
+    res.redirect('apply-3')
+  } else {
+    // close relative, partner or sole visitor
+    res.redirect('apply-22')
+  }
+})
+
+router.get('/v2-3/apply-4', function (req, res) {
+  var benefit = req.query.benefit
+
+  res.render('v2-3/apply-4', { 'benefit': benefit })
+})
+
+router.get('/v2-3/apply-5', function (req, res) {
+  var benefit = req.query.benefit
+
+  if (benefit === '' | 'None of the above') {
+    res.redirect('el-no')
+  } else {
+    res.render('v2-3/apply-5', { 'benefit': benefit })
   }
 })
 
