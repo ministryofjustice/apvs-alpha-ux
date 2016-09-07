@@ -138,4 +138,18 @@ router.get('/v2-3/apply-5', function (req, res) {
   }
 })
 
+
+
+
+router.post('/v2-3/login', function (req, res) {
+  var returningUser = req.body.returningUser
+
+  if (returningUser=== 'Yes') {
+    res.redirect('login')
+  } else {
+    res.redirect('apply-1')
+  }
+})
+
+
 module.exports = router
