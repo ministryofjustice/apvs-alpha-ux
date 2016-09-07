@@ -9,7 +9,7 @@
 
 <main id="content" role="main">
 
-{% include "includes/phase_banner_alpha.html" %}
+	{% include "includes/phase_banner_alpha.html" %}
 
 <!-- <div class="breadcrumbs">
 <ol>
@@ -20,90 +20,94 @@
 </div> -->
 
 <div class="grid-row">
-<div class="column-two-thirds">
+	<div class="column-two-thirds">
 
-<h1 class="heading-xlarge">
-{% if serviceName %} {{ serviceName }} {% endif %} Prototype
-</h1>
-
-
-
-<h2 class="heading-large">Alpha<h2>
-
-<h2 class="heading-medium">Sprint 1<h2>
-
-<h3 class="heading-small">Public<h3>
-<ul class="list list-bullet">
-<li><a href="/v1">V 1.0</a>
-<p>User Journey 1 -  Eligibibilty Checker and Application</p>
-</li>
-
-<li><a href="/v1/index-v1-1">V 1.1</a>
-<p>Homepage UI update</p>
-</li>
-</ul>
-
-<h3 class="heading-small">APVU<h3>
-
-<ul class="list list-bullet">
-<li><a href="/v1/admin">V 1.0</a>
-<p>Eligibility applications list view</p>
-</li>
-</ul>
-
-<h2 class="heading-medium">Sprint 2 <p class="form-hint">Work in progress</p><h2>
-<h3 class="heading-small">Public<h3>
-
-<ul class="list list-bullet">
-<li><a href="/v2">V 2.0</a>
-<p>User Journey 1 -  Eligibility checker merged in to application process</p>
-</li>
-
-<li><a href="/v2-1">V 2.1</a>
-<p>User Journey 1 -  Application language updated</p>
-</li>
+		<h1 class="heading-xlarge">
+			{% if serviceName %} {{ serviceName }} {% endif %} Prototype
+		</h1>
 
 
-</ul>
 
-<h3 class="heading-small">APVU<h3>
+		<h2 class="heading-large">Alpha<h2>
 
-<ul class="list list-bullet">
-<li><a href="/v2-1/admin/index">V 2.1</a>
-<p>Eligibility &amp; Claim list view</p>
-</li>
+			<h2 class="heading-medium">Sprint 1<h2>
 
-</li>
+				<h3 class="heading-small">Public<h3>
+					<ul class="list list-bullet">
+						<li><a href="/v1">V 1.0</a>
+							<p>User Journey 1 -  Eligibibilty Checker and Application</p>
+						</li>
+
+						<li><a href="/v1/index-v1-1">V 1.1</a>
+							<p>Homepage UI update</p>
+						</li>
+					</ul>
+
+					<h3 class="heading-small">APVU<h3>
+
+						<ul class="list list-bullet">
+							<li><a href="/v1/admin">V 1.0</a>
+								<p>Eligibility applications list view</p>
+							</li>
+						</ul>
+
+						<h2 class="heading-medium">Sprint 2 <p class="form-hint">Work in progress</p><h2>
+							<h3 class="heading-small">Public<h3>
+
+								<ul class="list list-bullet">
+									<li><a href="/v2">V 2.0</a>
+										<p>User Journey 1 -  Eligibility checker merged in to application process</p>
+									</li>
+
+									<li><a href="/v2-1">V 2.1</a>
+										<p>User Journey 1 -  Application language updated</p>
+									</li>
+
+									<li><a href="/v2-2">V 2.2</a>
+										<p>Returning user/new user links on homepage, homepage content update</p>
+									</li>
 
 
-</ul>
+								</ul>
 
-</div>
-<div class="column-third">
+								<h3 class="heading-small">APVU<h3>
 
-<aside class="govuk-related-items" role="complementary">
-<h2 class="heading-medium" id="subsection-title">Public</h2>
-<nav role="navigation" aria-labelledby="subsection-title">
-<ul class="font-xsmall">
-<li><a href="/v2-1">Start application</a></li>
-</ul>
-</nav>
-</aside>
+									<ul class="list list-bullet">
+										<li><a href="/v2-1/admin/index">V 2.1</a>
+											<p>Eligibility &amp; Claim list view</p>
+										</li>
 
-<aside class="govuk-related-items" role="complementary">
-<h2 class="heading-medium" id="subsection-title">APVU</h2>
-<nav role="navigation" aria-labelledby="subsection-title">
-<ul class="font-xsmall">
-<li><a href="/v2-1/admin/index">Administration</a></li>
-</ul>
-</nav>
-</aside>
+									</li>
 
-</div>
-</div>
 
-</main>
+								</ul>
 
-{% endblock %}
+							</div>
+							<div class="column-third">
+
+								<aside class="govuk-related-items" role="complementary">
+									<h2 class="heading-medium" id="subsection-title">Public</h2>
+									<nav role="navigation" aria-labelledby="subsection-title">
+										<ul class="font-xsmall">
+											<li><a href="/v2-1">Start application</a></li>
+										</ul>
+									</nav>
+								</aside>
+
+								<aside class="govuk-related-items" role="complementary">
+									<h2 class="heading-medium" id="subsection-title">APVU</h2>
+									<nav role="navigation" aria-labelledby="subsection-title">
+										<ul class="font-xsmall">
+											<li><a href="/v2-1/admin/index">Administration</a></li>
+										</ul>
+									</nav>
+								</aside>
+
+							</div>
+						</div>
+
+					</main>
+
+					{% endblock %}
 
 

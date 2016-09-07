@@ -28,6 +28,8 @@ router.get('/examples/over-18', function (req, res) {
   }
 })
 
+//version 2.0
+
 router.post('/v2/apply-2', function (req, res) {
   var relationship = req.body.relationship
 
@@ -49,6 +51,8 @@ router.get('/v2/apply-5', function (req, res) {
   }
 })
 
+//version 2.1 start
+
 router.post('/v2-1/apply-2', function (req, res) {
   var relationship = req.body.relationship
 
@@ -67,6 +71,35 @@ router.get('/v2-1/apply-4', function (req, res) {
 })
 
 router.get('/v2-1/apply-5', function (req, res) {
+  var benefit = req.query.benefit
+
+  if (benefit === '' | 'None of the above') {
+    res.redirect('el-no')
+  } else {
+    res.render('v2-1/apply-5', { 'benefit': benefit })
+  }
+})
+
+// version 2.2 start
+
+router.post('/v2-2/apply-2', function (req, res) {
+  var relationship = req.body.relationship
+
+  if (relationship === 'Other') {
+    res.redirect('apply-3')
+  } else {
+    // close relative, partner or sole visitor
+    res.redirect('apply-22')
+  }
+})
+
+router.get('/v2-2/apply-4', function (req, res) {
+  var benefit = req.query.benefit
+
+  res.render('v2-2/apply-4', { 'benefit': benefit })
+})
+
+router.get('/v2-2/apply-5', function (req, res) {
   var benefit = req.query.benefit
 
   if (benefit === '' | 'None of the above') {

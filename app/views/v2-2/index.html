@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_alpha.html" %}
+
+<div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+    </ol>
+  </div>
+
+<div class="grid-row">
+  <div class="column-two-thirds">
+
+    <h1 class="heading-xlarge">
+      {% if serviceName %} {{ serviceName }} {% endif %}
+    </h1>
+
+
+
+<h3 class="heading-medium">Eligibility<h3>
+    <p>You may be able to get help with the cost of <a href="https://www.gov.uk/staying-in-touch-with-someone-in-prison/visiting-someone-in-prison">visiting a close relative or partner in prison</a> if you’re aged over 16, are on certain benefits or have a low income.</p>
+
+    
+
+      <h4 class="heading-small">Relationship</h4>
+
+      <p>You may be eligible if you are the prisoner’s:</p>
+
+
+<ul class=" list list-bullet">
+  <li>close relative, partner, only visitor, or</li>
+<li>escorting a child, young person or adult</li>
+</ul>
+
+<a href="" class="link">More information</a>
+      
+
+
+      <h4 class="heading-small">Benefits</h4>
+
+      <p>You may qualify if you are receiving:</p>
+<ul class="list list-bullet">
+  <li>Income Support, Jobseeker’s Allowance, Employment and Support Allowance, Universal Credit, Working Tax Credits, Child Tax Credit, Pension Credit, or</li>
+<li>Have a Health Certificate (HC2 or HC3)</li>
+</ul>
+        
+          <a href="" class="link">More information</a>
+
+
+
+
+          <h2 class="heading-medium">First time applicant?</h2>
+          
+        <p>You’ll need to have:</p>
+        <ul class="list list-bullet">
+          <li>Your National Insurance number</li>
+<li>Prisoner’s number and name of the Prison </li>
+        </uL>
+
+        <p>You may also need to send paper documents to us electronically. We will explain how to do this during your application.</p>
+<p>
+            <a class="button button-start" href="v2-2/apply-1.html" role="button" id="start">Start now</a>
+          </p>
+
+          <h3 class="heading-small">Other ways to apply</h3>
+
+          <p>You can apply by filling in a paper form instead.</p>
+
+          <p>You will need to complete the paper form and send it to the address on the form to get help with travel costs.</p>
+
+          <h2 class="heading-medium">Want to start a new claim (and have a login ID)?</h2>
+
+          <p>
+            <a class="button button-start" href="v2-2/login.html" role="button" id="start">Start now</a>
+          </p>
+
+          <a href="">Forgotten your login ID?</a>
+
+          
+
+        </div>
+<!-- <div class="column-third">
+
+<aside class="govuk-related-items" role="complementary">
+<h2 class="heading-medium" id="subsection-title">Subsection</h2>
+<nav role="navigation" aria-labelledby="subsection-title">
+<ul class="font-xsmall">
+<li><a href="#">Related link</a></li>
+<li><a href="#">Related link</a></li>
+<li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+</ul>
+</nav>
+</aside>
+
+</div>
+</div> -->
+
+</main>
+
+{% endblock %}
+
+
