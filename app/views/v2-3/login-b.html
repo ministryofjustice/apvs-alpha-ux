@@ -22,17 +22,23 @@
 
 
         <h2 class="heading-large">
-          What is your date of birth?
+          Please log in
         </h2>
 
-<form action="apply-2" method="get" class="form">
-   
+<form action="" method="get" class="form">
+        <div class="form-group">
+      <label class="form-label-bold" for="full-name">Reference number</label>
+      <p class="form-hint">For example APVS1234</p>
+      <input type="text" class="form-control" id="full-name">
+      <br>
+      <br><a href="">Forgotten your reference number?</a>
+    </div>
 
     <div class="form-group">
       <fieldset>
 
         <div class="form-date">
-
+<label class="form-label-bold" for="full-name">Date of birth</label>
           <p class="form-hint">For example, 31 3 1980</p>
 
           <div class="form-group form-group-day">
@@ -54,8 +60,14 @@
       </fieldset>
     </div>
 
-    
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name">National Insurance number</label>
+      <input type="text" class="form-control" id="full-name">
+    </div>
 
+    
+    <br>
+    <br>
         <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
 </form>
 
