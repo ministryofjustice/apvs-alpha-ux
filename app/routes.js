@@ -179,11 +179,21 @@ router.get('/v2-4/apply-5', function (req, res) {
 })
 
 
-router.post('/v2-4/login', function (req, res) {
+router.post('/v2-4/apply-1', function (req, res) {
   var returningUser = req.body.returningUser
 
   if (returningUser=== 'Yes') {
+    res.redirect('apply-1')
+  } else {
     res.redirect('login')
+  }
+})
+
+router.post('/v2-4/apply-10', function (req, res) {
+  var eligibilityNo = req.body.eligibilityNo
+
+  if (eligibilityNo=== 'Yes') {
+    res.redirect('apply-10')
   } else {
     res.redirect('apply-1')
   }

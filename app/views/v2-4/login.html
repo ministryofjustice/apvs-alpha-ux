@@ -13,7 +13,7 @@
   <div class="breadcrumbs">
     <ol>
       <li><a href="/index.html">Prototype Index</a></li>
-<li><a href="/v2-3">Home</a></li>
+<li><a href="/v2-4">Home</a></li>
     </ol>
   </div>
 
@@ -25,19 +25,43 @@
           Enter your details
         </h2>
 
-<form action="" method="get" class="form">
+<form action="confirm" method="get" class="form">
         <div class="form-group">
-      <label class="form-label-bold" for="full-name">Login ID</label>
+      <label class="form-label-bold" for="full-name">Reference number</label>
       <p class="form-hint">For example APVS1234</p>
       <input type="text" class="form-control" id="full-name">
+      <br>
+      <br><a href="">Forgotten your reference number?</a>
     </div>
 
     <div class="form-group">
-      <label class="form-label-bold" for="full-name">Password</label>
-      <input type="text" class="form-control" id="full-name">
+      <fieldset>
+
+        <div class="form-date">
+<label class="form-label-bold" for="full-name">Date of birth</label>
+          <p class="form-hint">You must be over 16 to be eligible for assistance</p>
+
+          <div class="form-group form-group-day">
+            <label for="dob-day">Day</label>
+            <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+          </div>
+
+          <div class="form-group form-group-month">
+            <label for="dob-month">Month</label>
+            <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+          </div>
+
+          <div class="form-group form-group-year">
+            <label for="dob-year">Year</label>
+            <input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+          </div>
+        </div>
+
+      </fieldset>
     </div>
 
-    <a href="">Forgotten your login ID or password?</a>
+    
+    
     <br>
     <br>
         <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
