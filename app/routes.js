@@ -162,21 +162,21 @@ router.post('/v2-4/apply-2', function (req, res) {
   }
 })
 
-router.get('/v2-4/apply-4', function (req, res) {
-  var benefit = req.query.benefit
+// router.get('/v2-4/apply-4', function (req, res) {
+//   var benefit = req.query.benefit
 
-  res.render('v2-4/apply-4', { 'benefit': benefit })
-})
+//   res.render('v2-4/apply-4', { 'benefit': benefit })
+// })
 
-router.get('/v2-4/apply-5', function (req, res) {
-  var benefit = req.query.benefit
+// router.get('/v2-4/apply-5', function (req, res) {
+//   var benefit = req.query.benefit
 
-  if (benefit === '' | 'None of the above') {
-    res.redirect('el-no')
-  } else {
-    res.render('v2-4/apply-5', { 'benefit': benefit })
-  }
-})
+//   if (benefit === '' | 'None of the above') {
+//     res.redirect('el-no')
+//   } else {
+//     res.render('v2-4/apply-5', { 'benefit': benefit })
+//   }
+// })
 
 
 router.post('/v2-4/apply-1', function (req, res) {
