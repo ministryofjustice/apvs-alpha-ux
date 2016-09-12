@@ -26,6 +26,15 @@
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+.inline {
+    clear:none!important;
+    margin-right:10px;
+}
+
+.form-control.full{
+    width:100%;
+}
+
 .button.orange {
     background:#f48f0b;
 }
