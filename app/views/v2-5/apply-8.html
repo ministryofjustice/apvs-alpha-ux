@@ -27,13 +27,32 @@
 
         <p>I'm claiming for</p>
 
-<form action="apply-9.html" method="get" class="form">
+<form action="apply-previous-visit.html" method="get" class="form">
          <div class="form-group">
-          <fieldset>
-<label class="block-label">
-              <input type="radio" name="help" value="Wales" id="partner">
+
+         <fieldset>
+
+
+            <label for="close-relative" class="block-label" data-target="close-relative-question">
+              <input type="radio" name="relationship" value="Close Relative" id="close-relative">
+              
               a visit I have already made
+
             </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="close-relative-question">
+              <label for="close-relative-relationship" class="form-label">
+                What was the date of your visit?
+              </label>
+              <input class="form-control" type="text" id="close-relative-relationship" name="close-relative-relationship">
+            </div>
+
+          </fieldset>
+
+
+          <fieldset>
+
+
 
             <label class="block-label">
               <input type="radio" name="help" value="Wales" id="partner">
@@ -43,6 +62,8 @@
 
 
           </fieldset>
+
+
             
         </div>
 
