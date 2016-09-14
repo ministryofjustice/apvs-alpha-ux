@@ -1,0 +1,259 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+APVS Admin
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <ul id="sub-nav">
+
+    <li><a href="index">Dashboard</a></li>
+    <li>
+      <a href="eligibility">Eligibility</a>
+<!-- <ul>
+<li><a href="#">Link</a></li>
+<li><a href="#">Link</a></li>
+</ul> -->
+</li>
+<li>
+  <a href="claims">Claims</a>
+<!-- <ul>
+<li><a href="#">Link</a></li>
+<li><a href="#">Link</a></li>
+</ul> -->
+</li>
+
+</ul>
+
+
+
+
+<a class="link-back" href="eligibility">Back</a>
+
+
+<div class="grid-row">
+
+  <div class="column-two-thirds">
+    <h1 class="heading-large">Eligibility Application</h1>
+    <h3 class="heading-small">Date Submitted - 30/08/16</h3>
+    <table>
+
+      <tr>
+        <th colspan="2">Visitor</th>
+      </tr>
+
+      <tr>
+        <td>Name</td>
+        <td>Mr Joseph Bloggs</td>
+      </tr>
+
+      <tr>
+        <td>Date of Birth</td>
+        <td>31/3/1980</td>
+      </tr>
+
+      <tr>
+        <td>National Insurance number</td>
+        <td>JL 123 123 123</td>
+      </tr>
+
+      <tr>
+        <td>Home Address</td>
+        <td>  House No.<br>
+          First line of address<br>
+          Second line of address<br>
+          Post Code</td>
+        </tr>
+
+        <tr>
+          <td>Email Address</td>
+          <td><a href="">j.bloggs@gov.uk</a></td>
+        </tr>
+
+        <tr>
+          <td>Phone Number</td>
+          <td>+4475 123 12345</td>
+        </tr>
+
+        <tr>
+          <td>Prisoner Relationship</td>
+          <td>
+            Close Relative<br>
+            Son</td>
+          </tr>
+
+          <tr>
+            <td>Claiming Benefits?</td>
+            <td>[Benefit Type]<br>
+              <a href="">View Evidence</a></td>
+            </tr>
+
+
+          </table>
+
+
+
+          <br>
+
+          <table>
+
+            <tr>
+              <th colspan="2">Prisioner Information</th>
+            </tr>
+
+            <tr>
+              <td>Prison</td>
+              <td>Featherstone</td>
+            </tr>
+
+            <tr>
+              <td>Prisoner Number</td>
+              <td>0000001</td>
+            </tr>
+
+            <tr>
+              <td>Name</td>
+              <td>Mr Peter Bloggs</td>
+            </tr>
+
+            <tr>
+              <td>Eligible for visitation?</td>
+              <td>Yes</td>
+            </tr>
+
+          </table>
+
+<!--    <br>
+
+<a href="index.html" class="button orange">Request More Information</a>
+<a href="index.html" class="button red">Escalate</a>
+<a href="index.html" class="button red pull-right">Deny Eligibility</a>
+-->
+<br>
+<br>
+
+
+<form action="apply-2" method="post" class="form">
+  <div class="form-group">
+    <fieldset>
+
+
+      <label for="accept" class="block-label inline" data-target="accept-input">
+        <input type="radio" name="accept" value="" id="accept">
+
+        <span class="heading-small">Accept</span>
+
+      </label>
+
+
+
+      <label for="request" class="block-label inline" data-target="request-input">
+        <input type="radio" name="accept" value="" id="request">
+
+        <span class="heading-small">Request</span>
+
+      </label>
+
+      
+
+      <label for="reject" class="block-label inline" data-target="reject-input">
+        <input type="radio" name="accept" value="" id="accept">
+
+        <span class="heading-small">Reject</span>
+
+      </label>
+
+      <div class="panel panel-border-narrow js-hidden" id="accept-input">
+      <div class="form-group">
+          <label class="form-label-bold" for="full-name">Additional notes (optional)</label>
+          <textarea type="text" class="form-control full" id="full-name"></textarea> 
+        </div>
+
+        <a href="index.html" class="button">Send confirmation email to claimant</a>
+      </div>
+
+      <div class="panel panel-border-narrow js-hidden" id="request-input">
+
+        <div class="form-group">
+          <label class="form-label-bold" for="full-name">Select request type</label>
+
+          <select class="form-control full">
+            <option>Set answer</option>
+            <option>Set answer</option>
+            <option>Set answer</option>
+            <option>Set answer</option>
+          </select>
+        </div>
+
+         <div class="form-group">
+          <label class="form-label-bold" for="full-name">Additional notes (optional)</label>
+          <textarea type="text" class="form-control full" id="full-name"></textarea> 
+        </div>
+
+        <a href="index.html" class="button">Send request email to claimant</a>
+      </div>
+
+
+
+      <div class="panel panel-border-narrow js-hidden" id="reject-input">
+
+        <div class="form-group">
+          <label class="form-label-bold" for="full-name">Select reason</label>
+
+          <select class="form-control full">
+            <option>Set answer</option>
+            <option>Set answer</option>
+            <option>Set answer</option>
+            <option>Set answer</option>
+          </select>
+        </div>
+
+         <div class="form-group">
+          <label class="form-label-bold" for="full-name">Additional notes (optional)</label>
+          <textarea type="text" class="form-control full" id="full-name"></textarea> 
+        </div>
+
+        <a href="index.html" class="button">Send rejection email to claimant</a>
+      </div>
+
+    </fieldset>
+  </div>
+</form>
+<a class="link-back" href="eligibility">Back</a>
+</div>
+
+<div class="column-third">
+
+<!-- <h2 class="heading-medium">Links</h2>
+<ul class="un-ordered-list">
+<li>
+<a href="/examples/blank-govuk">
+My Account
+</a>
+</li>
+<li>
+<a href="/examples/blank-govuk">
+Link 1
+</a>
+</li>
+<li>
+<a href="/examples/blank-govuk">
+Link 2
+</a>
+</li>
+</ul>
+
+<br>
+<a href="">Log Out</a> -->
+</div>
+
+
+
+</div>
+
+</main>
+
+{% endblock %}

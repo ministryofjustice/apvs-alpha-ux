@@ -1,0 +1,264 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <!-- <div class="breadcrumbs">
+    <ol>
+      <li><a href="https://www.gov.uk">Home</a></li>
+      <li><a href="">Section</a></li>
+      <li>Subsection</li>
+    </ol>
+  </div> -->
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+
+
+
+      <p>You may be able to get help with the cost of <a href="https://www.gov.uk/staying-in-touch-with-someone-in-prison/visiting-someone-in-prison">visiting a close relative or partner in prison</a> if you’re aged over 18, are on certain benefits or have a low income.</p>
+
+      <h3 class="heading-medium">Eligibility<h3>
+
+        <h4 class="heading-small">Relationship</h4>
+
+        <p>You may be eligible if you're the prisoner’s:</p>
+        
+
+        <div class="form-group">
+      <details>
+        <summary><span class="summary">Close relative</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>Close relative means: wife, husband, civil partner, mother, father, sister, brother, son, daughter, grandparent or adoptive step/half brother/sister, stepchild or 􏰅􏰇􏰂􏰓􏰃􏰓􏰖􏰊􏰂􏰌􏰇􏰃􏰋􏰊􏰃􏰅􏰋􏰐􏰂􏰋􏰌􏰂􏰃􏰙􏰁􏰋􏰃􏰙􏰖􏰅􏰃􏰆􏰌􏰃􏰗􏰋􏰏􏰋􏰃􏰓􏰖􏰊􏰂􏰌􏰇􏰆􏰅􏰃􏰞􏰋􏰊􏰃􏰖􏰃􏰅􏰆􏰛􏰌􏰆􏰕􏰏􏰖􏰌􏰇􏰃􏰓􏰂􏰊􏰆􏰋􏰈􏰃􏰈􏰝􏰊􏰆􏰌􏰛􏰃􏰅􏰇􏰂􏰓􏰃􏰓􏰖􏰊􏰂􏰌􏰇􏰃􏰋􏰊􏰃􏰅􏰋􏰐􏰂􏰋􏰌􏰂􏰃􏰙􏰁􏰋􏰃􏰙􏰖􏰅􏰃􏰆􏰌􏰃􏰗􏰋􏰏􏰋􏰃􏰓􏰖􏰊􏰂􏰌􏰇􏰆􏰅􏰃􏰞􏰋􏰊􏰃􏰖􏰃􏰅􏰆􏰛􏰌􏰆􏰕􏰏􏰖􏰌􏰇􏰃􏰓􏰂􏰊􏰆􏰋􏰈􏰃􏰈􏰝􏰊􏰆􏰌􏰛􏰃stepparent or someone who was in loco parentis for a significant period during the prisoner’s childhood.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="form-group">
+      <details>
+        <summary><span class="summary">Partner</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>A partner means a person with whom the prisoner was living, as a couple, in an established relationship, immediately before the period of remand or imprisonment was imposed. </p>
+            <p>Any children living within the family unit are also eligible to receive assistance.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="form-group">
+      <details>
+        <summary><span class="summary">Sole visitor</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>A sole visitor is someone who is not a close relative or partner but is the prisoner’s only visitor during a four week period immediately before the date of 􏰇􏰁􏰂􏰃􏰕􏰊􏰅􏰇􏰃􏰖􏰅􏰅􏰆􏰅􏰇􏰂􏰈􏰃􏰔􏰆􏰅􏰆􏰇􏰠􏰃 the first assisted visit.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="form-group">
+      <details>
+        <summary><span class="summary">Escort to a qualifying child or young person</span></summary>
+        <div class="panel panel-border-narrow">
+          
+              <p>There are two types of escort to a prisoner’s child/children:</p>
+<ul class="list list-number">
+<li>Carer</li>
+<li>A person authorised to escort the child/children on someone’s behalf</li>
+</ul>
+
+
+<p>1. Carer</p>
+<p>If you're the guardian to the prisoner’s child/children, and you receive a qualifying low income benefit, you may be able to claim as an escort.   </p>
+
+<p>You'll need to provide:</p>
+<ul class="list list-bullet">
+<li>Birth Certificate for child/children being escorted</li>
+<li>Proof of receipt of a qualifying benefit (e.g. Child Tax Credit award)</li>
+</ul>
+
+<p>2. Authorised Person</p>
+<p>If you're not a relative, partner or guardian, but have permission to take the prisoner’s child/children to make a visit, you may be able to claim as an escort.</p>
+<p>You do not need to receive a qualifying low income benefit, but the child/children’s parent or guardian must receive a qualifying benefit for them.</p>
+
+<p>You'll need to provide:</p>
+<ul class="list list-bullet">
+<li>A letter of permission from the child/children’s parent or guardian</li>
+<li>Birth Certificate for child/children being escorted</li>
+<li>Proof of receipt of a qualifying benefit (e.g. Child Tax Credit award)</li>
+</ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="form-group">
+      <details>
+        <summary><span class="summary">Escort to a qualifying adult</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>Adult visitors may qualify for an escort.</p>
+
+<p>The escort must complete an application form and wherever possible it should be sent to us at the same time as the visitors form.</p>
+
+<p>A return journey between the home of the escort and qualifying visitor is payable subject to a maximum rate.</p>
+
+<p>Where a car journey is being claimed, the total mileage allowance will normally be paid to the qualifying visitor unless advised otherwise. The volunteer driver rate only applies if the escort isn’t going into the visit. </p>
+        </div>
+      </details>
+    </div>
+
+
+        <h4 class="heading-small">Income/Benefits</h4>
+
+        <p>You may be eligible if you have a relationship with the prisoner (as defined above), and if you (or someone on your behalf) are in receipt of one of the following:</p>
+
+
+        <div class="form-group">
+      <details>
+        <summary><span class="summary">Income Support</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>We confirm with the Department for Work and Pensions which benefit you receive and carry out regular checks. </p>
+        </div>
+      </details>
+    </div>
+
+    <div class="form-group">
+      <details>
+        <summary><span class="summary">Jobseeker’s Allowance (Income based)</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>We confirm with the Department for Work and Pensions which benefit you receive and carry out regular checks. </p>
+        </div>
+      </details>
+    </div>
+
+    <div class="form-group">
+      <details>
+        <summary><span class="summary">Employment and Support Allowance (Income related)</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>We confirm with the Department for Work and Pensions which benefit you receive and carry out regular checks. </p>
+        </div>
+      </details>
+    </div>
+
+    <div class="form-group">
+      <details>
+        <summary><span class="summary">Universal Credit (and you earn less than £1,250 a month)</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>An original award notice must be sent to us when you first claim and you must send us a new award notice every four months after that. An income limit applies.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="form-group">
+      <details>
+        <summary><span class="summary">Working Tax credits or Child tax credit with disability</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>To qualify you must be in receipt of one of the following:</p>
+
+
+<ul class="list list-bullet">
+  <li>Child Tax Credit</li>
+<li>The disability element in Working Tax Credit</li>
+<li>Working Tax Credit with Child Tax Credit</li>
+</ul>
+
+<p>In each case the gross household income as shown on the tax credit award
+notice must not exceed a published limit.</p>
+
+<p>The original award notice must be sent to us when first applying and thereafter when a when a new or amended award notice is issued.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="form-group">
+      <details>
+        <summary><span class="summary">Pension Credit</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>Recipients of Pension Credit are entitled to assisted prison visits subject to
+                          meeting the relationship criteria.</p>
+
+                          <p>The original award notice must be sent to us when first applying and thereafter when a when a new or amended award notice is issued.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="form-group">
+      <details>
+        <summary><span class="summary">Health Certificate (HC2 or HC3)</span></summary>
+        <div class="panel panel-border-narrow">
+          <p>The original certificate must be sent to us when first applying and thereafter when a when a new or amended certificate is issued.</p>
+
+                          <p>Assisted prison visits may be backdated up to three months prior to the commencement of the health certificate, subject to meeting all other conditions.</p>
+
+
+                          <p>The contribution shown on the HC3 certificate for travel to receive NHS treatment is deducted from the assisted prison visit payment. The application form for a HC certificate is available from APVU.</p>
+        </div>
+      </details>
+    </div>
+
+    <h3 class="heading-small">Check your eligibility</h3>
+
+    <p>Before apply for assited prision visits you can check your eligibility. </p>
+
+        <a href="check-eligibility.html" class="button button">Check your eligibility</a>
+
+        
+
+        
+
+        <h2 class="heading-medium">Start your application</h2>
+        <p>Before you apply, you’ll need to have:</p>
+        <ul class="list list-bullet">
+          <li>Your National Insurance number</li>
+<li>Prisoner’s number and name of the Prison </li>
+<!-- <li>A valid award notice (if claiming Universal credit, child tax credit, pension credit or health certificate)</li>
+<li>Proof of parentage - eg Long birth certificate (if acting as an escort for the prisoner's child)</li>
+<li>Letter from the doctor (if requiring a medical escort for another adult who qualifies for assistance)</li> -->
+        </uL>
+
+
+<p>
+          <a href="v2/apply-1.html" class="button button-start"  role="button" id="start">Start now</a>
+        </p>
+
+
+
+        
+
+        <h2 class="heading-medium">Other ways to apply</h2>
+
+        <p>You can apply by filling in a paper form instead.</p>
+
+        <p>You'll need to complete the paper form and send it to the address on the form to get help with travel costs.</p>
+
+      </div>
+      <!-- <div class="column-third">
+
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="#">Related link</a></li>
+              <li><a href="#">Related link</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div> -->
+
+  </main>
+
+  {% endblock %}
+
+

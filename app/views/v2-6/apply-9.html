@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+<li><a href="/v2-6">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+     <h2 class="heading-large">
+         Your claim details
+        </h2>
+
+        <p>Add expenses one a time for each part of your journey.</p>
+
+<form action="apply-train.html" method="get" class="form">
+         <div class="form-group">
+          <fieldset>
+
+            <label class="block-label" data-target="example_help">
+              <input type="radio" name="help" value="yes2" id="yes2">
+              Travel
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="example_help">
+            
+              <label class="block-label">
+              <input type="radio" name="category">
+              Car
+            </label>
+            <label class="block-label">
+              <input type="radio" name="category">
+              Bus
+            </label>
+            <label class="block-label">
+              <input type="radio" name="category">
+              Train
+            </label>
+            <label class="block-label">
+              <input type="radio" name="category">
+              Taxi
+            </label>
+
+            <label class="block-label">
+              <input type="radio" name="category">
+              Plane
+            </label>
+
+            <label class="block-label">
+              <input type="radio" name="category">
+              Ferry
+            </label>
+            
+            </div>
+
+            <label class="block-label">
+              <input type="radio" name="help" value="Wales" id="partner">
+              Light refreshment
+            </label>
+
+            <label class="block-label">
+              <input type="radio" name="help" value="Wales" id="partner">
+              Accomodation
+            </label>
+
+
+
+          </fieldset>
+            
+        </div>
+
+
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+</form>
+
+
+    </div>
+  </div>
+      <!-- <div class="column-third">
+
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="#">Related link</a></li>
+              <li><a href="#">Related link</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div> -->
+
+  </main>
+
+  {% endblock %}
+
+
