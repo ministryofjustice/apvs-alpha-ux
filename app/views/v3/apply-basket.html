@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+      <li><a href="/v3">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+     <h2 class="heading-large">
+       Your claim details
+     </h2>
+
+     <table>
+      <tr>
+        <th>Date of visit</th>
+        <th>Prisoner number</th>
+        <th>Prison</th>
+        <th></th>
+      </tr>
+
+      <tr>
+        <td>30/08/16</td>
+        <td>0000001</td>
+        <td>Hewell</td>
+        <td><a href="" class="button">View Confirmation</a></td>
+        <td></td>
+      </tr>
+
+    </table>
+
+    <br>
+
+    <form action="apply-10.html" method="get" class="form">
+
+     <table>
+      <tr>
+        <th>Expense(s)</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+
+      <tr>
+       <td>Car from Solihull to Birmingham New Street</td>
+       <td>10 miles</td>
+       <td colspan="2"><a href="" class="button">Edit</a></td>
+
+     </tr>
+
+     <tr>
+       <td>Train from Birmingham New Street to Redditch</td>
+       <td>£10</td>
+
+       <td><ul class="edit">
+        <li> <a href="#" class="">Edit</a></li>
+        <li>or <a href="#" class="">Remove</a></li>
+      </ul></td>
+      <td><a href="" class="button">Add Receipt</a></td>
+    </tr>
+    <tr>
+     <td>Taxi from Redditch to Hewell</td>
+     <td>£15</td>
+     <td><a href="" class="button">Edit</a></td>
+     <td><a href="" class="button">Add Receipt</a></td>
+   </tr>
+
+
+
+
+
+
+ </table>
+ <br>
+ <a href="apply-9.html" class="button">Add another expense to your claim</a>
+ <br>
+ <br>
+ <br>
+
+
+ <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+</form>
+
+
+</div>
+</div>
+      <!-- <div class="column-third">
+
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="#">Related link</a></li>
+              <li><a href="#">Related link</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div> -->
+
+  </main>
+
+  {% endblock %}
+
+

@@ -275,7 +275,7 @@ router.get('/v2-6/apply-5', function (req, res) {
   if (benefit === '' | 'None of the above') {
     res.redirect('el-no')
   } else {
-    res.render('v2-5/apply-5', { 'benefit': benefit })
+    res.render('v2-6/apply-5', { 'benefit': benefit })
   }
 })
 
@@ -291,6 +291,56 @@ router.post('/v2-6/apply-1', function (req, res) {
 })
 
 router.post('/v2-6/apply-10', function (req, res) {
+  var eligibilityNo = req.body.eligibilityNo
+
+  if (eligibilityNo=== 'Yes') {
+    res.redirect('apply-10')
+  } else {
+    res.redirect('apply-1')
+  }
+})
+
+// version 3.0 start
+
+router.post('/v3/apply-2', function (req, res) {
+  var relationship = req.body.relationship
+
+  if (relationship === 'Other') {
+    res.redirect('apply-3')
+  } else {
+    // close relative, partner or sole visitor
+    res.redirect('apply-22')
+  }
+})
+
+router.get('/v3/apply-4', function (req, res) {
+  var benefit = req.query.benefit
+
+  res.render('v3/apply-4', { 'benefit': benefit })
+})
+
+router.get('/v3/apply-5', function (req, res) {
+  var benefit = req.query.benefit
+
+  if (benefit === '' | 'None of the above') {
+    res.redirect('el-no')
+  } else {
+    res.render('v3/apply-5', { 'benefit': benefit })
+  }
+})
+
+
+router.post('/v3/apply-1', function (req, res) {
+  var returningUser = req.body.returningUser
+
+  if (returningUser=== 'Yes') {
+    res.redirect('apply-1')
+  } else {
+    res.redirect('login')
+  }
+})
+
+router.post('/v3/apply-10', function (req, res) {
   var eligibilityNo = req.body.eligibilityNo
 
   if (eligibilityNo=== 'Yes') {

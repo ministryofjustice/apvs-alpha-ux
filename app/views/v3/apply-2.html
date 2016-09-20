@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+<li><a href="/v3">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+        <h2 class="heading-large">
+          What is your relationship with the person you're visiting?
+        </h2>
+
+<form action="apply-2" method="post" class="form">
+         <div class="form-group">
+          <fieldset>
+
+
+            <label for="close-relative" class="block-label" data-target="close-relative-question">
+              <input type="radio" name="relationship" value="Close Relative" id="close-relative">
+              
+              <span class="heading-small">Close Relative</span>
+              <br>
+              You are the prisoner’s wife, husband, civil partner, mother, father, sister, brother, son, daughter, grandparent or adoptive step/half brother/sister, stepchild, stepparent or next of kin
+
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="close-relative-question">
+              <label for="close-relative-relationship" class="form-label">
+                What is your relationship to the person you're visiting?
+              </label>
+              <input class="form-control" type="text" id="close-relative-relationship" name="close-relative-relationship">
+            </div>
+
+          </fieldset>
+        
+          <fieldset>
+
+            <label for="partner" class="block-label" data-target="partner-question">
+              <input type="radio" name="relationship" value="Partner" id="partner">
+              <span class="heading-small">Partner </span>
+              <br>
+              You were living with the prisoner, as a couple, in an established relationship, immediately before the period of remand/imprisonment
+            </label>
+
+           
+            <label class="block-label">
+              <input type="radio" name="relationship" value="Sole Visitor">
+              <span class="heading-small">Sole Visitor</span>
+              <br>
+              You are going to be the prisoner’s only visitor for the next four weeks
+            </label>
+
+            <label class="block-label" data-target="escort">
+              <input type="radio" name="escort" value="Yes" id="escort-yes">
+              <span class="heading-small">Escort</span>
+              <br>
+              You are the guardian to the prisoner’s child/children or have permission to take the prisoner’s child/children to make a visit
+
+
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="escort">
+              <label for="escorting" class="form-label">
+                You are escorting:
+              </label>
+              <label class="block-label">
+              <input type="checkbox" type="radio" type="radio" name="escorting" value="An adult" id="an-adult">
+              An adult
+            </label>
+            <label class="block-label">
+              <input type="checkbox" type="radio" type="radio" name="escorting" value="Someone else's child/children" id="someone-elses-child-children">
+              Someone else’s child/children
+            </label>
+            <label class="block-label">
+              <input type="checkbox" type="radio" type="radio" name="escorting" value="My child/children" id="my-child-children">
+              My child/children
+            </label>
+            </div>
+
+
+            <label for="other" class="block-label" data-target="other-question">
+              <input type="radio" name="relationship" value="Other" id="other">
+              <span class="heading-small">None of the above</span>
+              <br>
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="other-question">
+              <label for="other-relationship" class="form-label">
+                What is your relationship to the person you're visiting?
+              </label>
+              <input class="form-control" type="text" name="other-relationship" id="other-relationship">
+            </div>
+
+
+          </fieldset>
+            
+        </div>
+
+
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+</form>
+
+      </div>
+      <!-- <div class="column-third">
+
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="#">Related link</a></li>
+              <li><a href="#">Related link</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div> -->
+
+  </main>
+
+  {% endblock %}
+
+

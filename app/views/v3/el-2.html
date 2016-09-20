@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_alpha.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+<li><a href="/v3">Home</a></li>
+      <li><a href="">Check Eligibility</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+        <h2 class="heading-large">
+          How are you related to the prisoner you're visiting?
+        </h2>
+
+<form action="el-3" method="get" class="form">
+        <div class="form-group">
+          <fieldset>
+
+            <label for="Close relative" class="block-label">
+              <input type="radio" name="relationship" value="Close relative" id="Close relative">
+              Close relative
+            </label>
+
+            <label for="Partner" class="block-label">
+              <input type="radio" name="relationship" value="Partner" id="Partner">
+              Partner
+            </label>
+
+            <label for="Sole visitor" class="block-label">
+              <input type="radio" name="relationship" value="Sole visitor" id="Sole visitor">
+              Sole visitor
+            </label>
+
+            <label for="Escort to a qualifying child or young person" class="block-label">
+              <input type="radio" name="relationship" value="Escort to a qualifying child or young person" id="Escort to a qualifying child or young person">
+              Escort to a qualifying child or young person
+            </label>
+
+            <label for="Escort to a qualifying adult" class="block-label">
+              <input type="radio" name="relationship" value="Escort to a qualifying adult" id="Escort to a qualifying adult">
+              Escort to a qualifying adult
+            </label>
+
+            <label for="Other" class="block-label">
+              <input type="radio" name="relationship" value="Other" id="Other">
+              Other
+            </label>
+
+          </fieldset>
+          </div>
+
+
+
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+</form>
+
+      </div>
+      <!-- <div class="column-third">
+
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="#">Related link</a></li>
+              <li><a href="#">Related link</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div> -->
+
+  </main>
+
+  {% endblock %}
+
+
