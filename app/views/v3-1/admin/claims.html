@@ -1,0 +1,159 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  APVS Admin
+{% endblock %}
+
+{% block content %}
+
+
+<main id="content" role="main">
+
+  
+ 
+ <ul id="sub-nav">
+  
+    <li><a href="index">Dashboard</a></li>
+    <li>
+      <a href="eligibility">Eligibility</a>
+      <!-- <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul> -->
+    </li>
+    <li>
+      <a href="" class="active">Claims</a>
+      <!-- <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul> -->
+    </li>
+
+  </ul>
+  
+
+
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+    <h2 class="heading-medium">Claim Applications</h2>
+      <table class="table">
+      <tr>
+        <th>Ref No.</th>
+        <th>Name</th>
+        <th>Submitted</th>
+        <th>Status</th>
+        <th></th>
+        </tr>
+
+        <tr>
+          <td>12432</td>
+          <td>Joseph Bloggs</td>
+          <td>30/08/16</td>
+          <td>Pending</td>
+          <td><a href="view-claim.html">View</a></td>
+        </tr>
+        <tr>
+          <td>12432</td>
+          <td>Joseph Bloggs</td>
+          <td>30/08/16</td>
+          <td>Pending</td>
+          <td><a href="view-claim.html">View</a></td>
+        </tr>
+
+        <tr>
+          <td>12432</td>
+          <td>Joseph Bloggs</td>
+          <td>30/08/16</td>
+          <td>Pending</td>
+          <td><a href="view-claim.html">View</a></td>
+        </tr>
+
+        <tr>
+          <td>12432</td>
+          <td>Joseph Bloggs</td>
+          <td>30/08/16</td>
+          <td>Pending</td>
+          <td><a href="view-claim.html">View</a></td>
+        </tr>
+        <tr>
+          <td>12432</td>
+          <td>Joseph Bloggs</td>
+          <td>30/08/16</td>
+          <td>Pending</td>
+          <td><a href="view-claim.html">View</a></td>
+        </tr>
+
+        <tr>
+          <td>12432</td>
+          <td>Joseph Bloggs</td>
+          <td>30/08/16</td>
+          <td>Pending</td>
+          <td><a href="view-claim.html">View</a></td>
+        </tr>
+
+        <tr>
+          <td>12432</td>
+          <td>Joseph Bloggs</td>
+          <td>30/08/16</td>
+          <td>Pending</td>
+          <td><a href="view-claim.html">View</a></td>
+        </tr>
+
+        <tr>
+          <td>12432</td>
+          <td>Joseph Bloggs</td>
+          <td>30/08/16</td>
+          <td>Pending</td>
+          <td><a href="view-claim.html">View</a></td>
+        </tr>
+
+        <tr>
+          <td>12432</td>
+          <td>Joseph Bloggs</td>
+          <td>30/08/16</td>
+          <td>Pending</td>
+          <td><a href="view-claim.html">View</a></td>
+        </tr>
+
+        <tr>
+          <td>12432</td>
+          <td>Joseph Bloggs</td>
+          <td>30/08/16</td>
+          <td>Pending</td>
+          <td><a href="view-claim.html">View</a></td>
+        </tr>
+
+      </table>
+      
+    </div>
+
+    <div class="column-third">
+
+      <h2 class="heading-medium">Filter</h2>
+      <ul class="filter-claims">
+        <li>
+          <a href="" class="active">
+            Pending <span>10</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Accepted <span>10</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Rejected <span>10</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    
+
+  </div>
+
+</main>
+
+{% endblock %}
