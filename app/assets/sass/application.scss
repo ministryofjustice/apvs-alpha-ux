@@ -26,6 +26,28 @@
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+td.text-right {
+    text-align:right;
+}
+
+.warning {
+    padding:10px;
+    background:#f2dede;
+    border-left:5px solid #a94442;
+    color:#a94442;
+}
+
+tr.warning td{
+    background:#f2dede;
+    color:#a94442;
+}
+
+tr.warning td:first-child{
+    padding:10px;
+    border-left:5px solid #a94442;
+    color:#a94442;
+}
+
 ul.edit  li{
     text-align:right;
 }
