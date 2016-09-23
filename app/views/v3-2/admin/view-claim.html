@@ -1,0 +1,166 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+APVS Admin
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <ul id="sub-nav">
+
+    <li><a href="index">Dashboard</a></li>
+    <li>
+      <a href="eligibility">Eligibility</a>
+<!-- <ul>
+<li><a href="#">Link</a></li>
+<li><a href="#">Link</a></li>
+</ul> -->
+</li>
+<li>
+  <a href="claims" class="active">Claims</a>
+<!-- <ul>
+<li><a href="#">Link</a></li>
+<li><a href="#">Link</a></li>
+</ul> -->
+</li>
+
+</ul>
+
+<a class="link-back" href="claims">Back</a>
+
+<div class="grid-row">
+
+  <div class="column-two-thirds">
+    <h1 class="heading-large">Joseph Bloggs
+      <span class="heading-secondary">Claim Application</span></h1>
+
+
+      <table>
+
+        <tr>
+          <th colspan="2">Prisoner Information</th>
+        </tr>
+        <tr>
+          <td>Prisoner number</td>
+          <td>0000001</td>
+        </tr>
+
+        <tr>
+          <td>Prisoner name</td>
+          <td>Mr Peter Bloggs</td>
+        </tr>
+
+        <tr>
+          <td>Eligible for visitation?</td>
+          <td>Yes</td>
+        </tr>
+
+      </table>
+
+      <br>
+
+
+
+      <h3 class="heading-medium">Submitted 5/09/16 <span class="time">3 days ago</span></h3>
+
+
+      <table>
+        <tr>
+          <th>Travel</th>
+          <th>Journey</th>
+          <th>Cost</th>
+          <th>Receipt</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>Train</td>
+          <td>Euston to Five Ways return ticket</td>
+          <td>£70.00</td>
+          <td><a href="">View Receipt</a></td>
+          <td>
+            <input type="radio" checked>
+          </td>
+        </tr>
+        <tr>
+          <td>Taxi</td>
+          <td>Five Ways to Visitors Centre</td>
+          <td>£10.00</td>
+          <td><a href="">View Receipt</a></td>
+          <td>
+            <input type="radio" checked>
+          </td>
+        </tr>
+        <tr>
+          <td>Sustenance</td>
+          <td>Lunch</td>
+          <td>£6.00</td>
+          <td>No Receipt</td>
+          <td>
+            <input type="radio">
+          </td>
+        </tr>
+      </table>
+      <br>
+
+      <a href="" class="button orange">Request Information</a>
+      <a href="" class="button red">Reject Selected</a>
+
+      <a href="" class="button pull-right">Approve Selected</a>
+
+
+    </div>
+
+    <div class="column-third">
+
+
+      <table>
+        <tr>
+          <th colspan="2">Contact</th>
+        </tr>
+        <tr>
+          <td>Phone number</td>
+          <td>+4475 123 12345</td>
+        </tr>
+        <tr>
+          <td>Email address</td>
+          <td><a href="">j.bloggs@gov.uk</a></td>
+        </tr>
+      </table>
+      <br>
+
+      <table>
+        <tr>
+          <th colspan="2">Claim history</th>
+        </tr>
+        <tr>
+          <td><a href="">APVS15348</a></td>
+          <td>Pending</td>
+        </tr>
+        <tr>
+          <td><a href="">APVS15342</a></td>
+          <td>Accepted</td>
+        </tr>
+        <tr>
+          <td><a href="">APVS15339</a></td>
+          <td>Rejected</td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <a href="" class="link">View More</a>
+          </td>
+        </tr>
+      </table>
+
+
+    </div>
+
+
+
+  </div>
+
+</main>
+
+{% endblock %}
