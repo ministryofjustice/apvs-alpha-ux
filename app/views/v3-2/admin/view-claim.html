@@ -12,19 +12,13 @@ APVS Admin
 
     <li><a href="index">Dashboard</a></li>
     <li>
-      <a href="eligibility">Eligibility</a>
+      <a href="claims">Claims</a>
 <!-- <ul>
 <li><a href="#">Link</a></li>
 <li><a href="#">Link</a></li>
 </ul> -->
 </li>
-<li>
-  <a href="claims" class="active">Claims</a>
-<!-- <ul>
-<li><a href="#">Link</a></li>
-<li><a href="#">Link</a></li>
-</ul> -->
-</li>
+
 
 </ul>
 
@@ -37,77 +31,159 @@ APVS Admin
       <span class="heading-secondary">Claim Application</span></h1>
 
 
-      <table>
+      <h3 class="heading-small">Date Submitted - 30/08/16</h3>
 
-        <tr>
-          <th colspan="2">Prisoner Information</th>
+
+
+
+
+
+
+      <ul class="sub-tabs">
+  <li><a href="view-claim" class="active">Visitor</a></li>
+  <li><a href="view-claim-prisoner">Prisoner</a></li>
+  <li><a href="view-claim-detail">Claim</a></li>
+</ul>
+    <table>
+
+      <tr>
+        <td>Visitor Name</td>
+        <td>Mr Joseph Bloggs</td>
+      </tr>
+
+      <tr>
+        <td>Date of Birth</td>
+        <td>31/3/1980</td>
+      </tr>
+
+      <tr>
+        <td>National Insurance number</td>
+        <td>JL 123 123 123</td>
+      </tr>
+
+      <tr>
+        <td>Home Address</td>
+        <td>  House No.<br>
+          First line of address<br>
+          Second line of address<br>
+          Post Code</td>
         </tr>
+
         <tr>
-          <td>Prisoner number</td>
-          <td>0000001</td>
+          <td>Email Address</td>
+          <td><a href="">j.bloggs@gov.uk</a></td>
         </tr>
 
         <tr>
-          <td>Prisoner name</td>
-          <td>Mr Peter Bloggs</td>
+          <td>Phone Number</td>
+          <td>+4475 123 12345</td>
         </tr>
 
         <tr>
-          <td>Eligible for visitation?</td>
-          <td>Yes</td>
-        </tr>
-
-      </table>
-
-      <br>
-
-
-
-      <h3 class="heading-medium">Submitted 5/09/16 <span class="time">3 days ago</span></h3>
-
-
-      <table>
-        <tr>
-          <th>Travel</th>
-          <th>Journey</th>
-          <th>Cost</th>
-          <th>Receipt</th>
-          <th></th>
-        </tr>
-        <tr>
-          <td>Train</td>
-          <td>Euston to Five Ways return ticket</td>
-          <td>£70.00</td>
-          <td><a href="">View Receipt</a></td>
+          <td>Prisoner Relationship</td>
           <td>
-            <input type="radio" checked>
-          </td>
-        </tr>
-        <tr>
-          <td>Taxi</td>
-          <td>Five Ways to Visitors Centre</td>
-          <td>£10.00</td>
-          <td><a href="">View Receipt</a></td>
-          <td>
-            <input type="radio" checked>
-          </td>
-        </tr>
-        <tr>
-          <td>Sustenance</td>
-          <td>Lunch</td>
-          <td>£6.00</td>
-          <td>No Receipt</td>
-          <td>
-            <input type="radio">
-          </td>
-        </tr>
-      </table>
-      <br>
+            Close Relative<br>
+            Son</td>
+          </tr>
 
-      <a href="" class="button orange">Request Information</a>
-      <a href="" class="button red">Reject Selected</a>
+          <tr>
+            <td>Claiming Benefits?</td>
+            <td>[Benefit Type]<br>
+              <a href="">View Evidence</a></td>
+            </tr>
 
-      <a href="" class="button pull-right">Approve Selected</a>
+
+          </table>
+
+          <br>
+
+
+<form action="apply-2" method="post" class="form">
+  <div class="form-group">
+    <fieldset>
+
+
+      <label for="accept" class="block-label inline" data-target="accept-input">
+        <input type="radio" name="accept" value="" id="accept">
+
+        <span class="heading-small">Accept</span>
+
+      </label>
+
+
+
+      <label for="request" class="block-label inline" data-target="request-input">
+        <input type="radio" name="accept" value="" id="request">
+
+        <span class="heading-small">Request</span>
+
+      </label>
+
+      
+
+      <label for="reject" class="block-label inline" data-target="reject-input">
+        <input type="radio" name="accept" value="" id="accept">
+
+        <span class="heading-small">Reject</span>
+
+      </label>
+
+      <div class="panel panel-border-narrow js-hidden" id="accept-input">
+      <div class="form-group">
+          <label class="form-label-bold" for="full-name">Additional notes (optional)</label>
+          <textarea type="text" class="form-control full" id="full-name"></textarea> 
+        </div>
+
+        <a href="index.html" class="button">Send confirmation email to claimant</a>
+      </div>
+
+      <div class="panel panel-border-narrow js-hidden" id="request-input">
+
+        <div class="form-group">
+          <label class="form-label-bold" for="full-name">Select request type</label>
+
+          <select class="form-control full">
+            <option>Set answer</option>
+            <option>Set answer</option>
+            <option>Set answer</option>
+            <option>Set answer</option>
+          </select>
+        </div>
+
+         <div class="form-group">
+          <label class="form-label-bold" for="full-name">Additional notes (optional)</label>
+          <textarea type="text" class="form-control full" id="full-name"></textarea> 
+        </div>
+
+        <a href="index.html" class="button">Send request email to claimant</a>
+      </div>
+
+
+
+      <div class="panel panel-border-narrow js-hidden" id="reject-input">
+
+        <div class="form-group">
+          <label class="form-label-bold" for="full-name">Select reason</label>
+
+          <select class="form-control full">
+            <option>Set answer</option>
+            <option>Set answer</option>
+            <option>Set answer</option>
+            <option>Set answer</option>
+          </select>
+        </div>
+
+         <div class="form-group">
+          <label class="form-label-bold" for="full-name">Additional notes (optional)</label>
+          <textarea type="text" class="form-control full" id="full-name"></textarea> 
+        </div>
+
+        <a href="index.html" class="button">Send rejection email to claimant</a>
+      </div>
+
+    </fieldset>
+  </div>
+</form>
 
 
     </div>
@@ -140,7 +216,7 @@ APVS Admin
         </tr>
         <tr>
           <td><a href="">APVS15342</a></td>
-          <td>Accepted</td>
+          <td>Approved</td>
         </tr>
         <tr>
           <td><a href="">APVS15339</a></td>

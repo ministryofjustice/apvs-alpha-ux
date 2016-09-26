@@ -1,3 +1,4 @@
+<div class="admin">
 {% extends "layout.html" %}
 
 {% block page_title %}
@@ -15,13 +16,6 @@
   
     <li><a href="index" class="active">Dashboard</a></li>
     <li>
-      <a href="admin/eligibility">Eligibility</a>
-      <!-- <ul>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-      </ul> -->
-    </li>
-    <li>
       <a href="admin/claims">Claims</a>
       <!-- <ul>
         <li><a href="#">Link</a></li>
@@ -31,13 +25,31 @@
 
   </ul>
   
-
-
-    <h2 class="heading-medium">Dashboard</h2>
-      
-      
+<br>
+<br>
+      <div class="grid-row">
+    <div class="column-third dashboard">
+      <h2 class="bold-medium">New claims</h2>
+      <p>
+        100
+      </p>
+    </div>
+    <div class="column-third dashboard">
+      <h2 class="bold-medium">In progress</h2>
+      <p>
+        30
+      </p>
+    </div>
+    <div class="column-third dashboard">
+      <h2 class="bold-medium"></h2>
+    </div>
+  </div>
   
 
 </main>
 
+
+
 {% endblock %}
+
+</div>
