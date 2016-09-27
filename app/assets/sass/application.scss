@@ -26,6 +26,28 @@
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+span.bold {
+    font-weight:bold;
+}
+
+span.error {
+    font-weight:bold;
+    background:#f2dede!important;
+    border:2px solid #a94442;
+    color:#a94442!important;
+    margin:0 0 0 10px;
+    padding:1px 5px!important;
+}
+
+span.updated {
+    font-weight:bold;
+    background:#e1f5fa!important;
+    color:#1f96b0!important;
+    border:2px solid #1f96b0;
+    margin:0 0 0 10px;
+    padding:1px 5px!important;
+}
+
 td.text-right {
     text-align:right;
 }
@@ -50,6 +72,24 @@ tr.warning td:first-child{
     padding:10px;
     border-left:5px solid #a94442;
     color:#a94442;
+}
+
+.updated {
+    padding:10px;
+    background:#e1f5fa;
+    border-left:5px solid #e99128;
+    color:#1f96b0;
+}
+
+tr.updated td{
+    background:#e1f5fa;
+    color:#1f96b0;
+}
+
+tr.updated td:first-child{
+    padding:10px;
+    border-left:5px solid #1f96b0;
+    color:#1f96b0;
 }
 
 ul.edit  li{
