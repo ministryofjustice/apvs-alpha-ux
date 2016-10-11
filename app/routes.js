@@ -502,7 +502,7 @@ router.post('/v3-3/apply-10', function (req, res) {
 
 // version BETA V1 start
 
-router.post('beta/v3-3/apply-2', function (req, res) {
+router.post('/beta/v1/apply-2', function (req, res) {
   var relationship = req.body.relationship
 
   if (relationship === 'Other') {
@@ -513,24 +513,24 @@ router.post('beta/v3-3/apply-2', function (req, res) {
   }
 })
 
-router.get('beta/v3-3/apply-4', function (req, res) {
+router.get('/beta/v1/apply-4', function (req, res) {
   var benefit = req.query.benefit
 
-  res.render('beta/v3-3/apply-4', { 'benefit': benefit })
+  res.render('beta/v1/apply-4', { 'benefit': benefit })
 })
 
-router.get('beta/v3-3/apply-5', function (req, res) {
+router.get('/beta/v1/apply-5', function (req, res) {
   var benefit = req.query.benefit
 
   if (benefit === '' | 'None of the above') {
     res.redirect('el-no')
   } else {
-    res.render('beta/v3-3/apply-5', { 'benefit': benefit })
+    res.render('beta/v1/apply-5', { 'benefit': benefit })
   }
 })
 
 
-router.post('beta/v3-3/apply-1', function (req, res) {
+router.post('/beta/v1/apply-1', function (req, res) {
   var returningUser = req.body.returningUser
 
   if (returningUser=== 'Yes') {
@@ -540,7 +540,7 @@ router.post('beta/v3-3/apply-1', function (req, res) {
   }
 })
 
-router.post('beta/v3-3/apply-10', function (req, res) {
+router.post('/beta/v1/apply-10', function (req, res) {
   var eligibilityNo = req.body.eligibilityNo
 
   if (eligibilityNo=== 'Yes') {
