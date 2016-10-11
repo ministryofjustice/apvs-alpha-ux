@@ -25,38 +25,45 @@
           What is your relationship with the person you're visiting?
         </h2>
 
+        <p>I am their:</p>
+
 <form action="apply-2" method="post" class="form">
          <div class="form-group">
           <fieldset>
 
 
-            <label for="close-relative" class="block-label" data-target="close-relative-question">
+            <label for="close-relative" class="block-label">
               <input type="radio" name="relationship" value="Close Relative" id="close-relative">
               
-              <span class="heading-small">Close Relative</span>
-              <br>
-              You are the prisoner’s wife, husband, civil partner, mother, father, sister, brother, son, daughter, grandparent or adoptive step/half brother/sister, stepchild, stepparent or next of kin
+              <span class="heading-small">Husband, wife or civil partner</span>
+          
 
             </label>
 
-            <div class="panel panel-border-narrow js-hidden" id="close-relative-question">
-              <label for="close-relative-relationship" class="form-label">
-                What is your relationship to the person you're visiting?
-              </label>
-              <input class="form-control" type="text" id="close-relative-relationship" name="close-relative-relationship">
-            </div>
-
-          </fieldset>
-        
-          <fieldset>
+         
 
             <label for="partner" class="block-label" data-target="partner-question">
               <input type="radio" name="relationship" value="Partner" id="partner">
-              <span class="heading-small">Partner </span>
+              <span class="heading-small">Parent</span>
               <br>
-              You were living with the prisoner, as a couple, in an established relationship, immediately before the period of remand/imprisonment
+              Includes step-parent or adoptive parent
             </label>
 
+            <label for="partner" class="block-label" data-target="partner-question">
+              <input type="radio" name="relationship" value="Partner" id="partner">
+              <span class="heading-small">Brother or sister</span>
+              <br>
+              Includes half-sibling, or step-sibling
+            </label>
+
+            <label for="partner" class="block-label" data-target="partner-question">
+              <input type="radio" name="relationship" value="Partner" id="partner">
+              <span class="heading-small">Son or daughter</span>
+              <br>
+              includes step- or adopted son or daughter
+            </label>
+
+            
            
             <label class="block-label">
               <input type="radio" name="relationship" value="Sole Visitor">
