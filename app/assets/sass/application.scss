@@ -24,6 +24,75 @@
   }
 }
 
+.message--success:before {
+    background-image: url(../images/icons/icon-tick-2x.png);
+    background-size: 100%;
+}
+.message--success:before {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons/icon-tick.png);
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    position: absolute;
+    content: '';
+    margin-left: -42px;
+}
+
+.text-warning {
+    color:#b10e1e;
+}
+
+.text-warning:before {
+    background-color: #b10e1e;
+    color:#b10e1e;
+}
+.text-warning:before, .text-pending:before {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: '!';
+    color: #fff;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    height: 1em;
+    line-height: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px;
+    text-align: center;
+    width: 1em;
+}
+
+.text-success {
+    color:#00823b;
+}
+
+.text-success:before {
+    background-color: #00823b;
+    color:#00823b;
+}
+.text-success:before {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: '✔ ';
+    color: #fff;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    font-size:12px;
+    height: 1em;
+    line-height: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 4px;
+    text-align: center;
+    width: 1em;
+}
+
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
 span.bold {
