@@ -1,0 +1,167 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+APVS Admin
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <ul id="sub-nav">
+
+    <li><a href="index">Dashboard</a></li>
+    <li>
+      <a href="claims.html">Claims</a>
+<!-- <ul>
+<li><a href="#">Link</a></li>
+<li><a href="#">Link</a></li>
+</ul> -->
+</li>
+
+
+</ul>
+
+<a class="link-back" href="claims.html">Back</a>
+
+
+<h1 class="heading-large">Joseph Bloggs
+  <span class="heading-secondary">Claim Application</span></h1>
+
+
+  <h3 class="heading-small">Date Submitted - 29/08/16</h3>
+
+
+
+  <ul class="sub-tabs">
+    <li><a href="view-claim">Visitor </a></li>
+    <li><a href="view-claim-prisoner" class="active">Prisoner</a></li>
+    <li><a href="view-claim-detail">Claim <span class="error">1</span></a></li>
+    <li><a href="">History</a></li>
+  </ul>
+
+
+  <table>
+
+    <tr>
+      <th colspan="2">Prisoner Information</th>
+    </tr>
+
+    <tr>
+      <td>Prison</td>
+      <td>Featherstone</td>
+    </tr>
+
+    <tr>
+      <td>Prisoner Number</td>
+      <td>0000001</td>
+    </tr>
+
+    <tr>
+      <td>Name</td>
+      <td>Mr Peter Bloggs</td>
+    </tr>
+
+    <tr>
+      <td>Eligible for visitation?</td>
+      <td>Yes</td>
+    </tr>
+
+  </table>
+
+  <br>
+
+
+  <form action="apply-2" method="post" class="form">
+    <div class="form-group">
+      <fieldset>
+
+
+        <label for="accept" class="block-label inline" data-target="accept-input">
+          <input type="radio" name="accept" value="" id="accept">
+
+          <span>Approve claim</span>
+
+        </label>
+
+
+
+        <label for="request" class="block-label inline" data-target="request-input">
+          <input type="radio" name="accept" value="" id="request">
+
+          <span>Request information</span>
+
+        </label>
+
+
+
+        <label for="reject" class="block-label inline" data-target="reject-input">
+          <input type="radio" name="accept" value="" id="accept">
+
+          <span>Reject claim</span>
+
+        </label>
+
+        <div class="panel panel-border-narrow js-hidden" id="accept-input">
+          <div class="form-group">
+            <label class="form-label-bold" for="full-name">Additional notes (optional)</label>
+            <textarea type="text" class="form-control full" id="full-name"></textarea> 
+          </div>
+
+          <a href="index.html" class="button">Send confirmation email to claimant</a>
+        </div>
+
+        <div class="panel panel-border-narrow js-hidden" id="request-input">
+
+          <div class="form-group">
+            <label class="form-label-bold" for="full-name">Select request type</label>
+
+            <select class="form-control full">
+              <option>Set answer</option>
+              <option>Set answer</option>
+              <option>Set answer</option>
+              <option>Set answer</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label-bold" for="full-name">Additional notes (optional)</label>
+            <textarea type="text" class="form-control full" id="full-name"></textarea> 
+          </div>
+
+          <a href="index.html" class="button">Send request email to claimant</a>
+        </div>
+
+
+
+        <div class="panel panel-border-narrow js-hidden" id="reject-input">
+
+          <div class="form-group">
+            <label class="form-label-bold" for="full-name">Select reason</label>
+
+            <select class="form-control full">
+              <option>Set answer</option>
+              <option>Set answer</option>
+              <option>Set answer</option>
+              <option>Set answer</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label-bold" for="full-name">Additional notes (optional)</label>
+            <textarea type="text" class="form-control full" id="full-name"></textarea> 
+          </div>
+
+          <a href="index.html" class="button">Send rejection email to claimant</a>
+        </div>
+
+      </fieldset>
+    </div>
+  </form>
+
+
+
+
+</main>
+
+{% endblock %}
