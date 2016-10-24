@@ -24,24 +24,10 @@
   }
 }
 
-.message--success:before {
-    background-image: url(../images/icons/icon-tick-2x.png);
-    background-size: 100%;
-}
-.message--success:before {
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-image: url(../images/icons/icon-tick.png);
-    width: 27px;
-    height: 27px;
-    display: inline-block;
-    position: absolute;
-    content: '';
-    margin-left: -42px;
-}
-
 .text-warning {
     color:#b10e1e;
+    padding-top:6px;
+    display:inline-block;
 }
 
 .text-warning:before {
@@ -59,7 +45,7 @@
     font-weight: bold;
     height: 1em;
     line-height: 1;
-    margin-left: 5px;
+    margin-left: 0px;
     margin-right: 5px;
     padding: 2px;
     text-align: center;
@@ -68,6 +54,8 @@
 
 .text-success {
     color:#00823b;
+    padding-top:2px;
+    display:inline-block;
 }
 
 .text-success:before {
@@ -86,7 +74,7 @@
     font-size:12px;
     height: 1em;
     line-height: 1;
-    margin-left: 5px;
+    margin-left: 0px;
     margin-right: 5px;
     padding: 4px;
     text-align: center;
