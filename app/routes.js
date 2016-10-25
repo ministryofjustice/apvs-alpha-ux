@@ -651,4 +651,54 @@ router.post('/beta/v2/apply-10', function (req, res) {
   }
 })
 
+// version BETA V2.1 start
+
+router.post('/beta/v2-1/apply-2', function (req, res) {
+  var relationship = req.body.relationship
+
+  if (relationship === 'Other') {
+    res.redirect('apply-3')
+  } else {
+    // close relative, partner or sole visitor
+    res.redirect('apply-3')
+  }
+})
+
+router.get('/beta/v2-1/apply-4', function (req, res) {
+  var benefit = req.query.benefit
+
+  res.render('beta/v2-1/apply-4', { 'benefit': benefit })
+})
+
+router.get('/beta/v2-1/apply-5', function (req, res) {
+  var benefit = req.query.benefit
+
+  if (benefit === '' | 'None of the above') {
+    res.redirect('el-no')
+  } else {
+    res.render('beta/v2/apply-5', { 'benefit': benefit })
+  }
+})
+
+
+router.post('/beta/v2-1/apply-1', function (req, res) {
+  var returningUser = req.body.returningUser
+
+  if (returningUser=== 'Yes') {
+    res.redirect('apply-1')
+  } else {
+    res.redirect('login')
+  }
+})
+
+router.post('/beta/v2-1/apply-10', function (req, res) {
+  var eligibilityNo = req.body.eligibilityNo
+
+  if (eligibilityNo=== 'Yes') {
+    res.redirect('apply-10')
+  } else {
+    res.redirect('apply-1')
+  }
+})
+
 module.exports = router
