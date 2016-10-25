@@ -1,0 +1,137 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+APVS Admin
+{% endblock %}
+
+{% block content %}
+
+
+<main id="content" role="main">
+
+
+
+  <ul id="sub-nav">
+
+    <li><a href="index">Dashboard</a></li>
+    <li>
+      <a href="" class="active">Claims</a>
+<!-- <ul>
+<li><a href="#">Link</a></li>
+<li><a href="#">Link</a></li>
+</ul> -->
+</li>
+
+</ul>
+<br>
+
+<div class="form-group">
+      <label class="form-label-bold" for="full-name">Reference Number</label>
+      <input type="text" class="form-control" id="full-name">
+      <a href="" class="button">Search</a>
+    </div>
+
+<ul class="sub-tabs">
+  <li><a href="index" class="active">New (12)</a></li>
+  <li><a href="claim-updated">Updated (8)</a></li>
+  <li><a href="claim">In progress (6)</a></li>
+</ul>
+
+
+
+<table class="table">
+  <tr>
+    <th>Ref No.</th>
+    <th>Name</th>
+    <th>Submitted</th>
+    <th></th>
+  </tr>
+
+  <tr>
+    <td>AVPS1234</td>
+    <td>Joseph Bloggs</td>
+    <td>29/09/16 - 12:24</td>
+    
+    <td><a href="view-claim.html">View</a></td>
+  </tr>
+  <tr>
+    <td>AVPS1234</td>
+    <td>Paul Smith</td>
+    <td>29/09/16 - 12:17</td>
+    
+    <td><a href="claim-updated.html">View</a></td>
+  </tr>
+
+  <tr>
+    <td>AVPS1234</td>
+    <td>Chris Sisk</td>
+    <td>29/09/16 - 11:59</td>
+    
+    <td><a href="view-claim.html">View</a></td>
+  </tr>
+
+  <tr>
+    <td>AVPS1234</td>
+    <td>Jane Smith</td>
+    <td>29/09/16 - 11:25</td>
+    
+    <td><a href="view-claim.html">View</a></td>
+  </tr>
+  <tr>
+    <td>AVPS1234</td>
+    <td>Susan Jones</td>
+    <td>29/09/16 - 11:24</td>
+    
+    <td><a href="view-claim.html">View</a></td>
+  </tr>
+
+  <tr>
+    <td>AVPS1234</td>
+    <td>Jim Brown</td>
+    <td>29/09/16 - 10:01</td>
+    
+    <td><a href="view-claim.html">View</a></td>
+  </tr>
+
+  <tr>
+    <td>AVPS1234</td>
+    <td>Sarah Smith</td>
+    <td>29/09/16 - 10:00</td>
+    
+    <td><a href="view-claim.html">View</a></td>
+  </tr>
+
+  
+
+</table>
+
+
+
+<!-- <div class="column-third">
+
+<h2 class="heading-medium">Filter</h2>
+<ul class="filter-claims">
+<li>
+<a href="" class="active">
+Pending <span>10</span>
+</a>
+</li>
+<li>
+<a href="">
+Approved <span>10</span>
+</a>
+</li>
+<li>
+<a href="">
+Rejected <span>10</span>
+</a>
+</li>
+</ul>
+</div> -->
+
+
+
+
+</main>
+
+{% endblock %}

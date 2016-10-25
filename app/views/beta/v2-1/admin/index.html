@@ -1,0 +1,55 @@
+<div class="admin">
+{% extends "layout.html" %}
+
+{% block page_title %}
+  APVS Admin
+{% endblock %}
+
+{% block content %}
+
+
+<main id="content" role="main">
+
+  
+ 
+ <ul id="sub-nav">
+  
+    <li><a href="index" class="active">Dashboard</a></li>
+    <li>
+      <a href="claims.html">Claims</a>
+      <!-- <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul> -->
+    </li>
+
+  </ul>
+  
+<br>
+<br>
+      <div class="grid-row">
+    <div class="column-third dashboard">
+      <h2 class="bold-medium">New claims</h2>
+      <p>
+        100
+      </p>
+    </div>
+    <div class="column-third dashboard">
+      <h2 class="bold-medium">In progress</h2>
+      <p>
+        30
+      </p>
+    </div>
+    <div class="column-third dashboard">
+      <h2 class="bold-medium"></h2>
+    </div>
+  </div>
+  
+
+</main>
+
+
+
+{% endblock %}
+
+</div>
