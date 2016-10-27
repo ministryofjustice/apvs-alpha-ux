@@ -24,24 +24,34 @@
   }
 }
 
-.message--success:before {
-    background-image: url(../images/icons/icon-tick-2x.png);
-    background-size: 100%;
+.email-preview {
+    background:#b5e6f1;
+    padding:15px;
+    margin:0 0 15px 0;
 }
-.message--success:before {
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-image: url(../images/icons/icon-tick.png);
-    width: 27px;
-    height: 27px;
-    display: inline-block;
-    position: absolute;
-    content: '';
-    margin-left: -42px;
+
+span.alt-amount {
+    margin-left:10px;
+}
+
+.old-amount {
+    color:#acacac;
+}
+
+span.alt-amount input{
+    width:65px;
+    margin-left:5px;
+}
+
+span.mileage input{
+    width:65px;
+    margin-left:5px;
 }
 
 .text-warning {
     color:#b10e1e;
+    padding-top:6px;
+    display:inline-block;
 }
 
 .text-warning:before {
@@ -59,7 +69,7 @@
     font-weight: bold;
     height: 1em;
     line-height: 1;
-    margin-left: 5px;
+    margin-left: 0px;
     margin-right: 5px;
     padding: 2px;
     text-align: center;
@@ -68,6 +78,8 @@
 
 .text-success {
     color:#00823b;
+    padding-top:2px;
+    display:inline-block;
 }
 
 .text-success:before {
@@ -86,7 +98,7 @@
     font-size:12px;
     height: 1em;
     line-height: 1;
-    margin-left: 5px;
+    margin-left: 0px;
     margin-right: 5px;
     padding: 4px;
     text-align: center;
@@ -105,6 +117,39 @@
  padding-bottom:10px;
     margin-bottom: 0px;
     margin-top: 40px;
+ }
+
+ ul.claim-dialog li {
+ max-width:550px;
+ padding:10px;
+ margin:0 0 10px 0; 
+ display:block;
+ clear:both!important;
+ }
+
+ ul.claim-dialog li p{
+ margin:0 0 5px 0; 
+ }
+
+  ul.claim-dialog li h2 {
+  font-weight: bold;
+  margin:0 0 5px 0;
+ }
+
+  ul.claim-dialog li p.time {
+  font-style:italic;
+  font-size:16px;
+  margin:0;
+ }
+
+  ul.claim-dialog li.claimant {
+ background:#e0eef1;
+ }
+
+   ul.claim-dialog li.caseworker {
+ background:#b5e6f1;
+ float:right;
+ text-align:right;
  }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you

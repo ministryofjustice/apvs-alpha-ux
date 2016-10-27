@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_beta.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+<li><a href="/beta/v2-1">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+     <h2 class="heading-large">
+         Your journey information
+        </h2>
+
+      
+
+<form action="apply-99.html" method="get" class="form">
+
+     <div class="form-group">
+      <fieldset>
+        <legend class="form-label-bold">Date of prison visit</legend>
+
+        <div class="form-date">
+
+          <p class="form-hint">For example, 20 10 2016</p>
+
+          <div class="form-group form-group-day">
+            <label for="dob-day">Day</label>
+            <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+          </div>
+
+          <div class="form-group form-group-month">
+            <label for="dob-month">Month</label>
+            <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+          </div>
+
+          <div class="form-group form-group-year">
+            <label for="dob-year">Year</label>
+            <input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+          </div>
+        </div>
+
+      </fieldset>
+    </div>
+
+   
+      
+      <label class="form-label-bold" for="full-name">Did you use an escort for this journey?</label>
+      <p class="form-hint">An escort is someone that helped you get to the prison but did not visit the prisoner</p>
+        
+        <div class="form-group">
+          <fieldset>
+
+            <label for="Yes" class="block-label inline">
+              <input type="radio" name="eligibilityNo" value="Yes" id="Yes">
+              Yes
+            </label>
+            <label for="No" class="block-label inline">
+              <input type="radio" name="eligibilityNo" value="No" id="No">
+              No
+            </label>
+
+          </fieldset>
+          </div>
+
+          <label class="form-label-bold" for="full-name">Did you bring any children on this visit?</label>
+      <p class="form-hint"></p>
+        
+        <div class="form-group">
+          <fieldset>
+
+            <label for="Yes1" class="block-label inline">
+              <input type="radio" name="eligibilityNoo" value="Yes1" id="Yes1">
+              Yes
+            </label>
+            <label for="No1" class="block-label inline">
+              <input type="radio" name="eligibilityNoo" value="No1" id="No1">
+              No
+            </label>
+
+          </fieldset>
+          </div>
+
+
+
+     
+
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+</form>
+
+
+    </div>
+  </div>
+      <!-- <div class="column-third">
+
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="#">Related link</a></li>
+              <li><a href="#">Related link</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div> -->
+
+  </main>
+
+  {% endblock %}
+
+
