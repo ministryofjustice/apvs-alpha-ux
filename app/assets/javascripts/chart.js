@@ -46,6 +46,10 @@ function drawLineChart() {
       ]);
 
       var options = {
+        legend: {
+          position: 'top',
+          alignment: 'end'
+        },
         animation:{
         "startup": true,
          duration: 1500,
