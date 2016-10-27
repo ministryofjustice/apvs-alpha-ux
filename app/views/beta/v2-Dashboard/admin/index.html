@@ -1,20 +1,6 @@
 <div class="admin">
 {% extends "layout.html" %}
 
-{% block proposition_header %}
-<div class="header-proposition">
-    <div class="content">
-        <!-- <a href="#proposition-links" class="js-header-toggle menu">Menu</a> -->
-        <nav id="proposition-menu">
-            <a href="/" id="proposition-name">Assisted Prison Visit Service</a>
-            <span class="beta-tag">Beta</span>
-            <ul id="proposition-links">
-            </ul>
-        </nav>
-    </div>
-</div>
-{% endblock %}
-
 {% block page_title %}
   APVS Admin Dashboard
 {% endblock %}
@@ -28,79 +14,49 @@
     <li><a href="index" class="active"><img src="/public/images/dashboard.png"/>Dashboard</a></li>
     <li><a href="claims.html"><img src="/public/images/claim.png"/>Claims</a></li>
     <span class="adminLinks">
-    <li><a href="messages"><img src="/public/images/message.png"/>Messages</a></li>
-    <li><a href="setting"><img src="/public/images/setting.png"/>Setting</a><li>
-    <li><a href="admin"><img src="/public/images/admin.png"/>Joe Blog</a><li>
+    <li><a href="setting"><img src="/public/images/setting.png"/>Settings</a><li>
+    <li><a href="admin"><img src="/public/images/admin.png"/>Phil Creighton</a><li>
     </span>
   </ul>
-
-  <header>
-    <h1>
-      <!-- <span class="strapline">Dashboard</span> -->
-      Assisted Prison Visit Service
-    </h1>
-    <p class="tagline">
-     This dashboard shows summary of total <strong>Assisted Prison Visit Service
-       applications</strong>.
-    </p>
-  </header>
-
-  <a href="claims"><div class="grid-row">
-    <div class="column-third dashboard">
-      <h2 class="bold-medium">New claims</h2>
-      <p>
-        100
-      </p>
-    </div></a>
-    <a href="claims"><div class="column-third dashboard">
-      <h2 class="bold-medium">In progress</h2>
-      <p>
-        30
-      </p>
-    </div><a>
-    <div class="column-third dashboard">
-      <h2 class="bold-medium"></h2>
-    </div>
-  </div>
 
 <!-- Data Summary Sections -->
 <div class="summaryBlocks">
 <section class="block1">
-  <h2> <a href=""> Summary Block One </a></h2>
+  <h2> <a href=""> New Claims </a></h2>
   <div class="visualisation">
-    <span class="number">412m</span>
-    <p class="period">Oct 2014 to Sep 2015</p>
+    <span class="number">125</span>
+    <p class="period">Oct 2016 to Nov 2016</p>
   </div>
   <div class="delta">
       <div class="single-stat-delta">
           <span class="change impact-number decrease"> −1.88% </span>
-          July 2014 to June 2015
+          Sept 2016 to Oct 2016
       </div>
   </div>
 </section>
 <section class="block2">
-  <h2> <a href=""> Summary Block Two </a></h2>
+  <h2> <a href=""> First Time Claimants </a></h2>
   <div class="visualisation">
-    <span class="number">201m</span>
-    <p class="period">Oct 2014 to Sep 2015</p>
+    <span class="number">30</span>
+    <p class="period">Oct 2016 to Nov 2016</p>
   </div>
   <div class="delta">
       <div class="single-stat-delta">
           <span class="change impact-number increase"> +1.88% </span>
-          July 2014 to June 2015
+          Sept 2016 to Oct 2016
       </div>
   </div>
 </section>
 <section class="block3">
-  <h2> <a href=""> Summary Block Three </a></h2>
+  <h2> <a href=""> Returning Claimants </a></h2>
   <div class="visualisation">
-    <span class="number">329m</span>
-    <p class="period">Oct 2014 to Sep 2015</p>
+    <span class="number">95</span>
+    <p class="period">Oct 2016 to Nov 2016</p>
   </div>
   <div class="delta">
       <div class="single-stat-delta">
           <span class="change impact-number decrease"> −1.88% </span>
-          July 2014 to June 2015
+          Sept 2016 to Oct 2016
       </div>
   </div>
   </section>
@@ -108,20 +64,20 @@
 
 <div class="charts">
   <section class="chartSection">
-    <h2> <a href=""> Chart Block </a></h2>
+    <h2> <a href=""> Monthly Applications </a></h2>
     <p>Total number of applications each month</p>
-      <div id="number_format_chart" class="graph"></div>
+    <div id="number_format_chart" class="graph"></div>
+    <!-- <div class="visualisation">
+      <span class="number">329m</span>
+      <p class="period">Oct 2014 to Sep 2015</p>
+    </div> -->
   </section>
   <section class="chartSection">
-    <h2> <a href=""> Line Block </a></h2>
+    <h2> <a href=""> Monthly Applications  </a></h2>
     <p>Total number of applications each month</p>
       <div id="chart_div" class="graph"></div>
   </section>
 </div>
-
-<p class="report-a-problem-toggle js-footer">
-  <a href="">Is there anything wrong with this dashboard?</a>
-</p>
 
 </main>
 

@@ -189,19 +189,12 @@ span.beta-tag {
 
     .graph {
         width: 100%;
-        min-height: 450px;
+        min-height: 200px;
         position: relative;
-        right: 118px;
         @media screen and (max-width: $break-small) {
             right: 14px;
         }
     }
+
 }
 // end of .charts
-p {
-  margin-top: 0.2631578947em;
-  margin-bottom: 1.0526315789em;
-  .report-a-problem-toggle {
-      clear: both;
-  }
-}

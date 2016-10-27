@@ -13,7 +13,6 @@ google.charts.setOnLoadCallback(drawBarChart);
     ]);
 
    var options = {
-     title: 'Monthly Applications',
      legend: 'none',
      animation:{
       "startup": true,
@@ -47,7 +46,6 @@ function drawLineChart() {
       ]);
 
       var options = {
-        title: 'Monthly Applications',
         animation:{
         "startup": true,
          duration: 1500,
