@@ -39,19 +39,21 @@ span.adminLinks {
     }
 }
 
+@media (min-width: 641px) {
+  .form-control {
+    width: 32.5%;
+  }
+}
 // blocks
 
 .summaryBlocks {
     @include blockTitle;
-
+    border-top: $summaryBlocks-border;
+    margin-top: 100px;
     .block1,
     .block2,
     .block3 {
         position: relative;
-        //margin-top: 1em;
-        margin-bottom: 1em;
-        //padding-top: 1em;
-        //border-top: $summaryBlocks-border;
         width: 32.25%;
         float: left;
         clear: none;
@@ -120,7 +122,7 @@ span.adminLinks {
 // end of .summaryBlocks
 
 .charts {
-    margin-top: 260px;
+    margin-top: 240px;
     @media screen and (max-width: $break-small) {
         margin-top: 20px;
     }
@@ -203,4 +205,3 @@ span.adminLinks {
         font-weight: bold;
     }
 }
-// end of table

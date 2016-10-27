@@ -1,6 +1,9 @@
-google.charts.load('current', {packages:['corechart']});
+google.charts.load('current', {packages:['corechart', 'line']});
 google.charts.setOnLoadCallback(drawBarChart);
-  function drawBarChart() {
+google.charts.setOnLoadCallback(drawLineChart);
+google.charts.setOnLoadCallback(drawPie);
+
+function drawBarChart() {
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Country');
     data.addColumn('number', 'Applications');
@@ -33,9 +36,6 @@ google.charts.setOnLoadCallback(drawBarChart);
    chart.draw(data, options);
   }
 
-google.charts.load('current', {packages: ['corechart', 'line']});
-google.charts.setOnLoadCallback(drawLineChart);
-
 function drawLineChart() {
       var data = new google.visualization.DataTable();
       data.addColumn('number', 'X');
@@ -67,8 +67,30 @@ function drawLineChart() {
       var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
       chart.draw(data, options);
     }
+
+function drawPie() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Auto Approved',     11],
+        ['Manually Approved',      2]
+      ]);
+
+      var options = {
+        pieHole: 0.2,
+        animation:{
+        "startup": true,
+         duration: 1500,
+         easing: 'out',
+       }
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+      chart.draw(data, options);
+    }
 // for responsiv chart
 $(window).resize(function(){
   drawBarChart();
   drawLineChart();
+  drawPie();
 });
