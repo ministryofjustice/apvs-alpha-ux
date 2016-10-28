@@ -1,13 +1,26 @@
 //variables
 $summaryBlocks-border: 1px solid #bfc1c3;
 $break-small: 414px; //mixins
-$break-landscape: 768px;
+$break-landscape: 736px;
 @mixin blockTitle {
     h2 {
         font-size: 1.4em;
         font-weight: bold;
     }
 }
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: 640px) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: 641px) and (max-width: 1024px) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: 1024px) { @content; }
+  }
+}
+
 // main
 
 #sub-nav {
@@ -28,28 +41,53 @@ span.adminLinks {
         top: 2px;
         right: 8px;
     }
-    @media screen and (max-width: $break-small) {
-        float: left;
+    @include respond-to(handhelds) {
+      float: left;
     }
-}
-@media (min-width: 641px) {
-    span.beta-tag {
-        font-size: 16px;
-        line-height: 1.25;
+    @include respond-to(medium-screens) {
     }
 }
 
-@media (min-width: 641px) {
-  .form-control {
-    width: 32.5%;
+//filters
+.filter {
+  select {
+    float: left;
+    margin-right: 10%;
+  }
+
+  .filter-year {
+    position: relative;
+    bottom: 25px;
+    @include respond-to(handhelds) {
+      bottom: 0;
+      padding-top: 3em;
+    }
+    @include respond-to(medium-screens) {
+
+    }
+  }
+
+  @media (min-width: 641px) {
+    select {
+      width: 32.5%;
+    }
   }
 }
 // blocks
 
 .summaryBlocks {
     @include blockTitle;
+    margin-top: 20px;
     border-top: $summaryBlocks-border;
-    margin-top: 100px;
+
+    @include respond-to(handhelds) {
+      margin-top: 60px;
+      border-top: none;
+    }
+    @include respond-to(medium-screens) {
+      margin-top: 60px;
+    }
+
     .block1,
     .block2,
     .block3 {
@@ -58,22 +96,17 @@ span.adminLinks {
         float: left;
         clear: none;
         margin-right: 0;
-        @media screen and (max-width: $break-small) {
-            border-top: $summaryBlocks-border;
-            width: 100%;
-            float: none;
+        @include respond-to(handhelds) {
+          border-top: $summaryBlocks-border;
+          width: 100%;
+          float: none;
+          margin-bottom: 20px;
+          margin-top: 20px;
         }
     }
 
     h2 {
         margin-top: 10px;
-    }
-
-    .block1 {
-        @media screen and (max-width: $break-small) {
-            margin-top: 0;
-            border-top: none;
-        }
     }
 
     .block2 {
@@ -123,17 +156,16 @@ span.adminLinks {
 
 .charts {
     margin-top: 240px;
-    @media screen and (max-width: $break-small) {
-        margin-top: 20px;
+    @include respond-to(handhelds) {
+      margin-top: 20px;
     }
-    // @media screen and (max-width: $break-landscape) {
-    //     margin-top: 310px;
-    // }
+    @include respond-to(medium-screens) {
+      margin-top: 310px;
+    }
 
     .chartSection {
         @include blockTitle;
         border-top: $summaryBlocks-border;
-
         h2 {
             margin-top: 24px;
         }
@@ -143,8 +175,8 @@ span.adminLinks {
         width: 100%;
         min-height: 200px;
         position: relative;
-        @media screen and (max-width: $break-small) {
-            right: 14px;
+        @include respond-to(handhelds) {
+          right: 14px;
         }
     }
 }
