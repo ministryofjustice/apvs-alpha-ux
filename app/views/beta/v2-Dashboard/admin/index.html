@@ -21,9 +21,10 @@
     </span> -->
   </ul>
 
-<div class="form-group">
-    <label class="form-label" for="select-box">Select Month</label>
-    <select class="form-control" id="select-box">
+<div class="filter">
+  <div class="filter-month">
+    <label class="form-label" for="select-month">Select Month</label>
+    <select class="form-control" id="select-month">
       <option>January</option>
       <option>Febuary</option>
       <option>March</option>
@@ -38,11 +39,21 @@
       <option>December</option>
     </select>
   </div>
+  <div class="filter-year">
+    <label class="form-label" for="select-year">Select Year</label>
+    <select class="form-control" id="select-year">
+      <option>2014</option>
+      <option>2015</option>
+      <option selected>2016</option>
+      <option>2017</option>
+    </select>
+  </div>
+</div>
 
 <!-- Data Summary Sections -->
 <div class="summaryBlocks">
 <section class="block1">
-  <h2> <a href=""> New Claims </a></h2>
+  <h2> <a href=""> Pending claims </a></h2>
   <div class="visualisation">
     <span class="number">125</span>
     <p class="period">Oct 2016 to Nov 2016</p>
@@ -55,7 +66,7 @@
   </div>
 </section>
 <section class="block2">
-  <h2> <a href=""> First Time Claimants </a></h2>
+  <h2> <a href=""> In-progress claims </a></h2>
   <div class="visualisation">
     <span class="number">30</span>
     <p class="period">Oct 2016 to Nov 2016</p>
@@ -68,7 +79,7 @@
   </div>
 </section>
 <section class="block3">
-  <h2> <a href=""> Returning Claimants </a></h2>
+  <h2> <a href=""> Closed claims </a></h2>
   <div class="visualisation">
     <span class="number">95</span>
     <p class="period">Oct 2016 to Nov 2016</p>
@@ -99,7 +110,7 @@
   </section>
   <section class="chartSection">
     <h2> <a href=""> Auto approved VS Manul approved applications   </a></h2>
-    <p>Total numver of auto approved applications vs manually approved
+    <p>Total number of auto approved applications vs manually approved
     applications</p>
       <div id="piechart"></div>
   </section>
