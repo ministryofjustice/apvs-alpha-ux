@@ -24,6 +24,10 @@
   }
 }
 
+.badge {
+    
+}
+
 
 .pound-wrapper span{
     background-color: #dee0e2;
@@ -418,7 +422,7 @@ ul.sub-tabs {
 
 ul.sub-tabs li a{
     background: #dde0e2;
-    padding:10px;
+    padding:15px 25px;
     margin: 0 4px 0px 0;
     display:inline-block;
     position:relative;
@@ -427,26 +431,34 @@ ul.sub-tabs li a{
     color:#000;
 }
 
+ul.sub-tabs li a:hover{
+    background: #dde0e2;
+}
+
 ul.sub-tabs li a.active{
     background: #ffc136;
-    padding:10px;
     display:block;
     text-decoration:none;
 }
 
 
 
-ul.sub-tabs li a span {
-    background:#aaaaaa;
-    float:right;
-    padding:3px 5px;
-    font-size:12px;
-    color:#fff;
+ul.sub-tabs li a span.badge  {
+    font-size: 14px;
+    padding:1px 3px 0px 4px;
+    min-width: 15px;
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    background:#004A83;
+    margin:0 0 0 10px;
     font-weight:bold;
+    color:#fff;
 }
 
-ul.sub-tabs li a.active span {
-    background:#000;
+ul.sub-tabs li a.active span.badge {
+    background:#fff;
+    background:#b10e1e;
 }
 
 
