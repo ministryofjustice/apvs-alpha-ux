@@ -24,23 +24,48 @@
   }
 }
 
+
+.pound-wrapper span{
+    background-color: #dee0e2;
+    position:absolute;
+    padding:5px 10px 5px 10px;
+    margin:2px 0 0px 2px;
+    border-right:1px solid #bfc1c3;
+}
+
+.pound-wrapper input {
+    padding-left:40px;
+}
+
+.pound-wrapper-admin {
+    display:inline-block;
+}
+
+.pound-wrapper-admin span{
+    background-color: #dee0e2;
+    position:absolute;
+    padding:4px 10px 4px 10px;
+    margin:2px 0 0px 2px;
+    border-right:1px solid #bfc1c3;
+}
+
+.pound-wrapper-admin input{
+    padding-left:40px;
+    width:115px;
+    font-size:16px;
+}
+
 .email-preview {
     background:#b5e6f1;
     padding:15px;
     margin:0 0 15px 0;
 }
 
-span.alt-amount {
-    margin-left:10px;
-}
 
 .old-amount {
     color:#acacac;
-}
-
-span.alt-amount input{
-    width:65px;
-    margin-left:5px;
+    display:inline-block;
+    margin:0 5px 0 0;
 }
 
 span.mileage input{
