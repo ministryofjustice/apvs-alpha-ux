@@ -1,13 +1,18 @@
 //variables
 $summaryBlocks-border: 1px solid #bfc1c3;
-$break-small: 414px; //mixins
+$break-small: 414px;
 $break-landscape: 736px;
+
+//mixins
+
 @mixin blockTitle {
     h2 {
         font-size: 1.4em;
         font-weight: bold;
     }
 }
+
+// responsive mixin
 
 @mixin respond-to($media) {
   @if $media == handhelds {
@@ -54,6 +59,9 @@ span.adminLinks {
     float: left;
     margin-right: 10%;
   }
+  .form-label {
+    font-size: 16px;
+  }
 
   .filter-year {
     position: relative;
@@ -61,9 +69,6 @@ span.adminLinks {
     @include respond-to(handhelds) {
       bottom: 0;
       padding-top: 3em;
-    }
-    @include respond-to(medium-screens) {
-
     }
   }
 
