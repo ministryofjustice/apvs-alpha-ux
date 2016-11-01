@@ -24,9 +24,13 @@
   }
 }
 
-.badge {
-    
+
+
+.block-label-inline .column-one-third label{
+    font-size:19px;
+    margin-bottom:10px;
 }
+
 
 
 .pound-wrapper span{
@@ -77,6 +81,11 @@ span.mileage input{
     margin-left:5px;
 }
 
+
+.error-summary span.text-warning {
+    padding-top:0px;
+    margin-top:0px;
+}
 .text-warning {
     color:#b10e1e;
     padding-top:6px;
