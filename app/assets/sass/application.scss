@@ -172,13 +172,13 @@ span.mileage input{
  ul.claim-dialog li {
  max-width:550px;
  padding:10px;
- margin:0 0 10px 0; 
+ margin:0 0 10px 0;
  display:block;
  clear:both!important;
  }
 
  ul.claim-dialog li p{
- margin:0 0 5px 0; 
+ margin:0 0 5px 0;
  }
 
   ul.claim-dialog li h2 {
@@ -361,7 +361,7 @@ background-color: #fff;
     padding-bottom: 0.75em;
     padding: 0;
     z-index: 999;
-            
+
         }
         #sub-nav li{
             position:relative;
@@ -418,7 +418,7 @@ background-color: #fff;
 
      .advanced-search {
      margin:0 0 0 20px;
-     }   
+     }
 
 span h4.heading-secondary {
     font-size:24px;
@@ -798,4 +798,31 @@ only screen and (min-resolution: 2dppx) {
 }
 .transaction .js-tab-content {
     overflow: hidden
+}
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 16px;
+  transform: scale(0.8);
+  transition: 0.5s;
+
+  label {
+    display: block;
+    margin: 0 0 3px 0;
+  }
+  input[type=text] {
+    width: 100%;
+  }
+
+  input[type="radio"]:checked ~ &,
+  input[type="checkbox"]:checked ~ & {
+    opacity: 1;
+    max-height: 100px;
+    padding: 10px 20px;
+    transform: scale(1);
+    overflow: visible;
+  }
+
 }

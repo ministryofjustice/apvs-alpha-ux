@@ -1,0 +1,138 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_beta.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+      <li><a href="/beta/v2-2">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+     <h2 class="heading-large">
+       About child
+     </h2>
+
+
+
+     <form action="apply-basket-child.html" method="get" class="form">
+
+
+      <div class="form-group">
+      <label class="form-label-bold" for="full-name">Child name</label>
+
+        <input type="text" class="form-control" id="full-name">
+        <p class="form-hint">For example, Joe Blog</p>
+      </div>
+
+    <div class="form-group">
+      <div class="form-date">
+        <label class="form-label-bold" for="full-name">Date of birth</label>
+        <p class="form-hint">For example, 18 08 1989</p>
+
+        <div class="form-group form-group-day">
+          <label for="dob-day">Day</label>
+          <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+        </div>
+
+        <div class="form-group form-group-month">
+          <label for="dob-month">Month</label>
+          <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+        </div>
+
+        <div class="form-group form-group-year">
+          <label for="dob-year">Year</label>
+          <input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+        </div>
+      </div>
+    </div>
+
+      <div class="form-group">
+
+      <label class="form-label-bold" for="full-name">Relationship</label>
+
+        <div class="form-group">
+          <fieldset>
+
+            <label for="my child" class="block-label">
+              <input type="radio" name="relationship" value="my child" id="my-child">
+              My child
+            </label>
+            <label for="prisoners child" class="block-label">
+              <input type="radio" name="relationship" value="prisoners child" id="prisoners-child">
+              Prisoner's child
+            </label>
+            <label for="other" class="block-label" data-target="other-question">
+              <input type="radio" name="relationship" value="other" id="other-relationship">
+              Other
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="other-question">
+              <label for="other-relationship" class="form-label">
+                What is the relationship of the child to you?
+              </label>
+              <input class="form-control" type="text" name="other-relationship" id="other-relationship">
+              <p class="form-hint">For example, Nephew</p>
+            </div>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <fieldset>
+
+
+            <label for="taxi-journey" class="block-label">
+              <input type="checkbox" name="eligibilityNo" value="taxi-journey" id="taxi-journey">
+              Add another child
+            </label>
+
+          </fieldset>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
+    </form>
+
+
+  </div>
+</div>
+      <!-- <div class="column-third">
+
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="#">Related link</a></li>
+              <li><a href="#">Related link</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div> -->
+
+  </main>
+
+  {% endblock %}
