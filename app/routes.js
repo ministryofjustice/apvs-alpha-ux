@@ -801,4 +801,26 @@ router.post('/beta/v2-3/apply-10', function (req, res) {
   }
 })
 
+// route to child journey adding
+
+router.get('/beta/v2-3/apply-99', function (req, res) {
+  var eligibilityChildren = req.query.eligibilityChildren
+
+  if (eligibilityChildren === 'true') {
+    res.redirect('/beta/v2-3/apply-99-child')
+  } else {
+    res.render('beta/v2-3/apply-99')
+  }
+})
+
+router.get('/beta/v2-3/apply-add-info-taxi.html', function (req, res) {
+  var childJourney = req.query.childJourney
+
+  if (childJourney === 'true') {
+    res.redirect('/beta/v2-3/apply-add-info-train-child.html')
+  } else {
+    res.render('beta/v2-3/apply-add-info-taxi.html')
+  }
+})
+
 module.exports = router
