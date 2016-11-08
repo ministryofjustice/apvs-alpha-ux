@@ -84,6 +84,20 @@ button.link {
     padding:0;
 }
 
+button.back-button {
+    color: #005ea5;
+    text-decoration: underline;
+    font-size:18px;
+    line-height:24px;
+    background:none;
+    border:none;
+    padding:0;
+    clear:left;
+    display:block;
+    position:relative;
+    margin:25px 0 0 0;
+}
+
 .push-top {
     margin-top:0;
 }
