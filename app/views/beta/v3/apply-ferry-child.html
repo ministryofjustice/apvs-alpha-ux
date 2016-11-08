@@ -26,7 +26,7 @@
 
     <p>You may be able to get help with the cost of a ferry ticket if your journey involved a sea crossing - for example from the Isle of Wight to the mainland.</p>
 
-     <form action="apply-add-info-child.html" method="get" class="form">
+     <form action="apply-basket-child.html" method="get" class="form">
 
 
       <div class="form-group">
@@ -81,20 +81,32 @@
           </div>
 
 <div class="form-group">
-      <label class="form-label-bold" for="full-name">Total cost of adult ticket</label>
-        <div class="pound-wrapper">
-          <span>£</span>
-          <input type="text" class="form-control">
-          <p class="form-hint">For example, £20</p>
-        </div>
-        </div>
-<div class="form-group">
-      <label class="form-label-bold" for="full-name">Total cost of child ticket</label>
-        <div class="pound-wrapper">
-          <span>£</span>
-          <input type="text" class="form-control">
-          <p class="form-hint">For example, £10</p>
-        </div>
+
+          <label class="form-label-bold" for="full-name">Is this a child ticket?</label>
+
+          <div class="form-group">
+            <fieldset>
+
+              <label for="Yes" class="block-label inline">
+                <input type="radio" name="eligibilityNo" value="Yes" id="Yes">
+                Yes
+              </label>
+              <label for="No" class="block-label inline">
+                <input type="radio" name="eligibilityNo" value="No" id="No">
+                No
+              </label>
+
+            </fieldset>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label-bold" for="full-name">Total cost ticket</label>
+            <div class="pound-wrapper">
+              <span>£</span>
+              <input type="text" class="form-control">
+              <p class="form-hint">For example, £20</p>
+            </div>
+          </div>
 
 
 </div>
