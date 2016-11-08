@@ -24,6 +24,27 @@
   }
 }
 
+ul.doc-upload li {
+    display:block;
+    margin:5px 0 10px 0;
+    padding:0;
+    width:100%;
+    float:left;
+    overflow:auto;
+}
+
+ul.doc-upload {
+    width:100%;
+    float:left;
+    position:relative;
+    margin:10px 0;
+}
+
+a.remove-link {
+    padding-right:25px;
+    float:right;
+}
+
 button.link {
     color: #005ea5;
     text-decoration: underline;
