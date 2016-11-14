@@ -29,7 +29,7 @@
 <p>You’ll get a reference number at the end of your application.</p>
 
 
-   <a href="apply-1"><input type="submit" name="commit" value="Apply" class="button"></a> 
+   <a href="apply-1"><input type="submit" name="commit" value="Apply" class="button"></a>
 
       </div>
 
@@ -38,19 +38,21 @@
           Already registered?
         </h2>
 
-        <p>With your reference number, you can sign in and:</p>
+        <p>With your national insurace number, you can sign in and:</p>
 
-<ul class="list-bullet"><li>apply without having to enter all of the information again</li>
-<li>return to saved applications</li>
+<ul class="list-bullet">
+  <li>apply without having to enter all of the information again</li>
+  <li>return to saved applications</li>
+  <li>add another prisoner which you visited</li>
 </ul>
 <br>
 <form action="profile" method="get" class="form">
         <div class="form-group">
-      <label class="form-label-bold" for="full-name">Reference number</label>
-      <p class="form-hint">For example, APVS1234</p>
+      <label class="form-label-bold" for="full-name">National Insurance Number</label>
+      <p class="form-hint">For example, AB 12 34 56 78 A</p>
       <input type="text" class="form-control" id="full-name">
       <br>
-      <br><a href="">Forgotten your reference number?</a>
+      <br><a href="">Forgotten your national insurance number?</a>
     </div>
 
     <div class="form-group">
@@ -79,11 +81,11 @@
       </fieldset>
     </div>
 
-    
-    
+
+
     <br>
     <br>
-        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
 </form>
 
       </div>
@@ -107,5 +109,3 @@
   </main>
 
   {% endblock %}
-
-

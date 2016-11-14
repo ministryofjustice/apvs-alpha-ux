@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_beta.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+      <li><a href="/beta/v3">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+     <h2 class="heading-large">
+              About your light refreshment
+
+     </h2>
+
+    
+     <p> A contribution to the cost of light refreshments may apply where your visit caused you to be away from home for over 5 hours. This is the time it took you to travel to the prison and return home afterwards.</p>
+ 
+<p>A limit of £2.55 applies to visits over 5 hours, and £5.10 for visits over 10 hours.</p>
+ 
+<p>Receipts should be held in case these are needed later on.</p>
+     <form action="apply-basket.html" method="get" class="form">
+
+
+    
+
+     
+
+
+        <div class="form-group">
+          <fieldset>
+          <label class="form-label-bold" for="full-name">Travel time</label>
+            <label for="Yes" class="block-label">
+
+              <input type="radio" name="eligibilityNo" value="Yes" id="Yes">
+              Up to 5 hours
+            </label>
+
+            <label for="Yes" class="block-label">
+              <input type="radio" name="eligibilityNo" value="Yes" id="Yes">
+              Over 5 hours
+            </label>
+
+            <label for="Yes" class="block-label">
+              <input type="radio" name="eligibilityNo" value="Yes" id="Yes">
+              Over 10 hours
+            </label>
+            
+
+          </fieldset>
+          </div>
+
+  
+
+      
+<div class="form-group">
+      <label class="form-label-bold" for="full-name">Cost</label>
+        
+        <input type="text" class="form-control" id="full-name">
+        <p class="form-hint">For example, £5</p>
+      </div>
+
+      <div class="form-group">
+      
+   
+        
+        <!-- <div class="form-group">
+          <fieldset>
+
+
+            <label for="taxi-journey" class="block-label">
+              <input type="checkbox" name="eligibilityNo" value="taxi-journey" id="taxi-journey">
+              Add another Light refreshment expense
+            </label>
+
+          </fieldset>
+          </div>
+ -->
+  
+
+
+      <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+    </form>
+
+
+  </div>
+</div>
+      <!-- <div class="column-third">
+
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="#">Related link</a></li>
+              <li><a href="#">Related link</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div> -->
+
+  </main>
+
+  {% endblock %}
+
+
