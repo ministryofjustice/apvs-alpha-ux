@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_beta.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+<li><a href="/beta/v3">Home</a></li>
+    </ol>
+  </div>
+
+
+
+  <div class="grid-row">
+
+
+    <div class="column-one-quarter">
+      <h1 class="heading-large push-top">
+      <span class="heading-secondary">National Insurance Number</span>AB 12 34 56 78 A
+    </h1>
+    </div>
+
+
+  </div>
+
+
+ <!-- <h3 class="heading-medium">List of people visited</h3> -->
+        <table>
+            <tr>
+              <th>Prisoner name</th>
+              <th>Prison</th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <td>Joe Smith</td>
+              <td>Hewell</td>
+              <td><a href="profile.html">View</a></td>
+            </tr>
+            <tr>
+              <td>Joe Blogs</td>
+              <td>Featherstone</td>
+              <td><a href="profile.html">View</a></td>
+            </tr>
+            <tr>
+              <td>Sam Smith</td>
+              <td>Stafford</td>
+              <td><a href="profile.html">View</a></td>
+            </tr>
+        </table>
+      <br>
+      <a href="visitor-dashboard.html" class="button grey">Add a new prisoner</a>
+
+
+  </main>
+
+  {% endblock %}
