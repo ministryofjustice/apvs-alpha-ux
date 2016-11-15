@@ -1,0 +1,157 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_beta.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+      <li><a href="/beta/v3-alt-start">Home</a></li>
+    </ol>
+  </div>
+
+
+
+      <h2 class="heading-large">
+        Your claim details
+      </h2>
+
+
+<p>Please add the relevant documentation associated with your claim.</p>
+      <table class="col-2">
+        <tr>
+          <td>Visitor</td>
+          <td>Joe Bloggs</td>
+        </tr>
+
+        <tr>
+          <td>Benefit information</td>
+          <td>Working Tax credits or Child tax credit with disability 
+        
+
+          <ul class="list doc-upload">
+            <li><span class="text-success"> Page one uploaded</span>  <a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></li>
+            <li><span class="text-success"> Page two uploaded</span>  <a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></li>
+
+            <li><a href="tax-credits" class="button grey pull-right">Add another page</a></li>
+
+          </ul>
+          
+          </td>
+        </tr>
+
+      </table>
+
+
+<h2 class="heading-medium">Your visit</h2>
+
+      <table class="col-2">
+        
+
+        <tr>
+          <td>Prisoner name</td>
+          <td>Paul Bloggs</td>
+        </tr>
+
+        <tr>
+          <td>Prisoner number</td>
+          <td>0000001</td>
+        </tr>
+
+        <tr>
+          <td>Prison</td>
+          <td>Hewell</td>
+        </tr>
+
+        <tr>
+          <td>Date of visit</td>
+          <td>Friday 28 October</td>
+        </tr>
+
+        <tr>
+          <td>Visit confirmation</td>
+          <td><span class="text-success">Visit confirmation uploaded</span> <a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></td>
+        </tr>
+
+      </table>
+    
+
+      <br>
+
+      <form action="apply-10.html" method="get" class="form">
+
+        <table>
+          <tr>
+            <th>Expense(s)</th>
+            <th>Amount</th>
+            <th></th>
+          </tr>
+
+
+
+          <tr>
+            <td><span class="bold">Train Journey </span> - <a href="#" class="">remove journey</a>
+            <br>Birmingham New Street to Redditch - Return </td>
+            <td>£14</td>
+
+            
+            <td><span class="text-success">Receipt uploaded</span> <a href="apply-upload.html" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></td>
+          </tr>
+          <tr>
+            <td><span class="bold">Taxi Journey </span> - <a href="#" class="">remove journey</a><br>Redditch to Hewell</td>
+            <td>£8.50</td>
+            
+            <td><span class="text-pending">Sending receipt by post</span> <a href="apply-upload.html" class="link pull-right">change</a></td>
+          </tr>
+
+          <tr>
+            <td><span class="bold">Taxi Journey </span> - <a href="#" class="">remove journey</a><br>Hewell to Redditch</td>
+            <td>£10</td>
+            
+            <td><span class="text-pending">Uploading receipt later</span> <a href="apply-upload.html" class="link pull-right">change</a></td>
+          </tr>
+
+         
+
+
+
+
+
+        </table>
+        <br>
+        <a href="apply-99.html" class="link">Add another expense</a>
+        <br>
+        <br>
+        <br>
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+      </form>
+
+
+<!-- <div class="column-third">
+
+<aside class="govuk-related-items" role="complementary">
+<h2 class="heading-medium" id="subsection-title">Subsection</h2>
+<nav role="navigation" aria-labelledby="subsection-title">
+<ul class="font-xsmall">
+<li><a href="#">Related link</a></li>
+<li><a href="#">Related link</a></li>
+<li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+</ul>
+</nav>
+</aside>
+
+</div>
+</div> -->
+
+</main>
+
+{% endblock %}
+
+
