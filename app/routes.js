@@ -967,4 +967,14 @@ router.get('/beta/v3-alt-start/apply-add-info-taxi.html', function (req, res) {
   }
 })
 
+router.get('/beta/v3-alt-start/returning.html', function (req, res) {
+  var returningUser = req.query.returningUser
+
+  if (returningUser === 'no') {
+    res.redirect('/beta/v3-alt-start/apply-1.html')
+  } else {
+    res.render('beta/v3-alt-start/returning.html')
+  }
+})
+
 module.exports = router

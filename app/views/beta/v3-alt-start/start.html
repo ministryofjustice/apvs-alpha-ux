@@ -1,72 +1,52 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-{% if serviceName %} {{ serviceName }} {% endif %}
+    {% if serviceName %}
+        {{ serviceName }}
+    {% endif %}
 {% endblock %}
 
 {% block content %}
 
-<main id="content" role="main">
+    <main id="content" role="main">
 
-  {% include "includes/phase_banner_beta.html" %}
+        {% include "includes/phase_banner_beta.html" %}
 
-  <div class="breadcrumbs">
-    <ol>
-      <li><a href="/index.html">Prototype Index</a></li>
-<li><a href="/beta/v3-alt-start">Home</a></li>
-    </ol>
-  </div>
-
-  <div class="grid-row">
-    <div class="column-two-thirds">
-
-
-        <h2 class="heading-large">
-         Have you made an online claim for visiting this prisoner before?
-        </h2>
-
-        
-
-<form action="returning.html" method="get" class="form">
-         <div class="form-group">
-
-         <fieldset>
-
-
-            <label for="close-relative" class="block-label">
-              <input type="radio" name="relationship" value="Close Relative" id="close-relative">
-              
-              Yes
-
-            </label>
-
-           
-
-
-
-            <label class="block-label">
-              <input type="radio" name="help" value="Wales" id="partner">
-              No
-            </label>
-
-
-
-          </fieldset>
-
-
-            
+        <div class="breadcrumbs">
+            <ol>
+                <li>
+                    <a href="/index.html">Prototype Index</a>
+                </li>
+                <li>
+                    <a href="/beta/v3-alt-start">Home</a>
+                </li>
+            </ol>
         </div>
 
+        <div class="grid-row">
+            <div class="column-two-thirds">
+                <h2 class="heading-large">
+                    Have you made an online claim for visiting this prisoner before?
+                </h2>
+                <form action="returning.html" method="get" class="form">
+                    <div class="form-group">
+                        <fieldset>
+                            <label for="yes" class="block-label">
+                                <input type="radio" name="returningUser" value="yes" id="yes">
+                                Yes
+                            </label>
+                            <label for="no" class="block-label">
+                                <input type="radio" name="returningUser" value="no" id="no">
+                                No
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
+                </form>
+            </div>
+        </div>
 
-        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
-</form>
-
-
-
-
-      </div>
-
-      <!-- <div class="column-third">
+        <!-- <div class="column-third">
 
         <aside class="govuk-related-items" role="complementary">
           <h2 class="heading-medium" id="subsection-title">Subsection</h2>
@@ -82,8 +62,6 @@
       </div>
     </div> -->
 
-  </main>
+    </main>
 
-  {% endblock %}
-
-
+{% endblock %}
