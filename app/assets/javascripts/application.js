@@ -110,4 +110,21 @@ $(document).ready(function () {
   var toggleContent = new ShowHideContent()
   toggleContent.showHideRadioToggledContent()
   toggleContent.showHideCheckboxToggledContent()
+
+
+
 })
+
+
+$( function() {
+  var availableTags = [
+    "Stafford",
+    "Featherstone",
+    "Belmarsh",
+    "Hewell",
+    "Birmingham"
+  ];
+  $( "#prison-name" ).autocomplete({
+    source: availableTags
+  });
+} );
