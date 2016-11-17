@@ -111,20 +111,29 @@ $(document).ready(function () {
   toggleContent.showHideRadioToggledContent()
   toggleContent.showHideCheckboxToggledContent()
 
-
-
-})
-
-
-$( function() {
   var availableTags = [
+    "Ashfield",
+    "Altcourse",
+    "Askham Grange",
+    "Aylesbury",
+    "Bedford",
+    "Bristol",
+    "Leeds",
+    "Leicester",
+    "Liverpool",
+    "Maidstone",
+    "Oakwood",
+    "Thameside",
+    "Stocken",
+    "Rye Hill",
     "Stafford",
     "Featherstone",
     "Belmarsh",
     "Hewell",
     "Birmingham"
   ];
-  $( "#prison-name" ).autocomplete({
+  $( ".autocomplete" ).autocomplete({
     source: availableTags
   });
-} );
+
+});

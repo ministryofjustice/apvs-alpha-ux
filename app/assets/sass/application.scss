@@ -935,19 +935,20 @@ only screen and (min-resolution: 2dppx) {
 
 }
 
-.ui-autocomplete-input {
-    background: #4a4a4a;
-    border-radius: 0px;
-    .soruce:hover{
-      background: yellow;
-    }
-}
-.ui-autocomplete-input.source:hover {
-    background: yellow;
+.ui-autocomplete {
+    padding: 0;
+    width: 218px;
+    max-height: 208px;
+    overflow-y: scroll;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #bfc1c3;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.4)
 }
 
-.ui-menu .ui-menu-item a{
-    background:red;
-    height:10px;
-      font-size:8px;
+.ui-autocomplete .ui-menu-item a {
+    display: block;
+    padding: 4px 6px;
+    color: #0b0c0c;
+    cursor: pointer
 }
