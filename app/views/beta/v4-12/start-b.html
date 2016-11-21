@@ -17,10 +17,15 @@
     </ol>
   </div>
 
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
 
         <h2 class="heading-large">
-          Check your information
+          Is this the first time you're applying for the Assisted Prison Visits Scheme online?
         </h2>
+
+      
 
         <!-- <div class="form-group">
         <details>
@@ -33,48 +38,18 @@
         </details>
       </div> -->
 
-      
-      <hr>
-      <a href="" class="button grey push-right">Change your details</a>
-
-      
-      <p>Your name: <span class="bold">Mr Chris Si**</span></p>
-
-    
-      <p>Your address: <span class="bold">1 Street****, London, N7***</span></p>
-
-      
-
-      <p>You receive:<span class="bold">
-      Income Support</span></p>
-
-      <p>You're the prisoner's: <span class="bold">Close relative</span></p>
-
-      <p>You're visiting:
-      <span class="bold">Joe Bloggs</span></p>
-      <p>Prisoner number: <span class="bold">0000001</span></p>
-
-      <p>Prison Location:
-      <span class="bold">Hewell</span></p>
-
-      <hr>
-
-      <a href="change-contact-details.html" class="button grey push-right">Change contact details</a>
-
-      <p>Contact email address: <span class="bold">chris.si**@gov.uk</span></p>
-
-      <p>Phone number: <span class="bold">075114567**</span></p>
-      
-<hr>
-      
-
-
+<form action="apply-1" method="post" class="form">
         <div class="form-group">
           <fieldset>
 
             <label for="Yes" class="block-label">
-              <input type="checkbox" name="eligibilityNo" value="Yes" id="Yes">
-              Confirm these details are correct
+              <input type="radio" name="returningUser" value="Yes" id="Yes">
+              Yes
+            </label>
+
+            <label for="No" class="block-label">
+              <input type="radio" name="returningUser" value="No" id="No">
+              No
             </label>
 
           </fieldset>
@@ -82,9 +57,10 @@
 
 
 
-        <a href="apply-8"><input type="submit" name="commit" value="Continue" class="button disabled"></a> 
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+</form>
 
-      
+      </div>
       <!-- <div class="column-third">
 
         <aside class="govuk-related-items" role="complementary">
