@@ -1049,7 +1049,7 @@ router.get('/beta/v4/apply-add-info-taxi.html', function (req, res) {
   }
 })
 
-router.get('/beta/v3-alt-start/returning.html', function (req, res) {
+router.get('/beta/v4/returning.html', function (req, res) {
   var returningUser = req.query.returningUser
 
   if (returningUser === 'no') {
