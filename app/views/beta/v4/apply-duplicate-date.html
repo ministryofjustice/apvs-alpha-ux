@@ -20,57 +20,55 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-
-        <h2 class="heading-large">
-         Have you already made the prison visit?
+     <h2 class="heading-large">
+         Your journey information
         </h2>
 
-        <p>You can apply for help with one visit at a time.</p>
+      
 
-<form action="apply-duplicate.html" method="get" class="form">
-         <div class="form-group">
+<form action="apply-basket" method="get" class="form">
 
-         <fieldset>
+     <div class="form-group">
+      <fieldset>
+        <legend class="form-label-bold">Date of prison visit</legend>
 
+        <div class="form-date">
 
-            <label for="close-relative" class="block-label">
-              <input type="radio" name="relationship" value="Close Relative" id="close-relative">
-              
-              Yes
+          <p class="form-hint">For example, 20 10 2016</p>
 
-            </label>
+          <div class="form-group form-group-day">
+            <label for="dob-day">Day</label>
+            <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+          </div>
 
-           
+          <div class="form-group form-group-month">
+            <label for="dob-month">Month</label>
+            <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+          </div>
 
-          </fieldset>
-
-</div>
-<div class="form-group">
-          <fieldset>
-
-
-
-            <label class="block-label">
-              <input type="radio" name="help" value="Wales" id="partner">
-              No - it's in the future
-            </label>
-
-
-
-          </fieldset>
-
-
-            
+          <div class="form-group form-group-year">
+            <label for="dob-year">Year</label>
+            <input class="form-control" id="dob-year" type="number" pattern="[0-9]*" min="0" max="2014">
+          </div>
         </div>
 
+      </fieldset>
+    </div>
+
+   
+      
+     
+
+
+
+     
 
         <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
 </form>
 
 
-
-
-      </div>
+    </div>
+  </div>
       <!-- <div class="column-third">
 
         <aside class="govuk-related-items" role="complementary">
