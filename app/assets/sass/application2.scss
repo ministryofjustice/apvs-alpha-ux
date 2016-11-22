@@ -1,12 +1,30 @@
-.ui-autocomplete {
-   max-height: 150px;
-   overflow-y: auto;
-   /* prevent horizontal scrollbar */
-   overflow-x: hidden;
- }
- /* IE 6 doesn't support max-height
-  * we use height instead, but this forces the menu to always be this tall
-  */
- * html .ui-autocomplete {
-   height: 150px;
- }
+//variables
+$summaryBlocks-border: 1px solid #bfc1c3;
+$break-small: 414px;
+$break-landscape: 736px;
+
+//mixins
+// responsive mixin
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: 640px) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: 641px) and (max-width: 1024px) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: 1024px) { @content; }
+  }
+}
+
+#claimSummary {
+  td {
+    width: 50%;
+  }
+  @include respond-to(handhelds){
+    td {
+      width: 60%;
+    }
+  }
+}
