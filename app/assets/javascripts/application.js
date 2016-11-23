@@ -110,4 +110,30 @@ $(document).ready(function () {
   var toggleContent = new ShowHideContent()
   toggleContent.showHideRadioToggledContent()
   toggleContent.showHideCheckboxToggledContent()
-})
+
+  var availableTags = [
+    "Ashfield",
+    "Altcourse",
+    "Askham Grange",
+    "Aylesbury",
+    "Bedford",
+    "Bristol",
+    "Leeds",
+    "Leicester",
+    "Liverpool",
+    "Maidstone",
+    "Oakwood",
+    "Thameside",
+    "Stocken",
+    "Rye Hill",
+    "Stafford",
+    "Featherstone",
+    "Belmarsh",
+    "Hewell",
+    "Birmingham"
+  ];
+  $( ".autocomplete" ).autocomplete({
+    source: availableTags
+  });
+
+});
