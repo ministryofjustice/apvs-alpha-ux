@@ -20,7 +20,10 @@ $break-landscape: 736px;
 
 #claimSummary {
   td {
-    width: 50%;
+    width: 70%;
+  }
+  .journeyExpenses td{
+    border-bottom: none;
   }
   @include respond-to(handhelds){
     td {
@@ -29,6 +32,23 @@ $break-landscape: 736px;
   }
 }
 
+.claimReceipt {
+  td {
+    width: 70%;
+  }
+  td a {
+    float: none;
+    margin-right: 10px;
+  }
+  .uploadedEvidence .noBorder{
+    border-bottom: none;
+  }
+  @include respond-to(handhelds){
+    td {
+      width: 60%;
+    }
+  }
+}
 
 @keyframes fadein {
     from {
@@ -40,9 +60,6 @@ $break-landscape: 736px;
     }
 }
 
-.journeyExpenses {
-  margin-top: 25px;
-  font-size: 21px;
-  text-align: center;
+.uploadedEvidence {
   animation: fadein 1.5s;
 }
