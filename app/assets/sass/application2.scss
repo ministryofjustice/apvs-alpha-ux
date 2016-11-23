@@ -20,7 +20,7 @@ $break-landscape: 736px;
 
 #claimSummary {
   td {
-    width: 70%;
+    width: 60%;
   }
   .journeyExpenses td{
     border-bottom: none;
@@ -34,13 +34,13 @@ $break-landscape: 736px;
 
 .claimReceipt {
   td {
-    width: 70%;
+    width: 60%;
   }
   td a {
     float: none;
     margin-right: 10px;
   }
-  .uploadedEvidence .noBorder{
+  .uploadedEvidence.noBorder td{
     border-bottom: none;
   }
   @include respond-to(handhelds){
