@@ -25,6 +25,9 @@ $break-landscape: 736px;
   .journeyExpenses td{
     border-bottom: none;
   }
+  .addReceipt td {
+    padding-top: 0em;
+  }
   @include respond-to(handhelds){
     td {
       width: 60%;
