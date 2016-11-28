@@ -8,10 +8,10 @@ $break-landscape: 736px;
 
 @mixin respond-to($media) {
   @if $media == handhelds {
-    @media only screen and (max-width: 640px) { @content; }
+    @media only screen and (max-width: 768px) { @content; }
   }
   @else if $media == medium-screens {
-    @media only screen and (min-width: 641px) and (max-width: 1024px) { @content; }
+    @media only screen and (min-width: 769px) and (max-width: 1024px) { @content; }
   }
   @else if $media == wide-screens {
     @media only screen and (min-width: 1024px) { @content; }
@@ -19,6 +19,15 @@ $break-landscape: 736px;
 }
 
 #claimSummary {
+  td {
+    width: 30%;
+  }
+  @include respond-to(handhelds){
+      display:none;
+  }
+}
+
+#claimSummaryMobile{
   td {
     width: 60%;
   }
@@ -33,9 +42,24 @@ $break-landscape: 736px;
       width: 60%;
     }
   }
+  @include respond-to(medium-screens){
+      display:none;
+  }
+  @include respond-to(wide-screens){
+      display:none;
+  }
 }
 
 .claimReceipt {
+  td {
+    width: 30%;
+  }
+  @include respond-to(handhelds){
+    display: none;
+  }
+}
+
+.claimReceiptMobile {
   td {
     width: 60%;
   }
@@ -50,6 +74,12 @@ $break-landscape: 736px;
     td {
       width: 60%;
     }
+  }
+  @include respond-to(medium-screens){
+      display:none;
+  }
+  @include respond-to(wide-screens){
+      display:none;
   }
 }
 

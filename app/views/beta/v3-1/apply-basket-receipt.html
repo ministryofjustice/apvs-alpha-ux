@@ -30,13 +30,14 @@
           <td><span class="bold">Visitor</span></td>
           <td>Joe Bloggs</td>
         </tr>
-        <tr class="uploadedEvidence noBorder">
-          <td><span class="bold">Benefit information</span>
-          <td>Health Certificate (HC2)</td>
-        </tr>
         <tr class="uploadedEvidence">
-          <td><span class="text-success">Evidence Uploaded</span></td>
-          <td><a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></li></td>
+          <td><span class="bold">Benefit information</span></td>
+          <td>Health Certificate (HC2)
+          <ul class="list doc-upload">
+            <li><span class="text-success"> Evidence uploaded</span>
+              <a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></li>
+          </ul>
+          </td>
         </tr>
       </table>
 <h2 class="heading-medium">Your visit</h2>
@@ -62,56 +63,131 @@
           <td>Friday 28 October</td>
         </tr>
 
-        <tr class="uploadedEvidence noBorder">
-          <td><span class="bold">Visit confirmation</span>
-          <td></td>
-        </tr>
         <tr class="uploadedEvidence">
-          <td><span class="text-success">Visit confirmation uploaded</span></td>
-          <td><a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></li></td>
+          <td><span class="bold">Visit confirmation</span></td>
+          <td><span class="text-success">Visit confirmation uploaded</span>
+            <a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a>
+          </td>
         </tr>
-
       </table>
-
       <br>
-
       <form action="apply-10.html" method="get" class="form">
 
         <table class="claimReceipt">
           <tr>
             <th>Expense(s)</th>
             <th>Amount</th>
+            <th></th>
+          </tr>
+
+          <tr class="uploadedEvidence">
+            <td><span class="bold">Train Journey </span> - <a href="#" class="">remove journey</a>
+            <br>Birmingham New Street to Redditch - Return </td>
+            <td>£14</td>
+            <td><span class="text-success">Receipt uploaded</span> <a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></td>
+          </tr>
+          <tr class="uploadedEvidence">
+            <td><span class="bold">Taxi Journey </span> - <a href="#" class="">remove journey</a><br>Redditch to Hewell</td>
+            <td>£8.50</td>
+            <td><span class="text-success">Receipt uploaded</span> <a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></td>
+          </tr>
+
+          <tr class="uploadedEvidence">
+            <td><span class="bold">Taxi Journey </span> - <a href="#" class="">remove journey</a><br>Hewell to Redditch</td>
+            <td>£10</td>
+            <td><span class="text-success">Receipt uploaded</span> <a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></td>
+          </tr>
+
+        </table>
+
+<!-- Delete above code on smaller screen and display code below -->
+
+        <table class="claimReceiptMobile">
+          <tr>
+            <td><span class="bold">Visitor</span></td>
+            <td>Joe Bloggs</td>
+          </tr>
+          <tr class="uploadedEvidence noBorder">
+            <td><span class="bold">Benefit information</span>
+            <td>Health Certificate (HC2)</td>
+          </tr>
+          <tr class="uploadedEvidence">
+            <td><span class="text-success">Evidence Uploaded</span></td>
+            <td><a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></li></td>
+          </tr>
+        </table>
+
+        <table class="claimReceiptMobile">
+          <tr>
+            <td><span class="bold">Prisoner name</span></td>
+            <td>Paul Bloggs</td>
+          </tr>
+
+          <tr>
+            <td><span class="bold">Prisoner number</span></td>
+            <td>0000001</td>
+          </tr>
+
+          <tr>
+            <td><span class="bold">Prison</span></td>
+            <td>Hewell</td>
+          </tr>
+
+          <tr>
+            <td><span class="bold">Date of visit</span></td>
+            <td>Friday 28 October</td>
           </tr>
 
           <tr class="uploadedEvidence noBorder">
-            <td><span class="bold">Train Journey </span> - <a href="#" class="">remove</a>
-            <br>Birmingham New Street to Redditch - Return </td>
-            <td>£14</td>
+            <td><span class="bold">Visit confirmation</span>
+            <td></td>
           </tr>
           <tr class="uploadedEvidence">
-            <td><span class="text-success">Receipt uploaded</span></td>
-            <td><a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></li></td>
-          </tr>
-          <tr class="uploadedEvidence noBorder">
-            <td><span class="bold">Taxi Journey </span> - <a href="#" class="">remove</a>
-            <br>Redditch to Hewell </td>
-            <td>£8.50</td>
-          </tr>
-          <tr class="uploadedEvidence">
-            <td><span class="text-success">Receipt uploaded</span></td>
-            <td><a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></li></td>
-          </tr>
-          <tr class="uploadedEvidence noBorder">
-            <td><span class="bold">Taxi Journey </span> - <a href="#" class="">remove</a>
-            <br>Hewell to Redditch </td>
-            <td>£8.50</td>
-          </tr>
-          <tr class="uploadedEvidence">
-            <td><span class="text-success">Receipt uploaded</span></td>
+            <td><span class="text-success">Visit confirmation uploaded</span></td>
             <td><a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></li></td>
           </tr>
 
         </table>
+
+        <br>
+
+        <form action="apply-10.html" method="get" class="form">
+
+          <table class="claimReceiptMobile">
+            <tr>
+              <th>Expense(s)</th>
+              <th>Amount</th>
+            </tr>
+
+            <tr class="uploadedEvidence noBorder">
+              <td><span class="bold">Train Journey </span> - <a href="#" class="">remove</a>
+              <br>Birmingham New Street to Redditch - Return </td>
+              <td>£14</td>
+            </tr>
+            <tr class="uploadedEvidence">
+              <td><span class="text-success">Receipt uploaded</span></td>
+              <td><a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></li></td>
+            </tr>
+            <tr class="uploadedEvidence noBorder">
+              <td><span class="bold">Taxi Journey </span> - <a href="#" class="">remove</a>
+              <br>Redditch to Hewell </td>
+              <td>£8.50</td>
+            </tr>
+            <tr class="uploadedEvidence">
+              <td><span class="text-success">Receipt uploaded</span></td>
+              <td><a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></li></td>
+            </tr>
+            <tr class="uploadedEvidence noBorder">
+              <td><span class="bold">Taxi Journey </span> - <a href="#" class="">remove</a>
+              <br>Hewell to Redditch </td>
+              <td>£8.50</td>
+            </tr>
+            <tr class="uploadedEvidence">
+              <td><span class="text-success">Receipt uploaded</span></td>
+              <td><a href="" class="link pull-right">view</a> <a href="" class="remove-link">remove</a></li></td>
+            </tr>
+
+          </table>
         <br>
         <a href="apply-99.html" class="link">Add another expense</a>
         <br>
