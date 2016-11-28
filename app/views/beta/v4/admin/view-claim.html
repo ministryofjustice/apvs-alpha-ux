@@ -119,12 +119,6 @@ APVS Admin
       <td>Benefit information</td>
       <td>Child Tax Credits<Br>
         <a href="" class="link">View page one</a>
-        <select class="form-control action-select" >
-          <option selected="">Select</option>
-          <option>Approved</option>
-          <option>Request new image</option>
-
-        </select>
       </td>
     </tr>
 
@@ -132,12 +126,6 @@ APVS Admin
       <td></td>
       <td>
         <a href="" class="link">View page two</a>
-        <select class="form-control action-select" >
-          <option selected="">Select</option>
-          <option>Approved</option>
-          <option>Request new image</option>
-
-        </select>
       </td>
     </tr>
 
@@ -145,17 +133,117 @@ APVS Admin
       <td></td>
       <td>
         <a href="" class="link">View page three</a>
-        <select class="form-control action-select" >
-          <option selected="">Select</option>
-          <option>Approved</option>
-          <option>Request new image</option>
-
-        </select>
       </td>
     </tr>
 
 
   </table>
+
+   <form action="" method="post" class="form">
+              <div class="form-group">
+                <fieldset>
+
+
+                  <label for="accept" class="block-label inline">
+                    <input type="radio" name="accept" value="" id="accept">
+
+                    <span>Approve benefit evidence</span>
+
+                  </label>
+
+
+
+                  <label for="request" class="block-label inline" data-target="request-info-input">
+                    <input type="radio" name="accept" value="" id="request">
+
+                    <span>Request information</span>
+
+                  </label>
+
+
+
+                  <label for="reject" class="block-label inline" data-target="reject-input">
+                    <input type="radio" name="accept" value="" id="accept">
+
+                    <span>Reject</span>
+
+                  </label>
+
+
+
+                  
+
+                    <div class="panel panel-border-narrow js-hidden" id="request-info-input">
+
+
+                    <div class="form-group">
+                      <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Page 1</span>
+
+                  </label>
+
+                  <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Page 2</span>
+
+                  </label>
+
+                  <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Page 2</span>
+
+                  </label>
+                    </div>
+
+                        <div class="form-group">
+                          <label class="form-label-bold" for="full-name">Additional information (optional)</label>
+                          <textarea type="text" class="form-control full" id="full-name"></textarea> 
+                        </div>
+
+                       
+                      </div>
+
+
+
+                      <div class="panel panel-border-narrow js-hidden" id="reject-input">
+
+                        <div class="form-group">
+                      <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Reason 1</span>
+
+                  </label>
+
+                  <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Reason 2</span>
+
+                  </label>
+                  <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Reason 3</span>
+
+                  </label>
+                    </div>
+
+
+                          <div class="form-group">
+                            <label class="form-label-bold" for="full-name">Additional information (optional)</label>
+                            <textarea type="text" class="form-control full" id="full-name"></textarea> 
+                          </div>
+
+                        </div>
+
+                      </fieldset>
+                    </div>
+                  </form>
 
 
 
@@ -188,17 +276,75 @@ APVS Admin
       <td>Eligible for visitation?</td>
       <td>
         <span class="text-warning">NOMIS check required</span>
-        <select class="form-control action-select" >
-          <option selected="">Select</option>
-          <option>Status 1</option>
-          <option>Status 2</option>
-          <option>Status 3</option>
-          <option>Status 4</option>
-        </select>
       </td>
     </tr>
 
   </table>
+
+  <form action="" method="post" class="form">
+              <div class="form-group">
+                <fieldset>
+
+
+                  <label for="accept" class="block-label inline">
+                    <input type="radio" name="accept" value="">
+
+                    <span>Approve</span>
+
+                  </label>
+
+
+
+                 
+
+
+
+                  <label for="reject" class="block-label inline" data-target="reject-cnom-input">
+                    <input type="radio" name="accept" value="" id="accept">
+
+                    <span>Reject</span>
+
+                  </label>
+
+
+
+                  
+
+                      <div class="panel panel-border-narrow js-hidden" id="reject-cnom-input">
+
+                        <div class="form-group">
+                      <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Reason 1</span>
+
+                  </label>
+
+                  <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Reason 2</span>
+
+                  </label>
+                  <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Reason 3</span>
+
+                  </label>
+                    </div>
+
+
+                          <div class="form-group">
+                            <label class="form-label-bold" for="full-name">Additional information (optional)</label>
+                            <textarea type="text" class="form-control full" id="full-name"></textarea> 
+                          </div>
+
+                        </div>
+
+                      </fieldset>
+                    </div>
+                  </form>
 
   <h1 class="table-heading">Visit</h1>
 
@@ -213,22 +359,95 @@ APVS Admin
         <td>
           <a href="">View confirmation</a>
         </td>
-        <td class="text-right">
-          <select class="form-control action-select" >
-            <option selected="">Select</option>
-            <option>Approved</option>
-            <option>Request new image</option>
-            <option>Reject</option>
-          </select>
-        </td>
+        
       </tr>
 
-
-
-
-
-
     </tbody></table>
+
+    <form action="" method="post" class="form">
+              <div class="form-group">
+                <fieldset>
+
+
+                  <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Approve visit confirmation</span>
+
+                  </label>
+
+
+
+                  <label for="request" class="block-label inline" data-target="request-visit-info-input">
+                    <input type="radio" name="accept" value="" id="request">
+
+                    <span>Request information</span>
+
+                  </label>
+
+
+
+                  <label for="reject" class="block-label inline" data-target="reject-visit-info-input">
+                    <input type="radio" name="accept" value="" id="accept">
+
+                    <span>Reject</span>
+
+                  </label>
+
+
+
+                  
+
+                    <div class="panel panel-border-narrow js-hidden" id="request-visit-info-input">
+
+
+                  
+
+                        <div class="form-group">
+                          <label class="form-label-bold" for="full-name">Additional information (optional)</label>
+                          <textarea type="text" class="form-control full" id="full-name"></textarea> 
+                        </div>
+
+                       
+                      </div>
+
+
+
+                      <div class="panel panel-border-narrow js-hidden" id="reject-visit-info-input">
+
+                        <div class="form-group">
+                      <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Reason 1</span>
+
+                  </label>
+
+                  <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Reason 2</span>
+
+                  </label>
+                  <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Reason 3</span>
+
+                  </label>
+                    </div>
+
+
+                          <div class="form-group">
+                            <label class="form-label-bold" for="full-name">Additional information (optional)</label>
+                            <textarea type="text" class="form-control full" id="full-name"></textarea> 
+                          </div>
+
+                        </div>
+
+                      </fieldset>
+                    </div>
+                  </form>
 
     <h1 class="table-heading">Claim</h1>
 
@@ -244,16 +463,7 @@ APVS Admin
             <td>
               <a href="">View receipt</a>
             </td>
-            <td class="text-right">
-              <select class="form-control action-select">
-                <option>Select</option>
-                <option>Approved</option>
-                <option>Approve different amount</option>
-                <option>Request information</option>
-                <option>Reject claim</option>
-
-              </select>
-            </td>
+            
           </tr>
           <tr >
             <td><span class="bold">Taxi Journey </span> 
@@ -264,16 +474,7 @@ APVS Admin
               <td>
                 <a href="">View receipt</a>
               </td>
-              <td class="text-right">
-                <select class="form-control action-select">
-                  <option>Select</option>
-                  <option>Approved</option>
-                  <option>Approve different amount</option>
-                  <option>Request information</option>
-                  <option>Reject claim</option>
-
-                </select>
-              </td>
+             
             </tr>
 
 
@@ -288,16 +489,7 @@ APVS Admin
                 <td>
                   <a href="">View receipt</a>
                 </td>
-                <td class="text-right">
-                  <select class="form-control action-select">
-                    <option>Select</option>
-                    <option>Approved</option>
-                    <option>Approve different amount</option>
-                    <option>Request information</option>
-                    <option>Reject claim</option>
-
-                  </select>
-                </td>
+                
               </tr>
 
               <tr>
@@ -308,24 +500,14 @@ APVS Admin
                 <td>
 
                 </td>
-                <td class="text-right">
-                  <select class="form-control action-select">
-                    <option>Select</option>
-                    <option>Approved</option>
-                    <option>Approve different amount</option>
-                    <option>Request information</option>
-                    <option>Reject claim</option>
-
-                  </select>
-                </td>
+                
               </tr>
 
               <tr class="no-border">
                 <td class="text-right"><h3 class="heading-small">Approved ammount</h3></td>
                 <td><h3 class="heading-small">£33</h3></td>
                 <td></td>
-                <td>
-                </td>
+               
               </tr>
 
 
