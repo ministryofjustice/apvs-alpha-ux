@@ -139,6 +139,8 @@ APVS Admin
 
   </table>
 
+<br>
+
    <form action="" method="post" class="form">
               <div class="form-group">
                 <fieldset>
@@ -147,18 +149,13 @@ APVS Admin
                   <label for="accept" class="block-label inline">
                     <input type="radio" name="accept" value="" id="accept">
 
-                    <span>Approve benefit evidence</span>
+                    <span>Approve</span>
 
                   </label>
 
 
 
-                  <label for="request" class="block-label inline" data-target="request-info-input">
-                    <input type="radio" name="accept" value="" id="request">
-
-                    <span>Request information</span>
-
-                  </label>
+                  
 
 
 
@@ -245,9 +242,15 @@ APVS Admin
                     </div>
                   </form>
 
+<br>
+<br>
+<br>
+<br>
+<hr>
 
 
   <h1 class="table-heading">Prisoner</h1>
+
 
   <table class="col-2">
     <tr>
@@ -280,6 +283,8 @@ APVS Admin
     </tr>
 
   </table>
+
+  <br>
 
   <form action="" method="post" class="form">
               <div class="form-group">
@@ -346,6 +351,12 @@ APVS Admin
                     </div>
                   </form>
 
+                  <br>
+<br>
+<br>
+<br>
+<hr>
+
   <h1 class="table-heading">Visit</h1>
 
   <table>
@@ -364,6 +375,8 @@ APVS Admin
 
     </tbody></table>
 
+    <br>
+
     <form action="" method="post" class="form">
               <div class="form-group">
                 <fieldset>
@@ -372,18 +385,13 @@ APVS Admin
                   <label class="block-label inline">
                     <input type="radio">
 
-                    <span>Approve visit confirmation</span>
+                    <span>Approve</span>
 
                   </label>
 
 
 
-                  <label for="request" class="block-label inline" data-target="request-visit-info-input">
-                    <input type="radio" name="accept" value="" id="request">
-
-                    <span>Request information</span>
-
-                  </label>
+                  
 
 
 
@@ -449,6 +457,12 @@ APVS Admin
                     </div>
                   </form>
 
+                  <br>
+<br>
+<br>
+<br>
+<hr>
+
     <h1 class="table-heading">Claim</h1>
 
     <table>
@@ -463,52 +477,160 @@ APVS Admin
             <td>
               <a href="">View receipt</a>
             </td>
+
+            <td>
+
+              <form action="" method="post" class="form">
+              <div class="form-group">
+                <fieldset>
+
+
+                  <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Approve</span>
+
+                  </label>
+
+
+
+                  
+
+
+
+                  <label for="reject" class="block-label inline" data-target="reject-claim-line">
+                    <input type="radio" name="accept" value="" id="accept">
+
+                    <span>Reject</span>
+
+                  </label>
+
+
+
+                  
+                  </form>
+            </td>
             
           </tr>
+
+        <tr class="no-border">
+            
+<td colspan="4">
+                    <div class="panel panel-border-narrow js-hidden" id="request-visit-info-input">
+
+
+                  
+
+                        <div class="form-group">
+                          <label class="form-label-bold" for="full-name">Additional information (optional)</label>
+                          <textarea type="text" class="form-control full" id="full-name"></textarea> 
+                        </div>
+
+                       
+                      </div>
+
+
+
+                      <div class="panel panel-border-narrow js-hidden" id="reject-claim-line">
+
+                        <div class="form-group">
+                      <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Reason 1</span>
+
+                  </label>
+
+                  <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Reason 2</span>
+
+                  </label>
+                  <label class="block-label inline">
+                    <input type="radio">
+
+                    <span>Reason 3</span>
+
+                  </label>
+                    
+
+                    </td>
+          </tr>
+
           <tr >
-            <td><span class="bold">Taxi Journey </span> 
-              <br>Redditch to Hewell</td>
-              <td>£8</td>
+          <td><span class="bold">Car Journey </span> 
+            <br>Birmingham New Street to Redditch - Return </td>
+            <td>£14</td>
 
 
-              <td>
-                <a href="">View receipt</a>
-              </td>
-             
-            </tr>
+            <td>
+              <a href="">View receipt</a>
+            </td>
+
+            <td>
+
+              <form action="" method="post" class="form">
+              <div class="form-group">
+                <fieldset>
+
+
+                  <label class="block-label inline" data-target="approve-car-mileage">
+                    <input type="radio" name="accept" value="" id="accept">
+
+                    <span>Approve</span>
+
+                  </label>
 
 
 
-
-            <tr>
-              <td><span class="bold">Taxi Journey </span> 
-                <br>Hewell to Birmingham New Street</td>
-                <td>£8.50</td>
+                  
 
 
-                <td>
-                  <a href="">View receipt</a>
-                </td>
-                
-              </tr>
 
-              <tr>
-                <td><span class="bold">Light refreshment </span> </td>
-                <td>£2.50</td>
+                  <label for="reject" class="block-label inline" data-target="reject-claim-line-2">
+                    <input type="radio" name="accept" value="" id="accept">
+
+                    <span>Reject</span>
+
+                  </label>
 
 
-                <td>
 
-                </td>
-                
-              </tr>
+                  
+                  </form>
+            </td>
+            
+          </tr>
 
-              <tr class="no-border">
-                <td class="text-right"><h3 class="heading-small">Approved ammount</h3></td>
-                <td><h3 class="heading-small">£33</h3></td>
-                <td></td>
-               
-              </tr>
+        <tr class="no-border">
+            
+<td colspan="4">
+                    
+
+
+
+                      <div class="panel panel-border-narrow js-hidden" id="approve-car-mileage">
+
+                        
+
+
+                          <div class="form-group">
+                            <label class="form-label-bold" for="full-name">Enter mileage</label>
+                            <input type="text" class="form-control" id="full-name"></input> 
+                          </div>
+
+                        </div>
+
+                      </fieldset>
+                    </div>
+
+                    </td>
+          </tr>
+       
+
+
+
 
 
 
