@@ -1059,4 +1059,86 @@ router.get('/beta/v4/returning.html', function (req, res) {
   }
 })
 
+// version BETA V5 start
+
+router.post('/beta/v5/apply-2', function (req, res) {
+  var relationship = req.body.relationship
+
+  if (relationship === 'Other') {
+    res.redirect('apply-3')
+  } else {
+    // close relative, partner or sole visitor
+    res.redirect('apply-3')
+  }
+})
+
+router.get('/beta/v5/apply-4', function (req, res) {
+  var benefit = req.query.benefit
+
+  res.render('beta/v5/apply-4', { 'benefit': benefit })
+})
+
+router.get('/beta/v5/apply-5', function (req, res) {
+  var benefit = req.query.benefit
+
+  if (benefit === '' | 'None of the above') {
+    res.redirect('el-no')
+  } else {
+    res.render('beta/v5/apply-5', { 'benefit': benefit })
+  }
+})
+
+
+router.post('/beta/v5/apply-1', function (req, res) {
+  var returningUser = req.body.returningUser
+
+  if (returningUser=== 'Yes') {
+    res.redirect('apply-1')
+  } else {
+    res.redirect('login')
+  }
+})
+
+router.post('/beta/v5/apply-10', function (req, res) {
+  var eligibilityNo = req.body.eligibilityNo
+
+  if (eligibilityNo=== 'Yes') {
+    res.redirect('apply-10')
+  } else {
+    res.redirect('apply-1')
+  }
+})
+
+// route to child journey adding
+
+router.get('/beta/v5/apply-99', function (req, res) {
+  var eligibilityChildren = req.query.eligibilityChildren
+
+  if (eligibilityChildren === 'true') {
+    res.redirect('/beta/v5/apply-99-child')
+  } else {
+    res.render('beta/v5/apply-99')
+  }
+})
+
+router.get('/beta/v5/apply-add-info-taxi.html', function (req, res) {
+  var childJourney = req.query.childJourney
+
+  if (childJourney === 'true') {
+    res.redirect('/beta/v5/apply-add-info-train-child.html')
+  } else {
+    res.render('beta/v5/apply-add-info-taxi.html')
+  }
+})
+
+router.get('/beta/v5/returning.html', function (req, res) {
+  var returningUser = req.query.returningUser
+
+  if (returningUser === 'no') {
+    res.redirect('/beta/v5/apply-1.html')
+  } else {
+    res.render('beta/v5/returning.html')
+  }
+})
+
 module.exports = router

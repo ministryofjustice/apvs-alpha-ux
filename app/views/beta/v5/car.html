@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_beta.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+      <li><a href="/beta/v5">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h2 class="heading-large">
+        About your car or Motorcycle journey
+      </h2>
+
+      <p>You will get 13p per mile for this kind of travel. The distance is calculated as the shortest route between your home and the prison’s visitor centre.</p>
+<p>You can also claim for any tolls or parking charges.</p>
+
+      <form action="apply-add-info-1.html" method="get" class="form">
+
+        <div class="form-group">
+          <label class="form-label-bold" for="full-name">From</label>
+
+          London
+        </div>
+
+
+        <div class="form-group">
+          <label class="form-label-bold" for="full-name">To</label>
+
+          Hewell
+        </div>
+
+
+
+
+          <fieldset>
+            <label for="other" class="block-label" data-target="other-question">
+              <input type="radio" name="relationship" value="Other" id="other">
+              Add toll charge
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="other-question">
+              <label for="other-relationship" class="form-label">
+                Cost
+              </label>
+              <input class="form-control" type="text" name="other-relationship" id="other-relationship">
+            </div>
+
+            <label for="other" class="block-label" data-target="other-question1">
+              <input type="radio" name="relationship" value="Other" id="other">
+              Add parking charge
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="other-question1">
+              <label for="other-relationship" class="form-label">
+                Cost
+              </label>
+              <input class="form-control" type="text" name="other-relationship" id="other-relationship">
+            </div>
+
+            
+
+          </fieldset>
+        
+
+
+
+
+
+
+
+
+
+          <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+        </form>
+
+
+      </div>
+    </div>
+<!-- <div class="column-third">
+
+<aside class="govuk-related-items" role="complementary">
+<h2 class="heading-medium" id="subsection-title">Subsection</h2>
+<nav role="navigation" aria-labelledby="subsection-title">
+<ul class="font-xsmall">
+<li><a href="#">Related link</a></li>
+<li><a href="#">Related link</a></li>
+<li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+</ul>
+</nav>
+</aside>
+
+</div>
+</div> -->
+
+</main>
+
+{% endblock %}
+
+
