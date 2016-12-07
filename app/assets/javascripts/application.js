@@ -170,6 +170,9 @@ $(document).ready(function() {
             $(".searchSection").slideUp("slow");
             $(".geography").slideUp("slow");
             $(".variousDates").slideUp("slow");
+            $(".newTab a").removeClass("active");
+            $(".searchResults").slideDown("slow");
+            $(".searchResults a").addClass("active");
 
             $(".refNumber a").show();
             $(".refNumber .advanced-download").slideDown("slow");
