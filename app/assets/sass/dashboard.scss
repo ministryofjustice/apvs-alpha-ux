@@ -53,65 +53,28 @@ span.adminLinks {
     }
 }
 
-//filters
-.filter {
-  select {
-    float: left;
-    margin-right: 10%;
+.filters {
+  margin-bottom: 100px;
+  .filter-day {
+    padding: 0px;
   }
-  .form-label {
-    font-size: 16px;
-  }
-
-  .filter-year {
-    position: relative;
-    bottom: 25px;
-    @include respond-to(handhelds) {
-      bottom: 0;
-      padding-top: 3em;
-    }
-  }
-
-  @media (min-width: 641px) {
-    select {
-      width: 32.5%;
-    }
+  .form-control {
+    width: 100%;
   }
 }
-// blocks
-
+.refresh {
+    font-size: 0.8em;
+    position: relative;
+    left: 57.4em;
+}
 .summaryBlocks {
+    // border-top: $summaryBlocks-border;
     @include blockTitle;
-    margin-top: 20px;
-    border-top: $summaryBlocks-border;
 
-    @include respond-to(handhelds) {
-      margin-top: 60px;
-      border-top: none;
-    }
-    @include respond-to(medium-screens) {
-      margin-top: 60px;
-    }
-
-    .block1,
-    .block2,
-    .block3 {
-        position: relative;
-        width: 32.25%;
-        float: left;
-        clear: none;
-        margin-right: 0;
-        @include respond-to(handhelds) {
-          border-top: $summaryBlocks-border;
-          width: 100%;
-          float: none;
-          margin-bottom: 20px;
-          margin-top: 20px;
-        }
-    }
-
-    h2 {
-        margin-top: 10px;
+    section {
+      margin-bottom: 5%;
+      margin-top: 5%;
+      // border-bottom: $summaryBlocks-border;
     }
 
     .block2 {
@@ -149,7 +112,11 @@ span.adminLinks {
             content: "\25B2";
         }
 
-        .decrease:after,
+        .decrease:after{
+          display: inline-block;
+          padding-right: 0.2em;
+          color: #bfc1c3;
+        }
         .increase:after {
             display: inline-block;
             padding-right: 0.2em;
@@ -158,39 +125,38 @@ span.adminLinks {
     }
 }
 // end of .summaryBlocks
-
-.charts {
-    margin-top: 240px;
-    @include respond-to(handhelds) {
-      margin-top: 20px;
-    }
-    @include respond-to(medium-screens) {
-      margin-top: 310px;
-    }
-
-    .chartSection {
-        @include blockTitle;
-        border-top: $summaryBlocks-border;
-        h2 {
-            margin-top: 24px;
-        }
-    }
-
-    .graph {
-        width: 100%;
-        min-height: 200px;
-        position: relative;
-        @include respond-to(handhelds) {
-          right: 14px;
-        }
-    }
-}
-// end of .charts
+//
+// .charts {
+//     margin-top: 240px;
+//     @include respond-to(handhelds) {
+//       margin-top: 20px;
+//     }
+//     @include respond-to(medium-screens) {
+//       margin-top: 310px;
+//     }
+//
+//     .chartSection {
+//         @include blockTitle;
+//         border-top: $summaryBlocks-border;
+//         h2 {
+//             margin-top: 24px;
+//         }
+//     }
+//
+//     .graph {
+//         width: 100%;
+//         min-height: 200px;
+//         position: relative;
+//         @include respond-to(handhelds) {
+//           right: 14px;
+//         }
+//     }
+// }
+// // end of .charts
 // Table
 .prisonVisitTable {
     @include blockTitle;
     margin-top: 20px;
-    border-top: $summaryBlocks-border;
 
     h2 {
         margin-top: 24px;
@@ -281,4 +247,5 @@ span.adminLinks {
 }
 .refNumber a {
   margin-right: 10px;
+  margin-bottom: 10px;
 }

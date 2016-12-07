@@ -179,8 +179,11 @@ $(document).ready(function() {
 
             $(".refNumber a").show();
             $(".refNumber .advanced-download").slideDown("slow");
-        } else {
 
+            for (var i = 0 in referenceNumbers) {
+                $("." + referenceNumbers[i]).show();
+                $(".searchResults span").text("8");
+            }
         }
     });
 
@@ -191,5 +194,106 @@ $(document).ready(function() {
         $("#submissionDate").datepicker();
         $("#approvalDate").datepicker();
         $("#rejectionDate").datepicker();
+
     });
+
+
+    var referenceNumbers = [];
+    $('table .ref').each(function() {
+        referenceNumbers.push($(this).html());
+    });
+
+    $(".refNumber .search").click(function() {
+        var searchInput = $('#input-refNumber').val();
+        for (var i = 0 in referenceNumbers) {
+            if (searchInput == referenceNumbers[i]) {
+                $("." + referenceNumbers[i]).show();
+                $(".newTab a").removeClass("active");
+                $(".searchResults").slideDown("slow");
+                $(".searchResults a").addClass("active");
+                $(".newTab").slideUp("slow");
+                $(".inProgressTab").slideUp("slow");
+                $(".updatedTab").slideUp("slow");
+                $(".searchResults span").text(1);
+            } else {
+              $("." + referenceNumbers[i]).hide();
+              $(".newTab a").removeClass("active");
+              $(".searchResults").slideDown("slow");
+              $(".searchResults a").addClass("active");
+              $(".newTab").slideUp("slow");
+              $(".inProgressTab").slideUp("slow");
+              $(".updatedTab").slideUp("slow");
+              $(".searchResults span").text(0);
+            }
+        }
+    });
+
+    $("#select-day")
+        .change(function() {
+            var selectedDay = "";
+            $("#select-day option:selected").each(function() {
+                selectedDay += $(this).text() + "";
+            });
+            if (selectedDay == "Today") {
+                $(".block1 .number").text("4");
+                $(".block2 .number").text("7");
+                $(".block3 .number").text("3");
+                $(".block4 .number").text("1");
+                $(".block5 .number").text("2");
+                $(".block6 .number").text("0");
+            } else if (selectedDay == "Yesterday") {
+                $(".block1 .number").text("12");
+                $(".block2 .number").text("7");
+                $(".block3 .number").text("3");
+                $(".block4 .number").text("4");
+                $(".block5 .number").text("5");
+                $(".block6 .number").text("0");
+            } else if (selectedDay == "Last week") {
+                $(".block1 .number").text("60");
+                $(".block2 .number").text("16");
+                $(".block3 .number").text("40");
+                $(".block4 .number").text("12");
+                $(".block5 .number").text("45");
+                $(".block6 .number").text("12");
+            } else if (selectedDay == "Last month") {
+                $(".block1 .number").text("120");
+                $(".block2 .number").text("33");
+                $(".block3 .number").text("88");
+                $(".block4 .number").text("23");
+                $(".block5 .number").text("80");
+                $(".block6 .number").text("20");
+            }
+        })
+        .change();
+
+    $("#select-month")
+        .change(function() {
+            var selectedMonth = "";
+            $("#select-month option:selected").each(function() {
+                selectedMonth += $(this).text() + "";
+            });
+            if (selectedMonth == "December") {
+                $(".block1 .number").text("120");
+                $(".block2 .number").text("33");
+                $(".block3 .number").text("88");
+                $(".block4 .number").text("23");
+                $(".block5 .number").text("80");
+                $(".block6 .number").text("20");
+            } else if (selectedMonth == "January") {
+                $(".block1 .number").text("123");
+                $(".block2 .number").text("30");
+                $(".block3 .number").text("70");
+                $(".block4 .number").text("70");
+                $(".block5 .number").text("78");
+                $(".block6 .number").text("21");
+            } else if (selectedMonth == "November") {
+                $(".block1 .number").text("140");
+                $(".block2 .number").text("46");
+                $(".block3 .number").text("90");
+                $(".block4 .number").text("18");
+                $(".block5 .number").text("70");
+                $(".block6 .number").text("16");
+            }
+        })
+        .change();
 });
