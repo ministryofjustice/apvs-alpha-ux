@@ -173,6 +173,9 @@ $(document).ready(function() {
             $(".newTab a").removeClass("active");
             $(".searchResults").slideDown("slow");
             $(".searchResults a").addClass("active");
+            $(".newTab").slideUp("slow");
+            $(".inProgressTab").slideUp("slow");
+            $(".updatedTab").slideUp("slow");
 
             $(".refNumber a").show();
             $(".refNumber .advanced-download").slideDown("slow");
