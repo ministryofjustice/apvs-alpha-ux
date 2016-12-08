@@ -54,12 +54,15 @@ span.adminLinks {
 }
 
 .filters {
-  margin-bottom: 100px;
+  margin-bottom: 4em;
   .filter-day {
     padding: 0px;
   }
   .form-control {
     width: 100%;
+  }
+  #select-day {
+    width: 95%;
   }
 }
 .refresh {
@@ -71,6 +74,10 @@ span.adminLinks {
     // border-top: $summaryBlocks-border;
     @include blockTitle;
 
+    .block1, .block2, .block3, .block4, .block5, .block6 {
+      padding-top: 1em;
+      border-top: 1px solid #bfc1c3;
+    }
     section {
       margin-bottom: 5%;
       margin-top: 5%;
@@ -124,43 +131,12 @@ span.adminLinks {
         }
     }
 }
-// end of .summaryBlocks
-//
-// .charts {
-//     margin-top: 240px;
-//     @include respond-to(handhelds) {
-//       margin-top: 20px;
-//     }
-//     @include respond-to(medium-screens) {
-//       margin-top: 310px;
-//     }
-//
-//     .chartSection {
-//         @include blockTitle;
-//         border-top: $summaryBlocks-border;
-//         h2 {
-//             margin-top: 24px;
-//         }
-//     }
-//
-//     .graph {
-//         width: 100%;
-//         min-height: 200px;
-//         position: relative;
-//         @include respond-to(handhelds) {
-//           right: 14px;
-//         }
-//     }
-// }
 // // end of .charts
 // Table
 .prisonVisitTable {
     @include blockTitle;
-    margin-top: 20px;
-
-    h2 {
-        margin-top: 24px;
-    }
+    padding-top: 1em;
+    border-top: 1px solid #bfc1c3;
 
     table {
         font-family: arial, sans-serif;

@@ -235,12 +235,12 @@ $(document).ready(function() {
                 selectedDay += $(this).text() + "";
             });
             if (selectedDay == "Today") {
-                $(".block1 .number").text("4");
-                $(".block2 .number").text("7");
-                $(".block3 .number").text("3");
-                $(".block4 .number").text("1");
-                $(".block5 .number").text("2");
-                $(".block6 .number").text("0");
+                $(".block1 .number").text(Math.floor((Math.random() * 10) + 1));
+                $(".block2 .number").text(Math.floor((Math.random() * 10) + 1));
+                $(".block3 .number").text(Math.floor((Math.random() * 10) + 1));
+                $(".block4 .number").text(Math.floor((Math.random() * 10) + 1));
+                $(".block5 .number").text(Math.floor((Math.random() * 10) + 1));
+                $(".block6 .number").text(Math.floor((Math.random() * 3)));
             } else if (selectedDay == "Yesterday") {
                 $(".block1 .number").text("12");
                 $(".block2 .number").text("7");
