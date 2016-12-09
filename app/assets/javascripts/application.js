@@ -178,7 +178,7 @@ $(document).ready(function() {
             $(".updatedTab").slideUp("slow");
 
             $(".refNumber a").show();
-            $(".refNumber .advanced-download").slideDown("slow");
+            $(".advanced-download").slideDown("slow");
         } else {
 
         }
