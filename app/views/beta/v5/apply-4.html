@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-  {% include "includes/phase_banner_beta.html" %}
+  {% include "includes/phase_banner.html" %}
 
   <div class="breadcrumbs">
     <ol>
@@ -30,7 +30,7 @@
          <div class="form-group">
           <fieldset>
 
-            <label class="block-label" data-target="example_help">
+            <label class="block-label selection-button-radio" data-target="example_help">
               <input type="radio" name="someone-else-claims" value="Yes" id="someone-else-claims-yes">
               Yes
             </label>
@@ -46,10 +46,10 @@
                  National Insurance number
               </label>
               <input class="form-control" type="text" id="nationality_other_countries">
-            
+
             </div>
 
-            <label class="block-label">
+            <label class="block-label selection-button-radio">
               <input type="radio" name="someone-else-claims" value="No" id="someone-else-claims-no">
               No
             </label>
@@ -57,11 +57,11 @@
             <input type="hidden" name="benefit" value="{{benefit}}">
 
           </fieldset>
-            
+
         </div>
 
 
-        <div class="form-group"><input type="submit" value="Continue" class="button"></div> 
+        <div class="form-group"><input type="submit" value="Continue" class="button"></div>
 </form>
 
       </div>
@@ -84,5 +84,3 @@
   </main>
 
   {% endblock %}
-
-

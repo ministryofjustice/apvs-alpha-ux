@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-  {% include "includes/phase_banner_beta.html" %}
+  {% include "includes/phase_banner.html" %}
 
   <div class="breadcrumbs">
     <ol>
@@ -24,18 +24,18 @@
        About your plane journey
      </h2>
 
-     
+
      <p>You may get help paying for air travel if it is cheaper than other public transport options.</p>
- 
+
 <p>Claims that include air travel require approval before you travel, by the Assisted Prison Visits Unit.</p>
-    
+
 
      <form action="apply-add-info-1.html" method="get" class="form">
-     
+
 
       <div class="form-group">
       <label class="form-label-bold" for="full-name">From</label>
-        
+
         <input type="text" class="form-control" id="full-name">
         <p class="form-hint">For example, Heathrow</p>
       </div>
@@ -43,23 +43,23 @@
 
       <div class="form-group">
       <label class="form-label-bold" for="full-name">To</label>
-        
+
         <input type="text" class="form-control" id="full-name">
         <p class="form-hint">For example, Edinburgh</p>
       </div>
 
       <div class="form-group">
-      
+
       <label class="form-label-bold" for="full-name">Is this a return journey?</label>
-        
+
         <div class="form-group">
           <fieldset>
 
-            <label for="Yes" class="block-label inline">
+            <label for="Yes" class="block-label selection-button-radio inline">
               <input type="radio" name="eligibilityNo" value="Yes" id="Yes">
               Yes
             </label>
-            <label for="No" class="block-label inline">
+            <label for="No" class="block-label selection-button-radio inline">
               <input type="radio" name="eligibilityNo" value="No" id="No">
               No
             </label>
@@ -68,19 +68,19 @@
           </div>
 <div class="form-group">
       <label class="form-label-bold" for="full-name">Cost</label>
-        
+
         <input type="text" class="form-control" id="full-name">
         <p class="form-hint">For example, £100</p>
       </div>
 
 
-   
- 
+
+
         <div class="form-group">
           <fieldset>
 
 
-            <label for="taxi-journey" class="block-label">
+            <label for="taxi-journey" class="block-label selection-button-radio">
               <input type="checkbox" name="eligibilityNo" value="taxi-journey" id="taxi-journey">
               Add another plane journey
             </label>
@@ -89,18 +89,18 @@
           </div>
 
 
-    
-
-
-
-
-   
 
 
 
 
 
-      <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+
+
+
+
+
+
+      <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
     </form>
 
 
@@ -125,5 +125,3 @@
   </main>
 
   {% endblock %}
-
-

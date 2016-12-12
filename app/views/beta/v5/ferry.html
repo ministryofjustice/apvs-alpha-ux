@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-  {% include "includes/phase_banner_beta.html" %}
+  {% include "includes/phase_banner.html" %}
 
   <div class="breadcrumbs">
     <ol>
@@ -27,11 +27,11 @@
     <p>You may be able to get help with the cost of a ferry ticket if your journey involved a sea crossing - for example from the Isle of Wight to the mainland.</p>
 
      <form action="apply-add-info-1.html" method="get" class="form">
-     
+
 
       <div class="form-group">
       <label class="form-label-bold" for="full-name">From</label>
-        
+
         <input type="text" class="form-control" id="full-name">
         <p class="form-hint">For example, Portsmouth</p>
       </div>
@@ -39,23 +39,23 @@
 
       <div class="form-group">
       <label class="form-label-bold" for="full-name">To</label>
-        
+
         <input type="text" class="form-control" id="full-name">
         <p class="form-hint">For example, Isle of Wight</p>
       </div>
 
       <div class="form-group">
-      
+
       <label class="form-label-bold" for="full-name">Is this a return journey?</label>
-        
+
         <div class="form-group">
           <fieldset>
 
-            <label for="Yes" class="block-label inline">
+            <label for="Yes" class="block-label selection-button-radio inline">
               <input type="radio" name="eligibilityNo" value="Yes" id="Yes">
               Yes
             </label>
-            <label for="No" class="block-label inline">
+            <label for="No" class="block-label selection-button-radio inline">
               <input type="radio" name="eligibilityNo" value="No" id="No">
               No
             </label>
@@ -64,15 +64,15 @@
           </div>
 
           <label class="form-label-bold" for="full-name">Ticket type</label>
-        
+
         <div class="form-group">
           <fieldset>
 
-            <label for="Yes" class="block-label">
+            <label for="Yes" class="block-label selection-button-radio">
               <input type="radio" name="eligibilityNo" value="Yes" id="Yes">
               Foot passenger
             </label>
-            <label for="No" class="block-label">
+            <label for="No" class="block-label selection-button-radio">
               <input type="radio" name="eligibilityNo" value="No" id="No">
               Car
             </label>
@@ -82,7 +82,7 @@
 
 <div class="form-group">
       <label class="form-label-bold" for="full-name">Cost</label>
-        
+
         <input type="text" class="form-control" id="full-name">
         <p class="form-hint">For example, £100</p>
       </div>
@@ -90,18 +90,18 @@
 
 
 
-    
-
-
-
-
-   
 
 
 
 
 
-      <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+
+
+
+
+
+
+      <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
     </form>
 
 
@@ -126,5 +126,3 @@
   </main>
 
   {% endblock %}
-
-

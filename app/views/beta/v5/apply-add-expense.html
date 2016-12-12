@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-  {% include "includes/phase_banner_beta.html" %}
+  {% include "includes/phase_banner.html" %}
 
   <div class="breadcrumbs">
     <ol>
@@ -24,29 +24,29 @@
        Request additional expenses
      </h2>
 
-    
+
 
      <form action="apply-basket.html" method="get" class="form">
 
 <p>Based on the duration of your journey you may be able to claim assistance for additional expenses</p>
 <div class="form-group">
 
-<label class="block-label">
+<label class="block-label selection-button-radio">
               <input type="checkbox" name="category">
               Light refreshment
-              
+
             </label>
-            <label class="block-label">
+            <label class="block-label selection-button-radio">
               <input type="checkbox" name="category">
               Accommodation
-              
+
             </label>
 
 </div>
-  
 
 
-      <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+
+      <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
     </form>
 
 
@@ -71,5 +71,3 @@
   </main>
 
   {% endblock %}
-
-

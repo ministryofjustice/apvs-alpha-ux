@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-  {% include "includes/phase_banner_beta.html" %}
+  {% include "includes/phase_banner.html" %}
 
   <div class="breadcrumbs">
     <ol>
@@ -46,7 +46,7 @@
 
 
           <fieldset>
-            <label for="other" class="block-label" data-target="other-question">
+            <label for="other" class="block-label selection-button-radio" data-target="other-question">
               <input type="radio" name="relationship" value="Other" id="other">
               Add toll charge
             </label>
@@ -58,7 +58,7 @@
               <input class="form-control" type="text" name="other-relationship" id="other-relationship">
             </div>
 
-            <label for="other" class="block-label" data-target="other-question1">
+            <label for="other" class="block-label selection-button-radio" data-target="other-question1">
               <input type="radio" name="relationship" value="Other" id="other">
               Add parking charge
             </label>
@@ -70,10 +70,9 @@
               <input class="form-control" type="text" name="other-relationship" id="other-relationship">
             </div>
 
-            
+
 
           </fieldset>
-        
 
 
 
@@ -83,7 +82,8 @@
 
 
 
-          <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+
+          <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
         </form>
 
 
@@ -108,5 +108,3 @@
 </main>
 
 {% endblock %}
-
-
