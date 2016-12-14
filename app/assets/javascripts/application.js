@@ -144,7 +144,7 @@ $(document).ready(function() {
         source: availableTags
     });
 
-    $(".advanced-search").click(function() {
+    $(".link.advanced-search").click(function() {
         if ($(".prison").is(":hidden")) {
             $(".nameAndNI").slideDown("slow");
             $(".prison").slideDown("slow");
@@ -159,7 +159,7 @@ $(document).ready(function() {
         }
     });
 
-    $(".advanced-more").click(function() {
+    $(".link.advanced-more").click(function() {
         if ($(".geography").is(":hidden")) {
             $(".geography").slideDown("slow");
             $(".variousDates").slideDown("slow");
@@ -169,7 +169,7 @@ $(document).ready(function() {
         }
     });
 
-    $(".search").click(function() {
+    $(".button.search").click(function() {
         if ($(".prison").is(":visible")) {
             $(".nameAndNI").slideUp("slow");
             $(".prison").slideUp("slow");
