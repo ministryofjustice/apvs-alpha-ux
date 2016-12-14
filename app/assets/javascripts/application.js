@@ -179,6 +179,8 @@ $(document).ready(function() {
 
             $(".refNumber a").show();
             $(".refNumber .advanced-download").slideDown("slow");
+            $(".advanced-download").slideDown("slow");
+        } else {
 
             for (var i = 0 in referenceNumbers) {
                 $("." + referenceNumbers[i]).show();
