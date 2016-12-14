@@ -111,6 +111,14 @@ $(document).ready(function() {
     toggleContent.showHideRadioToggledContent()
     toggleContent.showHideCheckboxToggledContent()
 
+    $(".block-label").find("input[type=checkbox]").each(function(){
+      $(".block-label").addClass("selection-button-checkbox");
+    });
+
+    $(".block-label").find("input[type=radio]").each(function(){
+      $(".block-label").addClass("selection-button-radio");
+    });
+
     var availableTags = [
         "Ashfield",
         "Altcourse",
