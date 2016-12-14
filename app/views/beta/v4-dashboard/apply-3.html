@@ -1,0 +1,111 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner_beta.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+<li><a href="/beta/v4">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+        <h2 class="heading-large">
+         Do you claim or receive any of the following?
+        </h2>
+
+<p>Please select from the following options:</p>
+
+<form action="apply-6" method="get" class="form">
+        <div class="form-group">
+          <fieldset>
+
+            <label for="Income Support" class="block-label">
+              <input type="radio" name="benefit" value="Income Support" id="Income Support">
+              Income Support
+            </label>
+
+            <label for="Jobseeker’s Allowance (Income based)" class="block-label">
+              <input type="radio" name="benefit" value="Jobseeker’s Allowance (Income based)" id="Jobseeker’s Allowance (Income based)">
+              Jobseeker’s Allowance (Income based)
+            </label>
+
+            <label for="Employment and Support Allowance (Income related)" class="block-label">
+              <input type="radio" name="benefit" value="Employment and Support Allowance (Income related)" id="Employment and Support Allowance (Income related)">
+              Employment and Support Allowance (Income related)
+            </label>
+
+            <label for="Universal Credit (and you earn less than £1,250 a month)" class="block-label">
+              <input type="radio" name="benefit" value="Universal Credit (and you earn less than £1,250 a month)" id="Universal Credit (and you earn less than £1,250 a month)">
+              Universal Credit (and you earn less than £1,250 a month)
+            </label>
+
+            <label for="Working Tax credits or Child tax credit with disability" class="block-label">
+              <input type="radio" name="benefit" value="Working Tax credits or Child tax credit with disability" id="Working Tax credits or Child tax credit with disability">
+              Working Tax credits with disability or Child tax credit (and you earn less than £17,474 a year)
+            </label>
+
+            <label for="Pension Credit" class="block-label">
+              <input type="radio" name="benefit" value="Pension Credit" id="Pension Credit">
+              Pension Credit
+            </label>
+
+            <label for="Health Certificate (HC2 or HC3)" class="block-label">
+              <input type="radio" name="benefit" value="Health Certificate (HC2 or HC3)" id="Health Certificate (HC2 or HC3)">
+              Health Certificate (HC2)
+            </label>
+
+            <label for="Health Certificate (HC2 or HC3)" class="block-label">
+              <input type="radio" name="benefit" value="Health Certificate (HC2 or HC3)" id="Health Certificate (HC2 or HC3)">
+              Health Certificate (HC3)
+            </label>
+
+            <label for="NHS Tax Credit Exemption Certificate" class="block-label">
+              <input type="radio" name="benefit" value="NHS Tax Credit Exemption Certificate" id="NHS Tax Credit Exemption Certificate">
+              NHS Tax Credit Exemption Certificate
+            </label>
+
+            <label for="None of the above" class="block-label">
+              <input type="radio" name="benefit" value="None of the above" id="None of the above">
+              None of the above
+            </label>
+
+          </fieldset>
+          </div>
+
+        <div class="form-group"><input type="submit" value="Continue" class="button"></div> 
+</form>
+
+      </div>
+      <!-- <div class="column-third">
+
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="#">Related link</a></li>
+              <li><a href="#">Related link</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div> -->
+
+  </main>
+
+  {% endblock %}
+
+
