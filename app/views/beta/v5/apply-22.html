@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-  {% include "includes/phase_banner_beta.html" %}
+  {% include "includes/phase_banner.html" %}
 
   <div class="breadcrumbs">
     <ol>
@@ -30,17 +30,17 @@
 
  <fieldset>
 
-            <label class="block-label">
+            <label class="block-label selection-button-radio">
               <input type="radio" name="help" value="Wales" id="partner">
               Yes, I have a medical reason
             </label>
 
-            <label class="block-label">
+            <label class="block-label selection-button-radio">
               <input type="radio" name="help" value="Wales" id="partner">
               Yes, I'm 75 or older
             </label>
 
-            <label class="block-label">
+            <label class="block-label selection-button-radio">
               <input type="radio" name="help" value="Wales" id="partner">
               No
             </label>
@@ -48,11 +48,11 @@
 
 
           </fieldset>
-            
+
         </div>
 
 
-        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
 </form>
 
       </div>
@@ -75,5 +75,3 @@
   </main>
 
   {% endblock %}
-
-

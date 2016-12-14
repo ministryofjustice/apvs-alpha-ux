@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-  {% include "includes/phase_banner_beta.html" %}
+  {% include "includes/phase_banner.html" %}
 
   <div class="breadcrumbs">
     <ol>
@@ -24,7 +24,7 @@
          Your journey information
         </h2>
 
-      
+
 
 <form action="apply-99.html" method="get" class="form">
 
@@ -55,19 +55,19 @@
       </fieldset>
     </div>
 
-   
-      
+
+
       <label class="form-label-bold" for="full-name">Did you use an escort for this journey?</label>
       <p class="form-hint">An escort is someone that helped you get to the prison but was not there to visit the prisoner</p>
-        
+
         <div class="form-group">
           <fieldset>
 
-            <label for="Yes" class="block-label inline">
+            <label for="Yes" class="block-label selection-button-radio inline">
               <input type="radio" name="eligibilityNo" value="Yes" id="Yes">
               Yes
             </label>
-            <label for="No" class="block-label inline">
+            <label for="No" class="block-label selection-button-radio inline">
               <input type="radio" name="eligibilityNo" value="No" id="No">
               No
             </label>
@@ -77,15 +77,15 @@
 
           <label class="form-label-bold" for="full-name">Did you bring any children on this visit?</label>
       <p class="form-hint"></p>
-        
+
         <div class="form-group">
           <fieldset>
 
-            <label for="Yes1" class="block-label inline">
+            <label for="Yes1" class="block-label selection-button-radio inline">
               <input type="radio" name="eligibilityNoo" value="Yes1" id="Yes1">
               Yes
             </label>
-            <label for="No1" class="block-label inline">
+            <label for="No1" class="block-label selection-button-radio inline">
               <input type="radio" name="eligibilityNoo" value="No1" id="No1">
               No
             </label>
@@ -95,9 +95,9 @@
 
 
 
-     
 
-        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
 </form>
 
 
@@ -122,5 +122,3 @@
   </main>
 
   {% endblock %}
-
-

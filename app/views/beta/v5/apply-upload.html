@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-  {% include "includes/phase_banner_beta.html" %}
+  {% include "includes/phase_banner.html" %}
 
   <div class="breadcrumbs">
     <ol>
@@ -43,7 +43,7 @@
 
             <ul class="list list-number">
               <li>Photograph or capture your receipt using a camera, mobile phone, scanner or other device</li>
-              <li>Transfer the image to your computer, or attach your camera to your computer</li> 
+              <li>Transfer the image to your computer, or attach your camera to your computer</li>
               <li>Click “Choose File”</li>
               <li>Locate and select the file</li>
               <li>Click “Continue"</li>
@@ -60,7 +60,7 @@
 <br>
     <h4 class="heading-small">Cannot Upload receipt now?</h4>
     <p>Your application will not be processed until we receive your receipt. </p>
-<label class="block-label">
+<label class="block-label selection-button-radio">
               <input type="radio" name="escort" value="Yes" id="escort-yes">
               <span class="heading-small">Upload later</span>
               <br>
@@ -68,7 +68,7 @@
 
 
             </label>
-            <label class="block-label">
+            <label class="block-label selection-button-radio">
               <input type="radio" name="escort" value="Yes" id="escort-yes">
               <span class="heading-small">Send by post</span>
               <br>
@@ -77,14 +77,14 @@
 
             </label>
 
-         
+
 
   </div>
 
   <form action="apply-basket-receipt.html" method="get" class="form">
 
   <div class="form-group"><input type="submit" name="commit" value="Continue" class="button">
-  <button class="back-button">Back</button></div> 
+  <button class="back-button">Back</button></div>
 
   </form>
   </div>
@@ -109,5 +109,3 @@
   </main>
 
   {% endblock %}
-
-

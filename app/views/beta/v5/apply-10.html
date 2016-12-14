@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-  {% include "includes/phase_banner_beta.html" %}
+  {% include "includes/phase_banner.html" %}
 
   <div class="breadcrumbs">
     <ol>
@@ -27,7 +27,7 @@
 
 
 
-        
+
 
         <h3 class="heading-small">Bank Details</h3>
         <p>We don’t store this information. You will need to enter this for each claim you make</p>
@@ -42,9 +42,9 @@
       <input type="text" class="form-control" id="full-name">
     </div>
 
-            
+
 <div class="form-group">
-            <label class="block-label">
+            <label class="block-label selection-button-radio">
               <input type="radio" name="help" value="Wales" id="partner">
               I don't have a bank account
             </label>
@@ -52,10 +52,10 @@
 </div>
 
           </fieldset>
-            
-      
 
-        <div class="form-group"><input type="submit" name="commit" value="Submit Application" class="button"></div> 
+
+
+        <div class="form-group"><input type="submit" name="commit" value="Submit Application" class="button"></div>
 </form>
 
       </div>
@@ -78,5 +78,3 @@
   </main>
 
   {% endblock %}
-
-

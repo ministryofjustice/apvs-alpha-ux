@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-  {% include "includes/phase_banner_beta.html" %}
+  {% include "includes/phase_banner.html" %}
 
   <div class="breadcrumbs">
     <ol>
@@ -17,7 +17,7 @@
     </ol>
   </div>
 
- 
+
 
     <h2 class="heading-large">
         Your claim details
@@ -57,7 +57,7 @@
 <h2 class="heading-medium">Your visit</h2>
 
       <table class="col-2">
-        
+
 
         <tr>
           <td>Prisoner name</td>
@@ -85,7 +85,7 @@
         </tr>
 
       </table>
-    
+
 
       <br>
 
@@ -99,28 +99,31 @@
           </tr>
 
           <tr>
-            <td><span class="bold">Train Journey </span> 
+            <td><span class="bold">Train Journey </span>
             <br>Birmingham New Street to Redditch - Return </td>
             <td>£14</td>
 
-            
+
             <td><span class="text-success">Receipt uploaded</span> </td>
           </tr>
           <tr>
             <td><span class="bold">Taxi Journey </span> <br>Redditch to Hewell</td>
             <td>£8.50</td>
-            
+
+            <td><span class="text-warning">Reciept required</span> <a href="" class="button grey pull-right">Add</a></td>
+          
             <td><span class="text-success">Receipt uploaded</span></td>
+
           </tr>
 
           <tr>
             <td><span class="bold">Taxi Journey </span> <br>Hewell to Redditch</td>
             <td>£10</td>
-            
+
             <td><span class="text-success">Receipt uploaded</span> </td>
           </tr>
 
-         
+
 
 
 
@@ -130,16 +133,23 @@
 
         <h1 class="heading-medium">Additional information</h1>
       <ul class="claim-dialog-public">
-          
+
 
           <li class="caseworker">
             <h2>Caseworker</h2>
+
+            <p>Please provide a higher quality image of your taxi journey, Redditch to Hewell reciept.</p>
             
             <p>There was an error with your bank information. Please enter your account details</p>
             <p class="time">24/10/16 - 14:20</p>
           </li>
 
           <br>
+
+        </ul>
+
+        <a href="view-claim-add-message.html" class="button grey">Send a message to your caseworker</a>
+
 
           <div class="form-group">
       <label class="form-label-bold" for="full-name">Account Number</label>
@@ -163,5 +173,3 @@
   </main>
 
   {% endblock %}
-
-

@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-  {% include "includes/phase_banner_beta.html" %}
+  {% include "includes/phase_banner.html" %}
 
   <div class="breadcrumbs">
     <ol>
@@ -30,12 +30,12 @@
         <div class="form-group">
           <fieldset>
 
-            <label for="Yes" class="block-label">
+            <label for="Yes" class="block-label selection-button-radio">
               <input type="radio" name="age" value="Yes" id="Yes">
               Yes
             </label>
 
-            <label for="No" class="block-label">
+            <label for="No" class="block-label selection-button-radio">
               <input type="radio" name="age" value="No" id="No">
               No
             </label>
@@ -45,7 +45,7 @@
 
 
 
-        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
 </form>
 
       </div>
@@ -68,5 +68,3 @@
   </main>
 
   {% endblock %}
-
-

@@ -8,7 +8,7 @@
 
 <main id="content" role="main">
 
-  {% include "includes/phase_banner_beta.html" %}
+  {% include "includes/phase_banner.html" %}
 
   <div class="breadcrumbs">
     <ol>
@@ -33,14 +33,14 @@
          <fieldset>
 
 
-            <label for="close-relative" class="block-label">
+            <label for="close-relative" class="block-label selection-button-radio">
               <input type="radio" name="relationship" value="Close Relative" id="close-relative">
-              
+
               Yes
 
             </label>
 
-           
+
 
           </fieldset>
 
@@ -50,7 +50,7 @@
 
 
 
-            <label class="block-label">
+            <label class="block-label selection-button-radio">
               <input type="radio" name="help" value="Wales" id="partner">
               No - it's in the future
             </label>
@@ -60,11 +60,11 @@
           </fieldset>
 
 
-            
+
         </div>
 
 
-        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div> 
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
 </form>
 
 
@@ -90,5 +90,3 @@
   </main>
 
   {% endblock %}
-
-
