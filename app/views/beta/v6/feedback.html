@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+
+{% block content %}
+
+
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+    </ol>
+  </div>
+
+  <h1 class="heading-xlarge heading-with-lede">Ask for technical help</h1>
+
+<p>Enter your name, telephone number and a brief description of what you need help with.</p>
+
+<p>We’ll only use your details to call you back. Don’t include any personal information, for example address or date of birth.</p>
+
+  <fieldset>
+    <div class="form-group">
+      <label class="form-label" for="help_request_name">Name</label>
+      <span class="error-message" id="name"></span>
+      <input class="form-control" type="text" name="help_request[name]" id="help_request_name">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="help_request_phone">Telephone number</label>
+      <span class="error-message" id="phone"></span>
+      <input class="form-control" type="text" name="help_request[phone]" id="help_request_phone">
+    </div>
+    <div class="form-group">
+      <label class="form-label" for="help_request_description">Describe what you'd like to talk about</label>
+      <span class="error-message" id="description"></span>
+      <textarea class="form-control" rows="6" name="help_request[description]" id="help_request_description"></textarea>
+    </div>
+    <div class="form-group">
+      <input type="submit" name="commit" value="Continue" class="button">
+    </div>
+  </fieldset>
+
+</main>
+
+{% endblock %}
