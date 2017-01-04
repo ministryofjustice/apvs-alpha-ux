@@ -1,161 +1,127 @@
 <div class="admin">
-  {% extends "layout.html" %}
+    {% extends "layout.html" %}
 
-  {% block page_title %}
-  APVS Admin
-  {% endblock %}
+    {% block page_title %}
+        APVS Admin
+    {% endblock %}
 
-  {% block content %}
+    {% block content %}
 
+        <main id="content" role="main">
 
-  <main id="content" role="main">
+            {% include "includes/phase_banner_beta.html" %}
 
-    {% include "includes/phase_banner_beta.html" %}
+            <ul id="sub-nav">
 
-    <ul id="sub-nav">
+                <li>
+                    <a href="index" class="active">Dashboard</a>
+                </li>
+                <li>
+                    <a href="claims.html">Claims</a>
+                </li>
+            </ul>
 
-      <li><a href="index" class="active">Dashboard</a></li>
-      <li>
-        <a href="claims.html">Claims</a>
-<!-- <ul>
-<li><a href="#">Link</a></li>
-<li><a href="#">Link</a></li>
-</ul> -->
-</li>
+            <div class="gird-row filters">
+                <div class="column-one-third filter-day">
+                    <div>
+                        <label class="form-label" for="select-day">Filter by</label>
+                        <select class="form-control" id="select-day">
+                            <option selected>Today</option>
+                            <option>Yesterday</option>
+                            <option>Last week</option>
+                            <option>Last month</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="column-one-third filter-month">
+                        <label class="form-label" for="select-month">Filter by month</label>
+                        <select class="form-control" id="select-month">
+                            <option>January</option>
+                            <option>Febuary</option>
+                            <option>March</option>
+                            <option>Apr</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option selected>December</option>
+                        </select>
+                </div>
+                <div class="column-one-third">
+                  <br><br><br><br>
+                </div>
+            </div>
 
-</ul>
+            <div class="grid-row summaryBlocks">
+                <div class="column-one-third">
+                    <section class="block1">
+                        <h2>
+                                Pending claims
+                        </h2>
+                        <div class="visualisation">
+                            <span class="number">8</span>
+                        </div>
+                    </section>
+                </div>
+                <div class="column-one-third">
+                    <section class="block2">
+                        <h2>
+                                In - progress claims
+                        </h2>
+                        <div class="visualisation">
+                            <span class="number">3</span>
+                        </div>
+                    </section>
+                </div>
+                <div class="column-one-third">
+                    <section class="block3">
+                        <h2>
+                                Paid claims
+                        </h2>
+                        <div class="visualisation">
+                            <span class="number">2</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
 
-<div class="filter">
-  <div class="filter-month">
-    <label class="form-label" for="select-month">Select Month</label>
-    <select class="form-control" id="select-month">
-      <option>January</option>
-      <option>Febuary</option>
-      <option>March</option>
-      <option>April</option>
-      <option>May</option>
-      <option>June</option>
-      <option>July</option>
-      <option>August</option>
-      <option>September</option>
-      <option selected>October</option>
-      <option>November</option>
-      <option>December</option>
-    </select>
-  </div>
-  <div class="filter-year">
-    <label class="form-label" for="select-year">Select Year</label>
-    <select class="form-control" id="select-year">
-      <option>2014</option>
-      <option>2015</option>
-      <option selected>2016</option>
-      <option>2017</option>
-    </select>
-  </div>
-</div>
+            <div class="grid-row summaryBlocks">
+                <div class="column-one-third">
+                    <section class="block4">
+                        <h2>
+                                Auto - approved claims
+                        </h2>
+                        <div class="visualisation">
+                            <span class="number">4</span>
+                        </div>
+                    </section>
+                </div>
+                <div class="column-one-third">
+                    <section class="block5">
+                        <h2>
+                                Manual - approved claims
+                        </h2>
+                        <div class="visualisation">
+                            <span class="number">5</span>
+                        </div>
+                    </section>
+                </div>
+                <div class="column-one-third">
+                    <section class="block6">
+                        <h2>
+                                Rejected claims
+                        </h2>
+                        <div class="visualisation">
+                            <span class="number">1</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
 
-<!-- Data Summary Sections -->
-<div class="summaryBlocks">
-  <section class="block1">
-    <h2> <a href=""> Pending claims </a></h2>
-    <div class="visualisation">
-      <span class="number">125</span>
-      <p class="period">Oct 2016 to Nov 2016</p>
-    </div>
-    <div class="delta">
-      <div class="single-stat-delta">
-        <span class="change impact-number decrease"> −1.88% </span>
-        Sept 2016 to Oct 2016
-      </div>
-    </div>
-  </section>
-  <section class="block2">
-    <h2> <a href=""> In-progress claims </a></h2>
-    <div class="visualisation">
-      <span class="number">30</span>
-      <p class="period">Oct 2016 to Nov 2016</p>
-    </div>
-    <div class="delta">
-      <div class="single-stat-delta">
-        <span class="change impact-number increase"> +1.88% </span>
-        Sept 2016 to Oct 2016
-      </div>
-    </div>
-  </section>
-  <section class="block3">
-    <h2> <a href=""> Closed claims </a></h2>
-    <div class="visualisation">
-      <span class="number">95</span>
-      <p class="period">Oct 2016 to Nov 2016</p>
-    </div>
-    <div class="delta">
-      <div class="single-stat-delta">
-        <span class="change impact-number decrease"> −1.88% </span>
-        Sept 2016 to Oct 2016
-      </div>
-    </div>
-  </section>
-</div>
-
-<div class="charts">
-  <section class="chartSection">
-    <h2> <a href=""> Auto VS manually approved claims </a></h2>
-    <p>Total number of applications each month</p>
-    <div class="allCharts"></div>
-  </section>
-  <section class="chartSection">
-    <h2> <a href=""> Auto VS manually approved claims </a></h2>
-    <p>Total number of applications each month</p>
-    <div class="lineChart"></div>
-  </section>
-</div>
-
-<div class="prisonVisitTable">
-  <h2> <a href=""> Applications per prison</a></h2>
-  <p>Summary of top prisons in terms of applications</p>
-  <table>
-    <tr>
-      <th><a href="">Title</a></th>
-      <th><a href="">Applications last month</a></th>
-      <th><a href="">Total Applications</a></th>
-    </tr>
-    <tr>
-      <td>Wandsworth Prison</td>
-      <td>125</td>
-      <td>1080</td>
-    </tr>
-    <tr>
-      <td>Brixton Prison</td>
-      <td>89</td>
-      <td>998</td>
-    </tr>
-    <tr>
-      <td>Maghaberry Prison</td>
-      <td>73</td>
-      <td>853</td>
-    </tr>
-    <tr>
-      <td>Wakefield Prison</td>
-      <td>61</td>
-      <td>707</td>
-    </tr>
-    <tr>
-      <td>Glen Parva Prison</td>
-      <td>47</td>
-      <td>604</td>
-    </tr>
-    <tr>
-      <td>Corton Vale Prison</td>
-      <td>23</td>
-      <td>403</td>
-    </tr>
-  </table>
-</div>
-
-</main>
-
-
-
-{% endblock %}
+    {% endblock %}
 
 </div>
