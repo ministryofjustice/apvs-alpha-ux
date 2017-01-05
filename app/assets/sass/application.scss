@@ -24,9 +24,7 @@
   }
 }
 
-#dashboard .column-one-third {
-   
-}
+
 
 #dashboard h2 {
 
@@ -57,8 +55,27 @@
      color:#fff;
 }
 
+.margin-top.link{
+    margin-top:7px;
+    display:inline-block;
+}
+
+.margin-top label{
+    margin-top:25px;
+    display:inline-block;
+}
+
 .margin-left {
     margin-left:20px;
+}
+
+.margin-left.heading-small{
+    margin-left:15px;
+}
+
+.link.export {
+    float:right;
+    margin:20px 0 0 0;
 }
 
 .push-right {
