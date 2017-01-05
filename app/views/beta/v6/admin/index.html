@@ -21,105 +21,55 @@
                 </li>
             </ul>
 
-            <div class="gird-row filters">
-                <div class="column-one-third filter-day">
-                    <div>
-                        <label class="form-label" for="select-day">Filter by</label>
-                        <select class="form-control" id="select-day">
+
+            <div class="grid-row">
+                <div class="column-one-third">
+                    <label class="form-label-bold">Filter by</label>
+                        <select class="form-control full">
                             <option selected>Today</option>
                             <option>Yesterday</option>
                             <option>Last week</option>
-                            <option>Last month</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="column-one-third filter-month">
-                        <label class="form-label" for="select-month">Filter by month</label>
-                        <select class="form-control" id="select-month">
-                            <option>January</option>
-                            <option>Febuary</option>
-                            <option>March</option>
-                            <option>Apr</option>
-                            <option>May</option>
-                            <option>June</option>
-                            <option>July</option>
-                            <option>August</option>
-                            <option>September</option>
-                            <option>October</option>
-                            <option>November</option>
                             <option selected>December</option>
+                            <option>November</option>
+                            <option>October</option>
+                            <option>September</option>
                         </select>
                 </div>
+            </div>
+
+
+            <div id="dashboard" class="grid-row">
                 <div class="column-one-third">
-                  <br><br><br><br>
+                    <h2 class="heading-medium">Pending</h2>
+                    <span class="number">248</span>
+                </div>
+
+                <div class="column-one-third">
+                    <h2 class="heading-medium">In progress</h2>
+                    <span class="number">318</span>
+                </div>
+
+                <div class="column-one-third">
+                    <h2 class="heading-medium">Paid</h2>
+                    <span class="number">786</span>
+                </div>
+
+                <div class="column-one-third">
+                    <h2 class="heading-medium">Auto approved</h2>
+                    <span class="number">592</span>
+                </div>
+
+                <div class="column-one-third">
+                    <h2 class="heading-medium">Manually approved</h2>
+                    <span class="number">194</span>
+                </div>
+
+                <div class="column-one-third">
+                    <h2 class="heading-medium">Rejected</h2>
+                    <span class="number">42</span>
                 </div>
             </div>
 
-            <div class="grid-row summaryBlocks">
-                <div class="column-one-third">
-                    <section class="block1">
-                        <h2>
-                                Pending claims
-                        </h2>
-                        <div class="visualisation">
-                            <span class="number">8</span>
-                        </div>
-                    </section>
-                </div>
-                <div class="column-one-third">
-                    <section class="block2">
-                        <h2>
-                                In - progress claims
-                        </h2>
-                        <div class="visualisation">
-                            <span class="number">3</span>
-                        </div>
-                    </section>
-                </div>
-                <div class="column-one-third">
-                    <section class="block3">
-                        <h2>
-                                Paid claims
-                        </h2>
-                        <div class="visualisation">
-                            <span class="number">2</span>
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-            <div class="grid-row summaryBlocks">
-                <div class="column-one-third">
-                    <section class="block4">
-                        <h2>
-                                Auto - approved claims
-                        </h2>
-                        <div class="visualisation">
-                            <span class="number">4</span>
-                        </div>
-                    </section>
-                </div>
-                <div class="column-one-third">
-                    <section class="block5">
-                        <h2>
-                                Manual - approved claims
-                        </h2>
-                        <div class="visualisation">
-                            <span class="number">5</span>
-                        </div>
-                    </section>
-                </div>
-                <div class="column-one-third">
-                    <section class="block6">
-                        <h2>
-                                Rejected claims
-                        </h2>
-                        <div class="visualisation">
-                            <span class="number">1</span>
-                        </div>
-                    </section>
-                </div>
-            </div>
         </main>
 
     {% endblock %}
