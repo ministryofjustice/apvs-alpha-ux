@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+
+{% block content %}
+
+
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+  <div class="column-two-thirds">
+
+  <h1 class="heading-xlarge">Give feedback</h1>
+
+<p class="heading-medium">Overall, how did you feel about the service you received today?</p>
+
+
+ 
+    <div class="form-group">
+      <label class="block-label selection-button-radio">
+          <input type="radio">
+          Very satisfied</label>
+    </div>
+
+    <div class="form-group">
+      <label class="block-label selection-button-radio">
+          <input type="radio">
+          Satisfied</label>
+    </div>
+
+    <div class="form-group">
+      <label class="block-label selection-button-radio">
+          <input type="radio">
+          Neither satisfied or dissatisfied</label>
+    </div>
+
+    <div class="form-group">
+      <label class="block-label selection-button-radio">
+          <input type="radio">
+          Dissatisfied</label>
+    </div>
+
+    <div class="form-group">
+      <label class="block-label selection-button-radio">
+          <input type="radio">
+          Very dissatisfied</label>
+    </div>
+
+    <div class="form-group">
+    <p class="heading-small">How could we improve this service?</p>
+      <textarea class="form-control full" rows="6" ></textarea>
+</div>
+      <p>(Limit is 1200 characters)</p>
+      <p>Please don't include any personal information or financial information, for example your National Insurance or bank details.</p>
+
+    
+
+<div class="form-group">
+      <input type="submit" name="commit" value="Send feedback" class="button">
+    </div>
+
+    </div>
+    </div>
+
+</main>
+
+{% endblock %}

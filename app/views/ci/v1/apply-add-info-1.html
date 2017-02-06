@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+      <li><a href="/beta/v6">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+     <h2 class="heading-large">
+       About your taxi journey
+     </h2>
+
+    <p>You can get help paying for a taxi if public transport wasn’t available for part of the journey and it would take longer that 20 minutes to walk.</p>
+<p>If you are over 75 or have a medical reason, you can take a longer taxi journey.</p>
+
+     <form action="apply-basket.html" method="get" class="form">
+
+
+
+
+      <div class="form-group">
+      <label class="form-label-bold" for="full-name">From</label>
+
+        <input type="text" class="form-control" id="full-name">
+        <p class="form-hint">For example, Redditch</p>
+      </div>
+
+
+      <div class="form-group">
+      <label class="form-label-bold" for="full-name">To</label>
+
+        <input type="text" class="form-control" id="full-name">
+        <p class="form-hint">For example, Hewell</p>
+      </div>
+
+
+<div class="form-group">
+      <label class="form-label-bold" for="full-name">Cost</label>
+
+        <div class="pound-wrapper">
+          <span>£</span>
+          <input type="text" class="form-control">
+          <p class="form-hint">For example, £10</p>
+        </div>
+      </div>
+
+      <div class="form-group">
+
+
+
+        <div class="form-group">
+          <fieldset>
+
+
+            <label for="taxi-journey" class="block-label selection-button-radio">
+              <input type="checkbox" name="eligibilityNo" value="taxi-journey" id="taxi-journey">
+              Add another taxi journey
+            </label>
+
+          </fieldset>
+          </div>
+
+
+
+
+      <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
+    </form>
+
+
+  </div>
+</div>
+      <!-- <div class="column-third">
+
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="#">Related link</a></li>
+              <li><a href="#">Related link</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div> -->
+
+  </main>
+
+  {% endblock %}

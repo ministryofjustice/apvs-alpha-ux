@@ -11,6 +11,14 @@
     "lint": "standard",
     "test": "npm run lint"
   },
+  "standard": {
+    "ignore": [
+      "jquery*.js"
+    ],
+    "globals": [
+      "$"
+    ]
+  },
   "dependencies": {
     "basic-auth": "^1.0.3",
     "basic-auth-connect": "^1.0.0",

@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+<li><a href="/beta/v6">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+        <h2 class="heading-large">
+         Does someone else claim benefits on your behalf?
+
+        </h2>
+
+<form action="apply-5" method="get" class="form">
+         <div class="form-group">
+          <fieldset>
+
+            <label class="block-label selection-button-radio" data-target="example_help">
+              <input type="radio" name="someone-else-claims" value="Yes" id="someone-else-claims-yes">
+              Yes
+            </label>
+
+            <div class="panel panel-border-narrow js-hidden" id="example_help">
+            <p>Provide their;</p>
+              <label for="nationality_other_countries" class="form-label">
+                 Name
+              </label>
+              <input class="form-control" type="text" id="nationality_other_countries">
+
+            <label for="nationality_other_countries" class="form-label">
+                 National Insurance number
+              </label>
+              <input class="form-control" type="text" id="nationality_other_countries">
+
+            </div>
+
+            <label class="block-label selection-button-radio">
+              <input type="radio" name="someone-else-claims" value="No" id="someone-else-claims-no">
+              No
+            </label>
+
+            <input type="hidden" name="benefit" value="{{benefit}}">
+
+          </fieldset>
+
+        </div>
+
+
+        <div class="form-group"><input type="submit" value="Continue" class="button"></div>
+</form>
+
+      </div>
+      <!-- <div class="column-third">
+
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="#">Related link</a></li>
+              <li><a href="#">Related link</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div> -->
+
+  </main>
+
+  {% endblock %}

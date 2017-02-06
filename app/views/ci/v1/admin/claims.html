@@ -1,0 +1,159 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+APVS Admin
+{% endblock %}
+
+{% block content %}
+
+
+<main id="content" role="main">
+
+    {% include "includes/phase_banner_beta.html" %}
+
+
+
+  <ul id="sub-nav">
+
+    <li><a href="index">Dashboard</a></li>
+    <li>
+      <a href="" class="active">Claims</a>
+<!-- <ul>
+<li><a href="#">Link</a></li>
+<li><a href="#">Link</a></li>
+</ul> -->
+</li>
+
+</ul>
+
+<div class="grid-row">
+            <div class="column-two-thirds">
+                <div class="form-group">
+                    <label>
+                        <input type="text" class="form-control">
+                    </label>
+                    <a href="search-results.html" class="button search">Search</a>
+                    <a href="advanced-search" class="link margin-left">Advanced search</a>
+                </div>
+
+            </div>
+        </div>
+<ul class="sub-tabs">
+  <li><a href="index" class="active">New <span class="badge">2</span></a></li>
+  <li><a href="index">Updated <span class="badge">222</span></a></li>
+  <li><a href="index">In progress <span class="badge">2</span></a></li>
+</ul>
+
+
+
+<table class="table">
+  <tr>
+    <th>Ref No.</th>
+    <th>Claimant name</th>
+    <th>Submitted</th>
+    <th>Status</th>
+    <th></th>
+  </tr>
+
+  <tr>
+    <td>4VTE9ZM</td>
+    <td>Joseph Bloggs</td>
+    <td>29/09/16 - 12:24</td>
+    <td>
+      <span class="tag manual">First time claim</span>
+    </td>
+    <td><a href="view-claim.html">View</a></td>
+  </tr>
+  <tr>
+    <td>4DTGEHI</td>
+    <td>Paul Smith</td>
+    <td>29/09/16 - 12:17</td>
+    <td>
+      <span class="tag repeat-manual">Eligibility changed</span>
+    </td>
+    <td><a href="claim-updated.html">View</a></td>
+  </tr>
+
+  <tr>
+    <td>6WKMCHS</td>
+    <td>Chris Sisk</td>
+    <td>29/09/16 - 11:59</td>
+    <td>
+      <span class="tag manual">First time claim</span>
+    </td>
+    <td><a href="view-claim.html">View</a></td>
+  </tr>
+
+  <tr>
+    <td>9PLATGD</td>
+    <td>Jane Smith</td>
+    <td>29/09/16 - 11:25</td>
+    <td>
+      <span class="tag manual">First time claim</span>
+    </td>
+    <td><a href="view-claim.html">View</a></td>
+  </tr>
+  <tr>
+    <td>2YDINGC</td>
+    <td>Susan Jones</td>
+    <td>29/09/16 - 11:24</td>
+    <td>
+      <span class="tag repeat-manual">Eligibility changed</span>
+    </td>
+    <td><a href="view-claim.html">View</a></td>
+  </tr>
+
+  <tr>
+    <td>5SLMMOP</td>
+    <td>Jim Brown</td>
+    <td>29/09/16 - 10:01</td>
+    <td>
+      <span class="tag manual">First time claim</span>
+    </td>
+    <td><a href="view-claim.html">View</a></td>
+  </tr>
+
+  <tr>
+    <td>7DNJSPP</td>
+    <td>Sarah Smith</td>
+    <td>29/09/16 - 10:00</td>
+    <td>
+      <span class="tag manual">First time claim</span>
+    </td>
+    <td><a href="view-claim.html">View</a></td>
+  </tr>
+
+  
+
+</table>
+
+
+
+<!-- <div class="column-third">
+
+<h2 class="heading-medium">Filter</h2>
+<ul class="filter-claims">
+<li>
+<a href="" class="active">
+Pending <span>10</span>
+</a>
+</li>
+<li>
+<a href="">
+Approved <span>10</span>
+</a>
+</li>
+<li>
+<a href="">
+Rejected <span>10</span>
+</a>
+</li>
+</ul>
+</div> -->
+
+
+
+
+</main>
+
+{% endblock %}
