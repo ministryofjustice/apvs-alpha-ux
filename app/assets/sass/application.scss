@@ -1041,6 +1041,7 @@ only screen and (min-resolution: 2dppx) {
     max-width: 100%;
   }
   td {
+    text-align: center;
     padding: 10px;
     border: 1px solid #bfc1c3;
   }
@@ -1048,6 +1049,7 @@ only screen and (min-resolution: 2dppx) {
 
 .instruction {
   td {
+    text-align: center;
     width: 25%;
   }
 }
