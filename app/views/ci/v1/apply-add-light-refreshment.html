@@ -1,0 +1,46 @@
+{% extends "layout.html" %} {% block page_title %} {% if serviceName %} {{ serviceName }} {% endif %} {% endblock %} {% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+      <li><a href="/beta/v6">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+    <h2 class="heading-large">
+       Light refreshments
+     </h2>
+
+    <form action="apply-add-info-1.html" method="get" class="form">
+
+      <p>If you were away from home for more than 5 hours for your visit, you can claim a contribution towards food and drink purchased.</p>
+
+      <p>Provide the total cost for everyone you are claiming for below.</p>
+
+        <div class="form-group">
+          <label class="form-label-bold" for="full-name">Total cost</label>
+          <div class="pound-wrapper">
+            <span>£</span>
+            <input type="text" class="form-control">
+            <p class="form-hint">
+              There is a limit of £2.55 per person over one year old
+              <br>
+              (£5.10 per person if away from home over 10 hours)
+            </p>
+            <p>Please obtain and keep any receipts in case we need to see these later.</p>
+          </div>
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
+    </form>
+    </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
