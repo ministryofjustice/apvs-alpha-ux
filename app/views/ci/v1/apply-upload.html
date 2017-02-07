@@ -23,7 +23,9 @@
       <p>{{ fileUploadGuidingText[document].guidingText }}</p>
 
       <h3 id="upload" class="heading-medium">Upload now</h3>
-      <p>Your claim will be processed faster if you upload your document.</p>
+      <p>Provide a receipt or a copy of your tickets. Capturing using the camera on your
+        tablet or phone is the quickest and easiest way of doing this. Just follow the four
+        simple steps below.</p>
       <form action="{{ URL }}" method="post" class="form">
 
         <div>
@@ -39,9 +41,11 @@
           </div>
           <div>
             <label id="label" class="custom-file-upload">
-              <div id='choose-file'>Choose file</div>
+              <div id='choose-file'>Choose image</div>
               <input id="document" type="file" name="document"/>
             </label>
+            <p>After tapping the button above, follow prompts on your device to complete
+the remaining steps.</p>
           </div>
           <div class="document-preview-text hidden">
             <br>
@@ -56,10 +60,17 @@
           <details role="group">
             <summary role="button" aria-controls="details-content-0" aria-expanded="true"><span class="summary">How to upload a file</span></summary>
             <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="false">
-              <ul class="list list-number">
-                <li>Take a photo using your smartphone, tablet or camera, or scan the document</li>
-                <li>Transfer the image to your computer or the device you’re using to make the claim</li>
-                <li>Go to ‘choose file’ above and find the image</li>
+              <ul class="list list-number upload-instruction">
+                <li>Click capture image button</li>
+                <img src="/public/images/step1.png" alt="">
+                <li>On prompt click "Camera" or "Take Photo" or "choose image"</li>
+                <img src="/public/images/step2.png" alt="">
+                <li>Compose and take photo</li>
+                <img src="/public/images/step3.png" alt="">
+                <li>Use photo or re-take</li>
+                <img src="/public/images/step4.png" alt="">
+                <ul>Not using a phone or tablet? See guidance for <a href="">uploading with a desktop or
+laptop computer</a></ul>
               </ul>
             </div>
           </details>

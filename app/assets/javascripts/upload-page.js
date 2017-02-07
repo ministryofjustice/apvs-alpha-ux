@@ -38,3 +38,11 @@ function previewFile () {
     reader.readAsDataURL(file)
   }
 }
+
+$(function () {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    document.getElementById('choose-file').innerHTML = 'Capture image'
+  } else {
+    document.getElementById('choose-file').innerHTML = 'Choose image'
+  }
+})

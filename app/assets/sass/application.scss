@@ -1021,3 +1021,9 @@ only screen and (min-resolution: 2dppx) {
     color: #0b0c0c;
     cursor: pointer
 }
+
+.upload-instruction {
+  img{
+    max-width: 35%;
+  }
+}
