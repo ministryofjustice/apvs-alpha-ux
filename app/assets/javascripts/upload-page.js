@@ -19,6 +19,9 @@ $('#document').change(function () {
     $('#choose-file').hide()
     $('#label').hide()
     $('#remove-file-upload').show()
+    $('.mobile-instruction').hide()
+    $('.instruction').hide()
+    $('.text-top').hide()
     previewFile()
   }
 })

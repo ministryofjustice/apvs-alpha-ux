@@ -10,61 +10,62 @@
 
   <div class="grid-row">
     <div class="column-two-thirds">
-
       <h2 class="heading-large">
       {{ fileUploadGuidingText[document].title }}
       </h2>
-      <p>{{ fileUploadGuidingText[document].guidingText }}</p>
+      <p class="text-top">{{ fileUploadGuidingText[document].guidingText }}</p>
 
-      <p>Capturing using the camera on your tablet or phone is the quickest and easiest way of doing this. Just follow the four simple steps below.</p>
-      <form action="{{ URL }}" method="post" class="form">
+      <p class="text-top">Capturing using the camera on your tablet or phone is the quickest and easiest way of doing this. Just follow the four simple steps below.</p>
+    </div>
+  </div>
+  <form action="{{ URL }}" method="post" class="form">
+    <div class="grid-row">
+      <div class="column-two-thirds">
 
         <div>
-          <div>
-            <p id='document-name' class="column-two-quarter"></p>
-            <a id="remove-file-upload" class="link pull-right remove-upload" href="{{ URL }}">remove</a>
-          </div>
-          <div>
-            <p class="document-preview-text hidden">
-              Preview of the document to be uploaded:
-            </p>
-            <img id="document-preview" class="hidden" height="200" src="">
-          </div>
-          <div>
-            <label id="label" class="custom-file-upload">
+          <p id='document-name' class="column-two-quarter"></p>
+          <a id="remove-file-upload" class="link pull-right remove-upload" href="{{ URL }}">remove</a>
+        </div>
+        <div>
+          <p class="document-preview-text hidden">
+            Preview of the document to be uploaded:
+          </p>
+          <img id="document-preview" class="hidden" height="200" src="">
+        </div>
+
+        <table class="instruction">
+          <tr>
+            <td><img src="/public/images/step1.png" alt="">1. Capture</td>
+            <td><img src="/public/images/step2.png" alt="">2. Connect or transfer</td>
+            <td><img src="/public/images/step3.png" alt="">3. Click "Choose image"</td>
+            <td><img src="/public/images/step4.png" alt="">4. Choose the correct image</td>
+          </tr>
+        </table>
+
+        <table class="mobile-instruction">
+          <tr>
+            <td><img src="/public/images/mobile_step1.png" alt="">1. Click "Capture image"</td>
+            <td><img src="/public/images/mobile_step2.png" alt="">2. Click "Camera" or "Photo"</td>
+          </tr>
+          <tr>
+            <td><img src="/public/images/mobile_step3.png" alt="">3. Compose and take photo</td>
+            <td><img src="/public/images/mobile_step4.png" alt="">4. Use photo or re-take</td>
+          </tr>
+        </table>
+
+        <div>
+          <label id="label" class="custom-file-upload">
               <div id='choose-file'>Choose image</div>
               <input id="document" type="file" name="document"/>
             </label>
-            <p>After tapping the button above, follow prompts on your device to complete the remaining steps</p>
-          </div>
+          <p class="instruction mobile-instruction">After tapping the button above, follow prompts on your device to complete the remaining steps</p>
+        </div>
 
-          <table class="instruction">
-            <tr>
-              <td><img src="/public/images/step1.png" alt="">1. Capture</td>
-              <td><img src="/public/images/step2.png" alt="">2. Connect or transfer</td>
-              <td><img src="/public/images/step3.png" alt="">3. Click "Choose image"</td>
-              <td><img src="/public/images/step4.png" alt="">4. Choose the correct image</td>
-            </tr>
-          </table>
-
-          <table class="mobile-instruction">
-            <tr>
-              <td><img src="/public/images/mobile_step1.png" alt="">1. Click "Capture image"</td>
-              <td><img src="/public/images/mobile_step2.png" alt="">2. Click "Camera" or "Photo"</td>
-            </tr>
-            <tr>
-              <td><img src="/public/images/mobile_step3.png" alt="">3. Compose and take photo</td>
-              <td><img src="/public/images/mobile_step4.png" alt="">4. Use photo or re-take</td>
-            </tr>
-          </table>
-          <p>Not using a phone or tablet? See guidance for <a href="">uploading with a desktop or
-laptop computer</a></p>
-          <div class="document-preview-text hidden">
-            <br>
-            <p>
-              Click the continue button below to complete the upload.
-            </p>
-          </div>
+        <div class="document-preview-text hidden">
+          <br>
+          <p>
+            Click Continue to use this image.
+          </p>
         </div>
 
         <br>
@@ -89,8 +90,8 @@ laptop computer</a></p>
         <div class="form-group">
           <input id="file-upload-submit" type="submit" name="commit" value="Continue" class="button">
         </div>
-      </form>
+      </div>
     </div>
-  </div>
+  </form>
 </main>
 {% endblock %}
