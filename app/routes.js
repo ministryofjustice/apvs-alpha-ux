@@ -1243,7 +1243,7 @@ router.get('/ci/v1/upload', function (req, res) {
 })
 
 router.post('/ci/v1/upload', function (req, res) {
-  res.render('index')
+  res.render('ci/v1/apply-basket-receipt')
 })
 
 module.exports = router
