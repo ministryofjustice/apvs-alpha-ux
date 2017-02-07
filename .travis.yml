@@ -7,7 +7,6 @@ install:
 - npm install
 script:
 - "./node_modules/grunt-cli/bin/grunt test"
-- npm test
 after_success:
 - "./create-release-tag.sh"
 deploy:
