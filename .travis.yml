@@ -1,25 +1,21 @@
 language: node_js
 node_js:
-  - 4.0
+- 4.0
 before_install:
-  - npm install -g grunt-cli
+- npm install -g grunt-cli
 install:
-  - npm install
+- npm install
 script:
-  # Reference the locally-installed version of Grunt
-  - ./node_modules/grunt-cli/bin/grunt test
-  - npm test
+- "./node_modules/grunt-cli/bin/grunt test"
+- npm test
 after_success:
-  # Check to see if the version file has been updated
-  - ./create-release-tag.sh
+- "./create-release-tag.sh"
 deploy:
   provider: heroku
   api_key:
-    secure: h/9/Rcd41XVU4VYYeBoKKvG6uShEoDksCGGZ/2dgeY1f3tYnhGzzgL6TIkvhafwDbKk2Y4o6d/MI05K+s7lorf2uTKpr1To2o52hQqmb4YREPWruZtBqoRo5X4nCeN2oEdW+yJRH3jZDNUmwkPzjytqxkcUUUeDPHfz3+xCtSZk=
-  app: govuk-prototype-kit
+    secure: mEABw967Lptjsh884Ld2WTW5z1ZIjqERkp4UoSCUL3KjyQ42UpgQXoVUDDczYHmJFjwm/BUW48vV/r9ZBctN95/IQpf+Ev3JlDU6KZMLz/dVzoczoUTX+ZKBGQvsTc0rfJ4Z0G5kDAPsQprh1KIYpFJHUfYSTdTSAE7LfPj4+9UH9gqq7D8/lu4p4ogNLF300XvsPTCfA/64BbG5+UWCvOl9ysZD935YM0e+jAd/5s3tXB8yKrfmVVm3AbIW3sQiFWPeML1yNt+KnTM7ST28gT1cq+1ov1iD+ZTqiplSWRBmri+erEryUs+7fucKaDd0rGGrgwFnCY7bXKeA/oCVQHB0sLd7EhzWw7N5UOUQnbSgrubTWupn93BYN3I6GEUN4WRG8rUEZlHa327PedS3DgLIuMPG7EEyYBG53m5mvvsswWLgEusKWzrZtVno8V8WaPV+AKYpsMVgbD/5PSdDJiVDBCOJWGgrQlopeYg2AjKG6HdPis4TRwSpWlopWJcgQA8K9fSael92M2TGKabrbTYN+gBKNIxSbygCT8L/qwgYh0LHHkuiSU6KHfw0xwwul02HgS4GzCiB/Um318Q3WlUP4CkE/4p3inbuR+Poouy3rWwIpAP/FVBNb1uNnyWrv7KXFOiWdc1ZXgfT66muOMpoTv7mNQjHMoNzb5c9W7I=
+  app: apvs-beta-ux
   on: master
-
 notifications:
   email: false
-
 sudo: false
