@@ -6,6 +6,18 @@
 @import 'patterns/check-your-answers';
 @import 'patterns/unbranded';
 
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: 768px) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: 769px) and (max-width: 1024px) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: 1024px) { @content; }
+  }
+}
+
 // Related items
 // (These styles will be moved to GOV.UK elements, duplicating here for now.)
 .govuk-related-items {
@@ -23,8 +35,6 @@
     list-style-type: none;
   }
 }
-
-
 
 #dashboard h2 {
 
@@ -1022,8 +1032,18 @@ only screen and (min-resolution: 2dppx) {
     cursor: pointer
 }
 
-.upload-instruction {
+.instruction, .mobile-instruction {
   img{
-    max-width: 35%;
+    max-width: 100%;
+  }
+  td {
+    padding: 10px;
+    border: 1px solid #bfc1c3;
+  }
+}
+
+.instruction {
+  td {
+    width: 25%;
   }
 }

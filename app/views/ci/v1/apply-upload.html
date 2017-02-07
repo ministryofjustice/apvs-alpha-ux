@@ -1,10 +1,4 @@
-{% extends "layout.html" %}
-
-{% block page_title %}
-  {% if serviceName %} {{ serviceName }} {% endif %}
-{% endblock %}
-
-{% block content %}
+{% extends "layout.html" %} {% block page_title %} {% if serviceName %} {{ serviceName }} {% endif %} {% endblock %} {% block content %}
 <main id="content" role="main">
   {% include "includes/phase_banner_beta.html" %}
 
@@ -22,10 +16,7 @@
       </h2>
       <p>{{ fileUploadGuidingText[document].guidingText }}</p>
 
-      <h3 id="upload" class="heading-medium">Upload now</h3>
-      <p>Provide a receipt or a copy of your tickets. Capturing using the camera on your
-        tablet or phone is the quickest and easiest way of doing this. Just follow the four
-        simple steps below.</p>
+      <p>Capturing using the camera on your tablet or phone is the quickest and easiest way of doing this. Just follow the four simple steps below.</p>
       <form action="{{ URL }}" method="post" class="form">
 
         <div>
@@ -44,37 +35,39 @@
               <div id='choose-file'>Choose image</div>
               <input id="document" type="file" name="document"/>
             </label>
-            <p>After tapping the button above, follow prompts on your device to complete
-the remaining steps.</p>
+            <p>After tapping the button above, follow prompts on your device to complete the remaining steps</p>
           </div>
+
+          <table class="instruction">
+            <tr>
+              <td><img src="/public/images/step1.png" alt="">1. Capture</td>
+              <td><img src="/public/images/step2.png" alt="">2. Connect or transfer</td>
+              <td><img src="/public/images/step3.png" alt="">3. Click "Choose image"</td>
+              <td><img src="/public/images/step4.png" alt="">4. Choose the correct image</td>
+            </tr>
+          </table>
+
+          <table class="mobile-instruction">
+            <tr>
+              <td><img src="/public/images/mobile_step1.png" alt="">1. Click "Capture image"</td>
+              <td><img src="/public/images/mobile_step2.png" alt="">2. Click "Camera" or "Photo"</td>
+            </tr>
+            <tr>
+              <td><img src="/public/images/mobile_step3.png" alt="">3. Compose and take photo</td>
+              <td><img src="/public/images/mobile_step4.png" alt="">4. Use photo or re-take"</td>
+            </tr>
+          </table>
+          <p>Not using a phone or tablet? See guidance for <a href="">uploading with a desktop or
+laptop computer</a></p>
           <div class="document-preview-text hidden">
             <br>
             <p>
               Click the continue button below to complete the upload.
             </p>
           </div>
+        </div>
 
-        </div>
         <br>
-        <div class="form-group">
-          <details role="group">
-            <summary role="button" aria-controls="details-content-0" aria-expanded="true"><span class="summary">How to upload a file</span></summary>
-            <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="false">
-              <ul class="list list-number upload-instruction">
-                <li>Click capture image button</li>
-                <img src="/public/images/step1.png" alt="">
-                <li>On prompt click "Camera" or "Take Photo" or "choose image"</li>
-                <img src="/public/images/step2.png" alt="">
-                <li>Compose and take photo</li>
-                <img src="/public/images/step3.png" alt="">
-                <li>Use photo or re-take</li>
-                <img src="/public/images/step4.png" alt="">
-                <ul>Not using a phone or tablet? See guidance for <a href="">uploading with a desktop or
-laptop computer</a></ul>
-              </ul>
-            </div>
-          </details>
-        </div>
 
         <div id="alternative" class="form-group" {% if hideAlternative %} hidden {% endif %}>
           <br>
@@ -94,11 +87,7 @@ laptop computer</a></ul>
         </div>
 
         <div class="form-group">
-          <input id="file-upload-submit"
-                 type="submit"
-                 name="commit"
-                 value="Continue"
-                 class="button">
+          <input id="file-upload-submit" type="submit" name="commit" value="Continue" class="button">
         </div>
       </form>
     </div>

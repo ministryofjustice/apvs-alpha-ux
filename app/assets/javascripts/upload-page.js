@@ -1,3 +1,16 @@
+$(function () {
+  $('#remove-file-upload').hide()
+  if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    document.getElementById('choose-file').innerHTML = 'Capture image'
+    $('.mobile-instruction').show()
+    $('.instruction').hide()
+  } else {
+    $('.instruction').show()
+    $('.mobile-instruction').hide()
+    document.getElementById('choose-file').innerHTML = 'Choose image'
+  }
+})
+
 $('#document').change(function () {
   var document = $('#document').val().replace(/\\/g, '/').replace(/.*\//, '')
   if (document) {
@@ -38,11 +51,3 @@ function previewFile () {
     reader.readAsDataURL(file)
   }
 }
-
-$(function () {
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    document.getElementById('choose-file').innerHTML = 'Capture image'
-  } else {
-    document.getElementById('choose-file').innerHTML = 'Choose image'
-  }
-})
