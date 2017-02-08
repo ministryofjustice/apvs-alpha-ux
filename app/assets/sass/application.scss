@@ -157,6 +157,13 @@ a.remove-link {
     float:right;
 }
 
+#document-preview {
+  max-width: 100%;
+}
+#document-name {
+    width: 80%;
+}
+
 button.link {
     color: #005ea5;
     text-decoration: underline;
