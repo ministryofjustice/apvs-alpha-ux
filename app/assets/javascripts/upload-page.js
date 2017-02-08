@@ -9,8 +9,7 @@ $(function () {
     $('.instruction').show()
     $('.mobile-instruction').hide()
     document.getElementById('choose-file').innerHTML = 'Choose image'
-    document.getElementById('device').innerHTML = 'Provide a receipt or a copy of your tickets. Scan or photograph each one.
-    Then transfer images or connect device to your computer. Finally tap “Choose image” and locate the image of the requested item'
+    document.getElementById('device').innerHTML = 'Provide a receipt or a copy of your tickets. Scan or photograph each one. Then transfer images or connect device to your computer. Finally tap “Choose image” and locate the image of the requested item'
   }
 })
 
