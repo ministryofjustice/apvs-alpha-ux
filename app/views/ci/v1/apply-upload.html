@@ -29,7 +29,6 @@
             <img id="document-preview" class="hidden" src="">
             <br>
             <p id='document-name' class="column-two-quarter"></p>
-            <a id="remove-file-upload" class="link pull-right remove-upload" href="{{ URL }}">remove</a>
           </div>
         </div>
 
@@ -54,17 +53,19 @@
         </table>
 
         <div>
-          <label id="label" class="custom-file-upload">
-            <div id='choose-file'>Choose image</div>
-            <input id="document" type="file" name="document"/>
-          </label>
+          <div class="form-group">
+            <label id="label" class="custom-file-upload">
+              <div id='choose-file'>Choose image</div>
+              <input id="document" type="file" name="document"/>
+            </label>
+          <div>
           <p class="mobile-instruction">After tapping the button above, follow prompts on your device to complete the remaining steps</p>
         </div>
 
         <div class="document-preview-text hidden">
           <br>
           <p>
-            Click Continue to use this image.
+            Tap “Continue”, or “Remove” if you want to choose another image.
           </p>
         </div>
 
@@ -87,6 +88,7 @@
 
         <div class="form-group">
           <input id="file-upload-submit" type="submit" name="commit" value="Continue" class="button">
+          <a id="remove-file-upload" class="button grey pull-right" href="{{ URL }}">Remove</a>
         </div>
       </div>
     </div>

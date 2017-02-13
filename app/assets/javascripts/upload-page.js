@@ -1,6 +1,6 @@
 $(function () {
   $('#remove-file-upload').hide()
-  if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  if (/Android|webOS|iPhone|iPod|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     document.getElementById('choose-file').innerHTML = 'Capture image'
     document.getElementById('device').innerHTML = 'Capturing using the camera on your tablet or phone is the quickest and easiest way of doing this. Just follow the four simple steps below.'
     $('.mobile-instruction').show()
