@@ -50,39 +50,46 @@
       </div>
 
       <div class="form-group">
-      <label class="form-label-bold" for="full-name">Arrival time</label>
-
-        <p class="form-hint">For example, 12pm</p>
-        <input type="text" class="form-control" id="full-name">
-      </div>
-
-      <div class="form-group">
 
       <div class="form-group ">
 
   <h2 id="return-journey" class="form-label-bold">Is this a return journey?</h2>
 
-  
 
-  <label for="return-yes" class="block-label inline">
-    <input id="return-yes"
-           type="radio"
-           name="return-journey"
-           value="yes"
-           >
-    Yes
-  </label>
-  <label for="return-no" class="block-label inline">
-    <input id="return-no"
+      
+      <div class="form-group">       
+    
+        <fieldset>    
+     
+    
+          <label for="close-relative" class="block-label selection-button-radio" data-target="close-relative-question">   
+          <input type="radio" name="relationship" value="Close Relative" id="close-relative">   
+          Yes   
+          </label>    
+    
+      <div class="panel panel-border-narrow js-hidden" id="close-relative-question">    
+      <div class="form-group">    
+          <label class="form-label-bold" for="full-name">What time is your return train home?</label>    
+          <p class="form-hint">For example, 4pm</p>    
+          <input type="text" class="form-control" id="full-name">   
+        
+      </div>          
+      </div> 
+     
+          </fieldset>
+
+      
+        <label for="return-no" class="block-label inline">
+        <input id="return-no"
            type="radio"
            name="return-journey"
            value="no"
            >
-    No
-  </label>
+        No
+        </label>
+      
 
-</div>
-     
+           
 
 
       <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
