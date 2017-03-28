@@ -29,93 +29,68 @@
         <h3 class="heading-small">Bank Details</h3>
         <p>We don’t store this information. You will need to enter this for each claim you make</p>
 
-<div class="form-group">
-      <label class="form-label-bold" for="full-name">Account Number</label>
-      <input type="text" class="form-control" id="full-name">
-    </div>
 
     <div class="form-group">
-      <label class="form-label-bold" for="full-name">Sort Code</label>
-      <input type="text" class="form-control" id="full-name">
+
+    <fieldset>    
+     
+    
+         
+          <label for="bank-account" class="block-label selection-button-radio" data-target="bank-account-form">   
+          <input type="radio" name="relationship" value="Bank Account" id="bank-account">   
+          Bank Account  
+          </label>    
+    
+      <div class="panel panel-border-narrow js-hidden" id="bank-account-form">    
+      <div class="form-group">    
+          <label class="form-label-bold" for="full-name">Account Number</label>      
+          <input type="text" class="form-control" id="full-name"> 
+
+           <label class="form-label-bold" for="full-name">Sort Code</label>      
+          <input type="text" class="form-control" id="full-name">    
+        
+      </div>          
+      </div> 
+     
+            
+          <label for="bank-account" class="block-label selection-button-radio" data-target="payout-form">   
+          <input type="radio" name="relationship" value="Bank Account" id="bank-account">   
+          I don't have a bank account 
+          </label>    
+    
+      <div class="panel panel-border-narrow js-hidden" id="payout-form">    
+      <details>
+            <summary><span class="summary">If you don't have a bank account</span>
+              <span class="visually-hidden">If using a screen reader such as JAWS if having difficulty accessing this list then try pressing control + space to expand the list then L + down to read list items</span>
+            </summary>
+            <div class="panel panel-border-narrow">
+              <ul class=" list list-bullet">
+                <li>Post Office payout is an easy way of claiming back your visit costs
+                </li>
+                <li>You will receive a unique reference barcode which can be scanned in any post office branch</li>
+                <li>The reference barcode will be sent out to the address you have provided </li>
+              </ul>
+            </div>
+          </details>
+
+          <p>Address to be sent to:</p>
+          <p>23 Street Name
+          <br>Belfast
+          <br>BT123BT</p>
+
+
+
+
+    </fieldset>
     </div>
-
-    <div class="form-group">
-      <label for="payout-show" class="block-label selection-button-checkbox" data-target="payout" >I dont have a bank account
-      <input id="payout-show" type="checkbox" name="category"></label>
-      </div>
-<div class="form-group">    
- -          <fieldset>    
- -    
- -            <fieldset>    
- -    
- -    
- -            <label for="close-relative" class="block-label selection-button-radio" data-target="close-relative-question">   
- -              <input type="radio" name="relationship" value="Close Relative" id="close-relative">   
- -              Yes   
- -    
- -            </label>    
- -    
- -            <div class="panel panel-border-narrow js-hidden" id="close-relative-question">    
- -              <div class="form-group">    
- -      <label class="form-label-bold" for="full-name">Time of departure</label>    
- -    
- -        <input type="text" class="form-control" id="full-name">   
- -        <p class="form-hint">For example, 10am</p>    
- -      </div>    
- -    
- -      <div class="form-group">    
- -      <label class="form-label-bold" for="full-name">From which station</label>   
- -    
-          <input type="text" class="form-control" id="full-name">             <input type="text" class="form-control" id="full-name">
- -        <p class="form-hint">For example, Euston</p>    
-        </div>            </div>
         
-        <div class="form-group">            <div class="form-group">
- -      <label class="form-label-bold" for="full-name">Time of arrival</label>     +      <label class="form-label-bold" for="full-name">Arrival time</label>
-        
- +        <p class="form-hint">For example, 12pm</p>
-          <input type="text" class="form-control" id="full-name">             <input type="text" class="form-control" id="full-name">
- -        <p class="form-hint">For example, 11am</p>    
-        </div>            </div>
-        
-        <div class="form-group">            <div class="form-group">
- -      <label class="form-label-bold" for="full-name">To which station</label>   
- -    
- -        <input type="text" class="form-control" id="full-name">   
- -        <p class="form-hint">For example, Birmingham New Street</p>   
- -      </div>    
- -            </div>    
- -    
- -          </fieldset>
-
-      <h2 class="heading-medium">
-     Declaration
-   </h2>
-
-   <p>I declare that:</p>
-   <ul class="list list-bullet">
-     <li>The information I have given is true to the best of my knowledge </li>
-     <li>The evidence I’ve given is genuine and the most recent version</li>
-     <li>I authorise the APVU to make any necessary checks with the
-     Department for Work and Pensions (DWP)</li>
-     <li>I understand that a false declaration may lead to prosecution and
-     a ban from claiming again</li>
-     <li>I agree to the terms of service as documented in the <a href="/terms-and-conditions" target="_blank">terms and conditions</a></li>
-   </ul>
-
-   <div id="terms-and-conditions" class="form-group">
-     <label for="terms-and-conditions-input" class="block-label">
-       <input id="terms-and-conditions-input"
-              type="checkbox"
-              value="yes">
-       <span class="heading-small"> I agree to the declaration</span>
-     </label>
-   </div>
-<form action="apply-11.html" method="get" class="form">
+        <form action="apply-11.html" method="get" class="form">
         <div class="form-group"><input type="submit" name="commit" value="Submit Application" class="button"></div>
 </form>
 
       </div>
+
+     
       <!-- <div class="column-third">
 
         <aside class="govuk-related-items" role="complementary">
