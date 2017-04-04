@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+{% if serviceName %} {{ serviceName }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  {% include "includes/phase_banner.html" %}
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/index.html">Prototype Index</a></li>
+<li><a href="/beta/v6">Home</a></li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+        <h2 class="heading-large">Your payment</h2>
+        <p>If your application is successful you will be given a payment for your travel and expenses.</p>
+
+
+        <h3 class="heading-small">How do you want to receive your payment?
+        </h3>
+
+
+
+        <fieldset>    
+     
+          <label for="bank-account" class="block-label selection-button-radio selected" data-target="bank-account-form">   
+          <input type="radio" name="relationship" value="Bank Account" id="bank-account" aria-controls="bank-account-form" aria-expanded="true">   
+          Bank transfer  
+          </label>    
+    
+      <div class="panel panel-border-narrow" id="bank-account-form" aria-hidden="false">    
+      <div class="form-group">    
+          <label class="form-label-bold" for="full-name">Sort code</label>      
+          <input type="text" class="form-control" id="full-name"> 
+
+           <label class="form-label-bold" for="full-name">Account number</label>      
+          <input type="text" class="form-control" id="full-name">    
+        
+      </div>          
+      </div> 
+     
+            
+          <label for="bank-account" class="block-label selection-button-radio" data-target="payout-form">   
+          <input type="radio" name="relationship" value="Bank Account" id="bank-account" aria-controls="payout-form">   
+          Voucher 
+          </label>    
+    
+      <div class="panel panel-border-narrow js-hidden" id="payout-form">    
+      <span class="text-secondary">You can exchange this for cash at any post office</span>
+      </br>
+       </br>
+          <p>Your voucher will be posted to:</p>
+          <p>23 Street Name
+          <br>Belfast
+          <br>BT123BT</p>
+
+      <p><a href="confirm" class="link">Change address</a></p>
+          <span class="text-secondary">(this will change the address for your whole application)
+          </span>
+
+     
+      <!-- <div class="column-third">
+
+        <aside class="govuk-related-items" role="complementary">
+          <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="font-xsmall">
+              <li><a href="#">Related link</a></li>
+              <li><a href="#">Related link</a></li>
+              <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+    </div> -->
+
+        </fieldset>
+          </br> 
+        
+          <form action="apply-12.html" method="get" class="form">
+        <div class="form-group"><input type="submit" name="commit" value="Continue" class="button"></div>
+          </form>
+
+      </div>
+
+  </main>
+
+  {% endblock %}
